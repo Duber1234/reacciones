@@ -52,7 +52,12 @@
                         <div class="header-top-navigation">
                             <nav>
                                 <ul>
-                                    <li class="msg-trigger"><a class="msg-trigger-btn" href="#a1">Seguidores</a>
+                                    <li class="msg-trigger">
+                          
+                                         <a class="msg-trigger-btn" href="#a1">S. <label class="notification request-trigger"><i class="flaticon-users"></i>
+                                            <span>03</span>
+                                        </label></a>
+
                                         <div class="message-dropdown" id="a1">
                                             <div class="dropdown-title">
                                                 <p class="recent-msg">recent message x</p>
@@ -135,10 +140,15 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="msg-trigger"><a class="msg-trigger-btn" href="#a">Comentarios</a>
-                                        <div class="message-dropdown" id="a">
+                                    <li class="msg-trigger">
+                          
+                                        <a class="msg-trigger-btn" href="#z">C. <label class="notification request-trigger"><i class="flaticon-chats"></i>
+                                            <span>03</span>
+                                        </label></a>
+
+                                        <div class="message-dropdown" id="z">
                                             <div class="dropdown-title">
-                                                <p class="recent-msg">recent message</p>
+                                                <p class="recent-msg">recent message x</p>
                                                 <div class="message-btn-group">
                                                     <button>New group</button>
                                                     <button>New Message</button>
@@ -218,13 +228,19 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="notification-trigger"><a class="msg-trigger-btn" href="#b">Reacciones</a>
-                                        <div class="message-dropdown" id="b">
+                                    <li class="msg-trigger">
+                          
+                                        <a class="msg-trigger-btn" href="#a1">R. <label class="notification request-trigger"><i class="flaticon-notification"></i>
+                                            <span>03</span>
+                                        </label></a>
+
+                                        <div class="message-dropdown" id="a1">
                                             <div class="dropdown-title">
-                                                <p class="recent-msg">Notification</p>
-                                                <button>
-                                                    <i class="flaticon-settings"></i>
-                                                </button>
+                                                <p class="recent-msg">recent message x</p>
+                                                <div class="message-btn-group">
+                                                    <button>New group</button>
+                                                    <button>New Message</button>
+                                                </div>
                                             </div>
                                             <ul class="dropdown-msg-list">
                                                 <li class="msg-list-item d-flex justify-content-between">
@@ -237,10 +253,9 @@
                                                     <!-- profile picture end -->
 
                                                     <!-- message content start -->
-                                                    <div class="msg-content notification-content">
-                                                        <a href="profile.html">Robert Faul</a>,
-                                                        <a href="profile.html">william jhon</a>
-                                                        <p>and 35 other people reacted to your photo</p>
+                                                    <div class="msg-content">
+                                                        <h6 class="author"><a href="profile.html">Mili Raoulin</a></h6>
+                                                        <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default</p>
                                                     </div>
                                                     <!-- message content end -->
 
@@ -260,16 +275,15 @@
                                                     <!-- profile picture end -->
 
                                                     <!-- message content start -->
-                                                    <div class="msg-content notification-content">
-                                                        <a href="profile.html">Robert mushkil</a>,
-                                                        <a href="profile.html">Terry jhon</a>
-                                                        <p>and 20 other people reacted to your photo</p>
+                                                    <div class="msg-content">
+                                                        <h6 class="author"><a href="profile.html">Jhon Doe</a></h6>
+                                                        <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default</p>
                                                     </div>
                                                     <!-- message content end -->
 
                                                     <!-- message time start -->
                                                     <div class="msg-time">
-                                                        <p>20 May 2019</p>
+                                                        <p>15 May 2019</p>
                                                     </div>
                                                     <!-- message time end -->
                                                 </li>
@@ -277,22 +291,21 @@
                                                     <!-- profile picture end -->
                                                     <div class="profile-thumb">
                                                         <figure class="profile-thumb-middle">
-                                                            <img src="assets/images/profile/profile-small-6.jpg" alt="profile picture">
+                                                            <img src="assets/images/profile/profile-small-5.jpg" alt="profile picture">
                                                         </figure>
                                                     </div>
                                                     <!-- profile picture end -->
 
                                                     <!-- message content start -->
-                                                    <div class="msg-content notification-content">
-                                                        <a href="profile.html">Horijon Mbala</a>,
-                                                        <a href="profile.html">Bashu jhon</a>
-                                                        <p>and 55 other people reacted to your post</p>
+                                                    <div class="msg-content">
+                                                        <h6 class="author"><a href="profile.html">Jon Wileyam</a></h6>
+                                                        <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default</p>
                                                     </div>
                                                     <!-- message content end -->
 
                                                     <!-- message time start -->
                                                     <div class="msg-time">
-                                                        <p>15 Jan 2019</p>
+                                                        <p>20 Jun 2019</p>
                                                     </div>
                                                     <!-- message time end -->
                                                 </li>
@@ -303,6 +316,7 @@
                                             </div>
                                         </div>
                                     </li>
+                                    
                                 </ul>
                             </nav>
                         </div>
