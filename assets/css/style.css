@@ -1280,10 +1280,11 @@ only screen and (max-width: 767.98px) {
     height: 60px;
 }
 .mobile-logo img{
-    width: 50%;
-    height: 50%;
+    width: 70%;
+    height: 70%;
     border-radius: 10%;
 }
+
 .mobile-logo,
 .mobile-header-profile {
     width: 80px;
@@ -1306,7 +1307,7 @@ only screen and (max-width: 767.98px) {
 
 .mobile-logo .profile-thumb-middle,
 .mobile-header-profile .profile-thumb-middle {
-    border-radius: 50;
+    border-radius: 40%;
 }
 
 .mobile-menu ul {
