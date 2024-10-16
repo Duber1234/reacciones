@@ -34,7 +34,7 @@
     <!-- light gallery css -->
     <link rel="stylesheet" href="assets/css/plugins/lightgallery.min.css">
     <!-- Main Style CSS -->
-    <link rel="stylesheet" href="assets/css/style.css?">
+    <link rel="stylesheet" href="assets/css/style.css?v=<?php echo time(); ?>">
 
 </head>
 <style type="text/css">
