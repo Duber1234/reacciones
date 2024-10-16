@@ -1279,7 +1279,11 @@ only screen and (max-width: 767.98px) {
     background-color: #fff;
     height: 60px;
 }
-
+.mobile-logo img{
+    width: 50%;
+    height: 50%;
+    border-radius: 10%;
+}
 .mobile-logo,
 .mobile-header-profile {
     width: 80px;
