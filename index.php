@@ -11,7 +11,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon1.png">
 
     <!-- CSS
 	============================================ -->
@@ -229,7 +229,7 @@
                         <!-- brand logo start -->
                         <div class="brand-logo text-center">
                             <a href="index.html">
-                                <img src="assets/images/logo/logo.png" alt="brand logo">
+                                <img src="assets/images/logo/logo1.png" alt="brand logo" width="30%">
                             </a>
                         </div>
                         <!-- brand logo end -->
