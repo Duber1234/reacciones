@@ -231,7 +231,7 @@
                         <!-- brand logo start -->
                         <div class="brand-logo text-center">
                             <a href="https://reacciona.in">
-                                <img src="assets/images/logo/logo1.png" alt="brand logo" width="20%">
+                                <img src="assets/images/logo/logo1.png" alt="brand logo" width="25%">
                             </a>
                         </div>
                         <!-- brand logo end -->
@@ -2029,7 +2029,7 @@
     <!-- isotope filter js -->
     <script src="assets/js/plugins/isotope.pkgd.min.js"></script>
     <!-- Main JS -->
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js?v=<?php echo time(); ?>"></script>
 
 </body>
 
