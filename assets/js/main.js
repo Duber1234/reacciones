@@ -1,6 +1,5 @@
 (function ($) {
-	$(".mobile-footer-inner").remove();
-	$(".footer-wrapper").remove();
+	
 	"use strict";
 
 	$(".msg-trigger-btn").on("click", function (event) {
