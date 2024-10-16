@@ -287,7 +287,7 @@
             <div class="mobile-header position-relative ">
                 <div class="mobile-logo">
                     <a href="index.html">
-                        <img src="assets/images/logo/logo-white.png" alt="logo">
+                        <img src="assets/images/logo/logo1.png" alt="logo">
                     </a>
                 </div>
                 <div class="mobile-menu w-100">
