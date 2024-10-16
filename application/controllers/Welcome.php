@@ -24,5 +24,9 @@ class Welcome extends CI_Controller {
 		$this->load->view('welcome_message');
 		$this->load->view('base/footer.php');
 	}
+	public function hola(){
+		$this->load->view('base/header.php');
+		$this->load->view('base/footer.php');
+	}
 
 }

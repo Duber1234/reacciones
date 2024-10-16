@@ -38,7 +38,9 @@
 
 </head>
 <style type="text/css">
-
+.btn-mnu{
+    cursor: pointer;
+}
 </style>
 <body>
 
@@ -54,7 +56,7 @@
                                 <ul>
                                     <li class="msg-trigger">
                           
-                                         <a class="msg-trigger-btn" href="#a1">S. <label class="notification request-trigger"><i class="flaticon-users"></i>
+                                         <a class="msg-trigger-btn" href="#a1">S. <label class="notification request-trigger btn-mnu"><i class="flaticon-users"></i>
                                             <span>03</span>
                                         </label></a>
 
@@ -142,7 +144,7 @@
                                     </li>
                                     <li class="msg-trigger">
                           
-                                        <a class="msg-trigger-btn" href="#z">C. <label class="notification request-trigger"><i class="flaticon-chats"></i>
+                                        <a class="msg-trigger-btn" href="#z">C. <label class="notification request-trigger btn-mnu"><i class="flaticon-chats"></i>
                                             <span>03</span>
                                         </label></a>
 
@@ -230,7 +232,7 @@
                                     </li>
                                     <li class="msg-trigger">
                           
-                                        <a class="msg-trigger-btn" href="#b">R. <label class="notification request-trigger"><i class="flaticon-notification"></i>
+                                        <a class="msg-trigger-btn " href="#b">R. <label class="notification request-trigger btn-mnu"><i class="flaticon-notification"></i>
                                             <span>03</span>
                                         </label></a>
 
@@ -326,7 +328,7 @@
                     <div class="col-md-2">
                         <!-- brand logo start -->
                         <div class="brand-logo text-center">
-                            <a href="https://reacciona.in">
+                            <a href="<?=base_url(); ?>"> 
                                 <img src="assets/images/logo/logo1.png" alt="brand logo" width="25%"> Reacciona.in
                             </a>
                         </div>
