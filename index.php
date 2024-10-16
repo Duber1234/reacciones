@@ -481,7 +481,7 @@
                                         </a>
                                     </figure>
                                     <div class="profile-desc text-center">
-                                        <h6 class="author"><a href="profile.html">Erik Jhonson</a></h6>
+                                        <h6 class="author"><a href="profile.html">Duber Pesca</a></h6>
                                         <p>Any one can join with but Social network us if you want Any one can join with us if you want</p>
                                     </div>
                                 </div>
