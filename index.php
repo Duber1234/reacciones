@@ -228,7 +228,7 @@
                     <div class="col-md-2">
                         <!-- brand logo start -->
                         <div class="brand-logo text-center">
-                            <a href="index.html">
+                            <a href="https://reacciona.in">
                                 <img src="assets/images/logo/logo1.png" alt="brand logo" width="20%">
                             </a>
                         </div>
