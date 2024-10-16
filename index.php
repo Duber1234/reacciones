@@ -230,11 +230,11 @@
                                     </li>
                                     <li class="msg-trigger">
                           
-                                        <a class="msg-trigger-btn" href="#a1">R. <label class="notification request-trigger"><i class="flaticon-notification"></i>
+                                        <a class="msg-trigger-btn" href="#b">R. <label class="notification request-trigger"><i class="flaticon-notification"></i>
                                             <span>03</span>
                                         </label></a>
 
-                                        <div class="message-dropdown" id="a1">
+                                        <div class="message-dropdown" id="b">
                                             <div class="dropdown-title">
                                                 <p class="recent-msg">recent message x</p>
                                                 <div class="message-btn-group">
