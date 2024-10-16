@@ -229,7 +229,7 @@
                         <!-- brand logo start -->
                         <div class="brand-logo text-center">
                             <a href="index.html">
-                                <img src="assets/images/logo/logo1.png" alt="brand logo" width="30%">
+                                <img src="assets/images/logo/logo1.png" alt="brand logo" width="20%">
                             </a>
                         </div>
                         <!-- brand logo end -->
