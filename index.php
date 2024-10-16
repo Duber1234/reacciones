@@ -52,8 +52,90 @@
                         <div class="header-top-navigation">
                             <nav>
                                 <ul>
-                                    <li class="active"><a href="https://reacciona.in">home</a></li>
-                                    <li class="msg-trigger"><a class="msg-trigger-btn" href="#a">message</a>
+                                    <li class="msg-trigger"><a class="msg-trigger-btn" href="#a1">Seguidores</a>
+                                        <div class="message-dropdown" id="a1">
+                                            <div class="dropdown-title">
+                                                <p class="recent-msg">recent message x</p>
+                                                <div class="message-btn-group">
+                                                    <button>New group</button>
+                                                    <button>New Message</button>
+                                                </div>
+                                            </div>
+                                            <ul class="dropdown-msg-list">
+                                                <li class="msg-list-item d-flex justify-content-between">
+                                                    <!-- profile picture end -->
+                                                    <div class="profile-thumb">
+                                                        <figure class="profile-thumb-middle">
+                                                            <img src="assets/images/profile/profile-small-3.jpg" alt="profile picture">
+                                                        </figure>
+                                                    </div>
+                                                    <!-- profile picture end -->
+
+                                                    <!-- message content start -->
+                                                    <div class="msg-content">
+                                                        <h6 class="author"><a href="profile.html">Mili Raoulin</a></h6>
+                                                        <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default</p>
+                                                    </div>
+                                                    <!-- message content end -->
+
+                                                    <!-- message time start -->
+                                                    <div class="msg-time">
+                                                        <p>25 Apr 2019</p>
+                                                    </div>
+                                                    <!-- message time end -->
+                                                </li>
+                                                <li class="msg-list-item d-flex justify-content-between">
+                                                    <!-- profile picture end -->
+                                                    <div class="profile-thumb">
+                                                        <figure class="profile-thumb-middle">
+                                                            <img src="assets/images/profile/profile-small-4.jpg" alt="profile picture">
+                                                        </figure>
+                                                    </div>
+                                                    <!-- profile picture end -->
+
+                                                    <!-- message content start -->
+                                                    <div class="msg-content">
+                                                        <h6 class="author"><a href="profile.html">Jhon Doe</a></h6>
+                                                        <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default</p>
+                                                    </div>
+                                                    <!-- message content end -->
+
+                                                    <!-- message time start -->
+                                                    <div class="msg-time">
+                                                        <p>15 May 2019</p>
+                                                    </div>
+                                                    <!-- message time end -->
+                                                </li>
+                                                <li class="msg-list-item d-flex justify-content-between">
+                                                    <!-- profile picture end -->
+                                                    <div class="profile-thumb">
+                                                        <figure class="profile-thumb-middle">
+                                                            <img src="assets/images/profile/profile-small-5.jpg" alt="profile picture">
+                                                        </figure>
+                                                    </div>
+                                                    <!-- profile picture end -->
+
+                                                    <!-- message content start -->
+                                                    <div class="msg-content">
+                                                        <h6 class="author"><a href="profile.html">Jon Wileyam</a></h6>
+                                                        <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default</p>
+                                                    </div>
+                                                    <!-- message content end -->
+
+                                                    <!-- message time start -->
+                                                    <div class="msg-time">
+                                                        <p>20 Jun 2019</p>
+                                                    </div>
+                                                    <!-- message time end -->
+                                                </li>
+                                            </ul>
+                                            <div class="msg-dropdown-footer">
+                                                <button>See all in messenger</button>
+                                                <button>Mark All as Read</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="msg-trigger"><a class="msg-trigger-btn" href="#a">Comentarios</a>
                                         <div class="message-dropdown" id="a">
                                             <div class="dropdown-title">
                                                 <p class="recent-msg">recent message</p>
@@ -136,7 +218,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="notification-trigger"><a class="msg-trigger-btn" href="#b">notification</a>
+                                    <li class="notification-trigger"><a class="msg-trigger-btn" href="#b">Reacciones</a>
                                         <div class="message-dropdown" id="b">
                                             <div class="dropdown-title">
                                                 <p class="recent-msg">Notification</p>
@@ -239,14 +321,14 @@
 
                     <div class="col-md-5">
                         <div class="header-top-right d-flex align-items-center justify-content-end">
-                            <!-- header top search start -->
+                            <!-- header top search start 
                             <div class="header-top-search">
                                 <form class="top-search-box">
                                     <input type="text" placeholder="Search" class="top-search-field">
                                     <button class="top-search-btn"><i class="flaticon-search"></i></button>
                                 </form>
                             </div>
-                            <!-- header top search end -->
+                            header top search end -->
 
                             <!-- profile picture start -->
                             <div class="profile-setting-box">
