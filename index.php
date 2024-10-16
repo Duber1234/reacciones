@@ -34,10 +34,12 @@
     <!-- light gallery css -->
     <link rel="stylesheet" href="assets/css/plugins/lightgallery.min.css">
     <!-- Main Style CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css?">
 
 </head>
+<style type="text/css">
 
+</style>
 <body>
 
     <!-- header area start -->

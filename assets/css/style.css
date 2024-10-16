@@ -1285,7 +1285,7 @@ only screen and (max-width: 767.98px) {
     width: 80px;
     height: 100%;
     text-align: center;
-    background-color: #dc4734;
+    background-color: #0000;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1302,7 +1302,7 @@ only screen and (max-width: 767.98px) {
 
 .mobile-logo .profile-thumb-middle,
 .mobile-header-profile .profile-thumb-middle {
-    border-radius: 0;
+    border-radius: 50;
 }
 
 .mobile-menu ul {
