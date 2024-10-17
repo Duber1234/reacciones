@@ -22,7 +22,7 @@ class Welcome extends CI_Controller {
 	{	
 		$this->load->model('welcome_model', 'welcome');
 		$data['ip']=$this->welcome->get_ip();
-		$user=$this->db->get_where("usuarios",arra("ip"=>$data['ip']))->row();	
+		$user=$this->db->get_where("usuarios",array("ip"=>$data['ip']))->row();	
 		if(empty($user)){
 			//crear un row
 			$data=array("ip"=>$data['ip']);
