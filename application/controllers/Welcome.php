@@ -25,7 +25,8 @@ class Welcome extends CI_Controller {
 		$user=$this->db->get_where("usuarios",arra("ip"=>$data['ip']))->row();	
 		if(empty($user)){
 			//crear un row
-			$data=arra();
+			$data=array("ip"=>$data['ip']);
+			$this->db->inset("usuarios",$data);
 		}else{
 			$_SESSION['user_var']=$user;
 		}
