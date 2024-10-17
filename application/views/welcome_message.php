@@ -223,7 +223,7 @@
                                 <!-- share content box start -->
                                 <div class="share-content-box w-100">
                                     <form class="share-text-box">
-                                        <textarea name="share" class="share-text-field" aria-disabled="true" placeholder="Say Something" data-bs-toggle="modal" data-bs-target="#textbox" id="email"></textarea>
+                                        <textarea name="share" class="share-text-field" aria-disabled="true" autofocus placeholder="Say Something" data-bs-toggle="modal" data-bs-target="#textbox" id="email"></textarea>
                                         <button class="btn-share" type="submit">share</button>
                                     </form>
                                 </div>
