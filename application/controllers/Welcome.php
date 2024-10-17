@@ -19,9 +19,11 @@ class Welcome extends CI_Controller {
 	 * @see https://codeigniter.com/userguide3/general/urls.html
 	 */
 	public function index()
-	{
+	{	
+		$this->load->model('welcome_model', 'welcome');
+		$data['ip']=$this->welcome->get_ip();
 		$this->load->view('base/header.php');
-		$this->load->view('welcome_message');
+		$this->load->view('welcome_message',$data);
 		$this->load->view('base/footer.php');
 	}
 	public function hola(){
