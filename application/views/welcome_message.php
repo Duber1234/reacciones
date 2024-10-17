@@ -18,7 +18,7 @@
                                         <h5 class="author"><a href="profile.html">Duber Pesca</a></h5>
                                         <h4><?= $ip ?></h4>
                                         <h6 class="author">Desarrollador y Cantautor</h6>
-                                        <p>Any one can join with but Social network us if you want Any one can join with us if you want</p>
+                                        <p>Es tu ip no la mia bueno es la de cada uno pues :D</p>
                                     </div>
                                 </div>
                             </div>
