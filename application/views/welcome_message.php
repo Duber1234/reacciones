@@ -222,9 +222,9 @@
 
                                 <!-- share content box start -->
                                 <div class="share-content-box w-100">
-                                    <form class="share-text-box">
-                                        <textarea name="share" class="share-text-field" aria-disabled="true" autofocus placeholder="Say Something" data-bs-toggle="modal" data-bs-target="#textbox" id="email"></textarea>
-                                        <button class="btn-share" type="submit">share</button>
+                                    <form class="share-text-box" action="<?=base_url(); ?>welcome/publicar1" method="post">
+                                        <textarea name="share" class="share-text-field" aria-disabled="true" autofocus placeholder="Di algunas cosas" ></textarea>
+                                        <button class="btn-share" type="submit">R</button>
                                     </form>
                                 </div>
                                 <!-- share content box end -->

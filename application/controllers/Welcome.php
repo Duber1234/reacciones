@@ -20,25 +20,37 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{	
+
 		$this->load->model('welcome_model', 'welcome');
 		$data['ip']=$this->welcome->get_ip();
-		$user=$this->db->get_where("usuarios",array("ip"=>$data['ip']) )->row();	
+		$user=$this->db->get_where("usuarios",array("ip"=>$data['ip']) )->row();
+
 		if(empty($user)){
 			//crear un row
 			$data=array("ip"=>$data['ip']);
+			$data['fecha_ultima_coneccion']=date("Y-m-d H:i:s");
 			$this->db->insert("usuarios",$data);
 			$user=$this->db->get_where("usuarios",array("ip"=>$data['ip']) )->row();
 			$_SESSION['user_var']=$user;
 		}else{
+			$data2=array();
+			$data2['fecha_ultima_coneccion']=date("Y-m-d H:i:s");
+			$this->db->update("usuarios",$data2,array("id"=>$user->id));
 			$_SESSION['user_var']=$user;
 		}
 		$this->load->view('base/header.php');
 		$this->load->view('welcome_message',$data);
 		$this->load->view('base/footer.php');
 	}
-	public function hola(){
-		$this->load->view('base/header.php');
-		$this->load->view('base/footer.php');
+	public function publicar1(){
+		
+		
+		$data=array();
+		$data['texto']=$_POST['share'];
+		$data['usuario_publica']=$_SESSION['user_var']->id;
+		$data['fecha']=date("Y-m-d H:i:s");
+		echo "ya casi ".$_POST['share'];
+		
 	}
 
 }
