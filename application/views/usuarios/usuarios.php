@@ -1,3 +1,9 @@
+<style type="text/css">
+    .divs_frame{
+        width: 100%;
+        height: 500px;
+    }
+</style>
         <div class="main-wrapper pt-80">
             <div class="container">
                 <div class="row">
@@ -296,8 +302,8 @@ if($url_emb==true){
                                     
                                 
                                 
-                                 <div class="plyr__video-embed ">
-                                <iframe id="video<?=$pl['id']  ?>" class="framesx" src="<?=$url_emb ?>?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  web-share;"  allowfullscreen ></iframe>
+                                 <div class=""  >
+                                <iframe id="video<?=$pl['id']  ?>" class="framesx divs_frame" src="<?=$url_emb ?>?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  web-share;"  allowfullscreen ></iframe>
                                 </div>
 
                                 <div class="post-meta">
