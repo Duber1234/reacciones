@@ -300,11 +300,11 @@ if($url_emb==true){
                             </div>
                             <!-- post title start -->
                             <div class="post-content">
-                                
+                                <?php if($i1==0){ ?>
                                     <p class="post-desc">
                                          <a href="https://drive.google.com/file/d/1MkE8N9TtMP96Tibbc1lt1R17MFZbsDWb/view?usp=sharing" style="color: green;"><strong>Descarga el APK aqui</strong></a>
                                     </p>
-                                
+                                <?php } ?>
                                 
                                  <div class=""  >
                                 <iframe id="video<?=$pl['id']  ?>" class="framesx divs_frame" src="<?=$url_emb ?>?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  web-share;"  allowfullscreen ></iframe>
