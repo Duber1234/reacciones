@@ -62,6 +62,23 @@ class Welcome_model extends CI_Model
         
       return $this->db->get_where("publicacion")->result();
     }
+    public function diferencia_m($fecha){
+        
+     // Fecha actual
+$fecha_actual = new DateTime();
+
+// Fecha X (reemplaza con la fecha que desees)
+$fecha_x = new DateTime($fecha);
+
+// Obtener la diferencia entre las dos fechas
+$diferencia = $fecha_actual->diff($fecha_x);
+
+// Convertir la diferencia a minutos
+$minutos_diferencia = ($diferencia->days * 24 * 60) + ($diferencia->h * 60) + $diferencia->i;
+
+// Mostrar la diferencia en minutos
+      return "hace "$minutos_diferencia." min";
+    }
 
     
 }
