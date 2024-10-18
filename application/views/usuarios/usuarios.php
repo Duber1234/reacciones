@@ -232,6 +232,7 @@
                                     <form id="pl1" class="share-text-box" action="<?=base_url(); ?>usuarios/publicar1" method="post">
                                         <textarea  name="share" class="share-text-field" aria-disabled="true" autofocus  placeholder="Di algunas cosas" ></textarea>
                                         <button class="btn-share" type="submit">Iniciar</button>
+
                                     </form>
                                 </div>
                                 <!-- share content box end -->
@@ -262,7 +263,7 @@
                         <!-- share box end -->
  <!-- inicio publicaciones -->
 
- <?php foreach ($lista_p as $key => $pl) {
+ <?php $i1=0; foreach ($lista_p as $key => $pl) {
 $url_emb=$this->welcome->convertir_a_embed($pl['texto']);
 if($url_emb==true){
     ?>
@@ -299,8 +300,10 @@ if($url_emb==true){
                             </div>
                             <!-- post title start -->
                             <div class="post-content">
-                                <?php //echo '<p class="post-desc"></p>' ?>
-                                    
+                                
+                                    <p class="post-desc">
+                                         <a href="https://drive.google.com/file/d/1MkE8N9TtMP96Tibbc1lt1R17MFZbsDWb/view?usp=sharing" style="color: green;"><strong>Descarga el APK aqui</strong></a>
+                                    </p>
                                 
                                 
                                  <div class=""  >
@@ -330,7 +333,7 @@ if($url_emb==true){
                                 </div>
                             </div>
                         </div>
-                    <?php }} ?>
+                    <?php $i1++; }} ?>
                         
                         
                         
