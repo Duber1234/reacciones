@@ -85,9 +85,11 @@ if ($dias > 0) {
 } elseif ($horas > 0) {
     // Si han pasado más de 1 hora pero menos de 1 día
     $texto= "Hace $horas horas con $minutos minutos.";
-} else {
+} else if($minutos==0) {
     // Si han pasado menos de 1 hora
     $texto= "Ahora";
+}else{
+    $texto= "Hace $minutos minutos.";
 }
 return $texto;
     }
