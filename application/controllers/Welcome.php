@@ -31,7 +31,7 @@ class Welcome extends CI_Controller {
 		$data['lista_p']=$this->welcome->get_lista_publicaciones();
 
 		$this->load->view('base/header.php');
-		$this->load->view('welcome_message',$data);
+		$this->load->view('usuarios/usuarios',$data);
 		$this->load->view('base/footer.php');
 	}
 	public function publicar1(){
@@ -66,10 +66,10 @@ class Welcome extends CI_Controller {
 	}
 	public function perfil(){
 		$this->welcome->cargar();
-		$data['lista_p']=$this->welcome->get_lista_publicaciones();
+		
 
 		$this->load->view('base/header.php');
-		$this->load->view('perfil',$data);
+		$this->load->view('usuarios/perfil');
 		$this->load->view('base/footer.php');
 	}
 

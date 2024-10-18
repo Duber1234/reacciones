@@ -16,6 +16,7 @@
     <!-- CSS
 	============================================ -->
     <!-- google fonts -->
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="<?=base_url()?>assets/css/vendor/bootstrap.min.css">
@@ -26,37 +27,36 @@
     <!-- audio & video player CSS -->
     <link rel="stylesheet" href="<?=base_url()?>assets/css/plugins/plyr.css">
     <!-- Slick CSS -->
-    <link rel="stylesheet" href="assets/css/plugins/slick.min.css">
+    <link rel="stylesheet" href="<?=base_url()?>assets/css/plugins/slick.min.css">
     <!-- nice-select CSS -->
-    <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
+    <link rel="stylesheet" href="<?=base_url()?>assets/css/plugins/nice-select.css">
     <!-- perfect scrollbar css -->
-    <link rel="stylesheet" href="assets/css/plugins/perfect-scrollbar.css">
+    <link rel="stylesheet" href="<?=base_url()?>assets/css/plugins/perfect-scrollbar.css">
     <!-- light gallery css -->
-    <link rel="stylesheet" href="assets/css/plugins/lightgallery.min.css">
+    <link rel="stylesheet" href="<?=base_url()?>assets/css/plugins/lightgallery.min.css">
     <!-- Main Style CSS -->
-    <link rel="stylesheet" href="assets/css/style.css?v=<?php echo time(); ?>">
-     <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="<?=base_url()?>assets/css/style.css?v=<?php echo time(); ?>">
+     <script src="<?=base_url()?>assets/js/vendor/modernizr-3.6.0.min.js"></script>
     <!-- jQuery JS -->
-    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="<?=base_url()?>assets/js/vendor/jquery-3.6.0.min.js"></script>
     <!-- Bootstrap JS -->
-    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="<?=base_url()?>assets/js/vendor/bootstrap.bundle.min.js"></script>
     <!-- Slick Slider JS -->
-    <script src="assets/js/plugins/slick.min.js"></script>
+    <script src="<?=base_url()?>assets/js/plugins/slick.min.js"></script>
     <!-- nice select JS -->
-    <script src="assets/js/plugins/nice-select.min.js"></script>
+    <script src="<?=base_url()?>assets/js/plugins/nice-select.min.js"></script>
     <!-- audio video player JS -->
-    <script src="assets/js/plugins/plyr.min.js"></script>
+    <script src="<?=base_url()?>assets/js/plugins/plyr.min.js"></script>
     <!-- perfect scrollbar js -->
-    <script src="assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="<?=base_url()?>assets/js/plugins/perfect-scrollbar.min.js"></script>
     <!-- light gallery js -->
-    <script src="assets/js/plugins/lightgallery-all.min.js"></script>
+    <script src="<?=base_url()?>assets/js/plugins/lightgallery-all.min.js"></script>
     <!-- image loaded js -->
-    <script src="assets/js/plugins/imagesloaded.pkgd.min.js"></script>
+    <script src="<?=base_url()?>assets/js/plugins/imagesloaded.pkgd.min.js"></script>
     <!-- isotope filter js -->
-    <script src="assets/js/plugins/isotope.pkgd.min.js"></script>
+    <script src="<?=base_url()?>assets/js/plugins/isotope.pkgd.min.js"></script>
     <!-- Main JS -->
-    <script src="assets/js/main.js?v=<?php echo time(); ?>"></script>
-
+    <script src="<?=base_url()?>assets/js/main.js?v=<?php echo time(); ?>"></script>
 </head>
 <style type="text/css">
 .btn-mnu{
@@ -94,7 +94,7 @@
                                                     <!-- profile picture end -->
                                                     <div class="profile-thumb">
                                                         <figure class="profile-thumb-middle">
-                                                            <img src="assets/images/profile/profile-small-3.jpg" alt="profile picture">
+                                                            <img src="<?=base_url()?>assets/images/profile/profile-small-3.jpg" alt="profile picture">
                                                         </figure>
                                                     </div>
                                                     <!-- profile picture end -->
@@ -116,7 +116,7 @@
                                                     <!-- profile picture end -->
                                                     <div class="profile-thumb">
                                                         <figure class="profile-thumb-middle">
-                                                            <img src="assets/images/profile/profile-small-4.jpg" alt="profile picture">
+                                                            <img src="<?=base_url()?>assets/images/profile/profile-small-4.jpg" alt="profile picture">
                                                         </figure>
                                                     </div>
                                                     <!-- profile picture end -->
@@ -138,7 +138,7 @@
                                                     <!-- profile picture end -->
                                                     <div class="profile-thumb">
                                                         <figure class="profile-thumb-middle">
-                                                            <img src="assets/images/profile/profile-small-5.jpg" alt="profile picture">
+                                                            <img src="<?=base_url()?>assets/images/profile/profile-small-5.jpg" alt="profile picture">
                                                         </figure>
                                                     </div>
                                                     <!-- profile picture end -->
@@ -182,7 +182,7 @@
                                                     <!-- profile picture end -->
                                                     <div class="profile-thumb">
                                                         <figure class="profile-thumb-middle">
-                                                            <img src="assets/images/profile/profile-small-3.jpg" alt="profile picture">
+                                                            <img src="<?=base_url()?>assets/images/profile/profile-small-3.jpg" alt="profile picture">
                                                         </figure>
                                                     </div>
                                                     <!-- profile picture end -->
@@ -204,7 +204,7 @@
                                                     <!-- profile picture end -->
                                                     <div class="profile-thumb">
                                                         <figure class="profile-thumb-middle">
-                                                            <img src="assets/images/profile/profile-small-4.jpg" alt="profile picture">
+                                                            <img src="<?=base_url()?>assets/images/profile/profile-small-4.jpg" alt="profile picture">
                                                         </figure>
                                                     </div>
                                                     <!-- profile picture end -->
@@ -226,7 +226,7 @@
                                                     <!-- profile picture end -->
                                                     <div class="profile-thumb">
                                                         <figure class="profile-thumb-middle">
-                                                            <img src="assets/images/profile/profile-small-5.jpg" alt="profile picture">
+                                                            <img src="<?=base_url()?>assets/images/profile/profile-small-5.jpg" alt="profile picture">
                                                         </figure>
                                                     </div>
                                                     <!-- profile picture end -->
@@ -270,7 +270,7 @@
                                                     <!-- profile picture end -->
                                                     <div class="profile-thumb">
                                                         <figure class="profile-thumb-middle">
-                                                            <img src="assets/images/profile/profile-small-3.jpg" alt="profile picture">
+                                                            <img src="<?=base_url()?>assets/images/profile/profile-small-3.jpg" alt="profile picture">
                                                         </figure>
                                                     </div>
                                                     <!-- profile picture end -->
@@ -292,7 +292,7 @@
                                                     <!-- profile picture end -->
                                                     <div class="profile-thumb">
                                                         <figure class="profile-thumb-middle">
-                                                            <img src="assets/images/profile/profile-small-4.jpg" alt="profile picture">
+                                                            <img src="<?=base_url()?>assets/images/profile/profile-small-4.jpg" alt="profile picture">
                                                         </figure>
                                                     </div>
                                                     <!-- profile picture end -->
@@ -314,7 +314,7 @@
                                                     <!-- profile picture end -->
                                                     <div class="profile-thumb">
                                                         <figure class="profile-thumb-middle">
-                                                            <img src="assets/images/profile/profile-small-5.jpg" alt="profile picture">
+                                                            <img src="<?=base_url()?>assets/images/profile/profile-small-5.jpg" alt="profile picture">
                                                         </figure>
                                                     </div>
                                                     <!-- profile picture end -->
@@ -350,7 +350,7 @@
                         <!-- brand logo start -->
                         <div class="brand-logo text-center">
                             <a href="<?=base_url(); ?>"> 
-                                <img src="assets/images/logo/logo1.png" alt="brand logo" width="25%"> Reacciona.in
+                                <img src="<?=base_url()?>assets/images/logo/logo1.png" alt="brand logo" width="25%"> Reacciona.in
                             </a>
                         </div>
                         <!-- brand logo end -->
@@ -372,7 +372,7 @@
                                 <div class="profile-thumb-small">
                                     <a href="javascript:void(0)" class="profile-triger">
                                         <figure>
-                                            <img src="assets/images/profile/profile-35x35-1.jpg" alt="profile picture">
+                                            <img src="<?=base_url()?>assets/images/profile/profile-35x35-1.jpg" alt="profile picture">
                                         </figure>
                                     </a>
                                     <div class="profile-dropdown">
@@ -408,7 +408,7 @@
             <div class="mobile-header position-relative ">
                 <div class="mobile-logo">
                     <a href="index.html">
-                        <img src="assets/images/logo/logo1.png" alt="logo">
+                        <img src="<?=base_url()?>assets/images/logo/logo1.png" alt="logo">
                     </a>
                 </div>
                 <div class="mobile-menu w-100">
@@ -422,7 +422,7 @@
                                     <div class="frnd-request-member">
                                         <figure class="request-thumb">
                                             <a href="profile.html">
-                                                <img src="assets/images/profile/profile-midle-1.jpg" alt="proflie author">
+                                                <img src="<?=base_url()?>assets/images/profile/profile-midle-1.jpg" alt="proflie author">
                                             </a>
                                         </figure>
                                         <div class="frnd-content">
@@ -439,7 +439,7 @@
                                     <div class="frnd-request-member">
                                         <figure class="request-thumb">
                                             <a href="profile.html">
-                                                <img src="assets/images/profile/profile-midle-2.jpg" alt="proflie author">
+                                                <img src="<?=base_url()?>assets/images/profile/profile-midle-2.jpg" alt="proflie author">
                                             </a>
                                         </figure>
                                         <div class="frnd-content">
@@ -456,7 +456,7 @@
                                     <div class="frnd-request-member">
                                         <figure class="request-thumb">
                                             <a href="profile.html">
-                                                <img src="assets/images/profile/profile-midle-3.jpg" alt="proflie author">
+                                                <img src="<?=base_url()?>assets/images/profile/profile-midle-3.jpg" alt="proflie author">
                                             </a>
                                         </figure>
                                         <div class="frnd-content">
@@ -486,7 +486,7 @@
                                     <div class="profile-thumb">
                                         <a href="profile.html">
                                             <figure class="profile-thumb-small profile-active">
-                                                <img src="assets/images/profile/profile-35x35-13.jpg" alt="profile picture">
+                                                <img src="<?=base_url()?>assets/images/profile/profile-35x35-13.jpg" alt="profile picture">
                                             </figure>
                                         </a>
                                     </div>
@@ -496,8 +496,8 @@
                                         <span class="active-pro">active now</span>
                                     </div>
                                     <div class="live-chat-settings ml-auto">
-                                        <button class="chat-settings"><img src="assets/images/icons/settings.png" alt=""></button>
-                                        <button class="close-btn"><img src="assets/images/icons/close.png" alt=""></button>
+                                        <button class="chat-settings"><img src="<?=base_url()?>assets/images/icons/settings.png" alt=""></button>
+                                        <button class="close-btn"><img src="<?=base_url()?>assets/images/icons/close.png" alt=""></button>
                                     </div>
                                 </div>
                                 <div class="message-list-inner">
@@ -531,7 +531,7 @@
                                 <div class="chat-text-field mob-text-box">
                                     <textarea class="live-chat-field custom-scroll" placeholder="Text Message"></textarea>
                                     <button class="chat-message-send" type="submit" value="submit">
-                                        <img src="assets/images/icons/plane.png" alt="">
+                                        <img src="<?=base_url()?>assets/images/icons/plane.png" alt="">
                                     </button>
                                 </div>
                             </div>
@@ -555,7 +555,7 @@
                     <div class="profile-thumb profile-setting-box">
                         <a href="javascript:void(0)" class="profile-triger">
                             <figure class="profile-thumb-middle">
-                                <img src="assets/images/profile/profile-small-1.jpg" alt="profile picture">
+                                <img src="<?=base_url()?>assets/images/profile/profile-small-1.jpg" alt="profile picture">
                             </figure>
                         </a>
                         <div class="profile-dropdown text-left">
