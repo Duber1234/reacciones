@@ -255,7 +255,10 @@
                         <!-- share box end -->
  <!-- inicio publicaciones -->
 
- <?php foreach ($lista_p as $key => $pl) {?>
+ <?php foreach ($lista_p as $key => $pl) {
+$url_emb=$this->welcome->convertir_a_embed($pl['texto']);
+if($url_emb==true){
+    ?>
  <div class="card">
                             <!-- post title start -->
                             <div class="post-title d-flex align-items-center">
@@ -294,7 +297,7 @@
                                 
                                 
                                  <div class="plyr__video-embed plyr-video">
-                                <iframe src="<?=$this->welcome->convertir_a_embed($pl['texto'])?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
+                                <iframe src="<?=?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
                                 </div>
 
                                 <div class="post-meta">
@@ -320,7 +323,7 @@
                                 </div>
                             </div>
                         </div>
-                    <?php } ?>
+                    <?php }} ?>
                          ?><!-- post status start -->
                         
                         
