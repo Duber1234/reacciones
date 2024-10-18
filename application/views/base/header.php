@@ -19,23 +19,23 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900" rel="stylesheet">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="<?=base_url()?>assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="<?=base_url('assets/css/vendor/bootstrap.min.css')?>">
     <!-- Icon Font CSS -->
-    <link rel="stylesheet" href="<?=base_url()?>assets/css/vendor/bicon.min.css">
+    <link rel="stylesheet" href="<?=base_url('assets/css/vendor/bicon.min.css')?>">
     <!-- Flat Icon CSS -->
-    <link rel="stylesheet" href="<?=base_url()?>assets/css/vendor/flaticon.css">
+    <link rel="stylesheet" href="<?=base_url('assets/css/vendor/flaticon.css')?>">
     <!-- audio & video player CSS -->
-    <link rel="stylesheet" href="<?=base_url()?>assets/css/plugins/plyr.css">
+    <link rel="stylesheet" href="<?=base_url('assets/css/plugins/plyr.css')?>">
     <!-- Slick CSS -->
-    <link rel="stylesheet" href="<?=base_url()?>assets/css/plugins/slick.min.css">
+    <link rel="stylesheet" href="<?=base_url('assets/css/plugins/slick.min.css')?>">
     <!-- nice-select CSS -->
     <link rel="stylesheet" href="<?=base_url()?>assets/css/plugins/nice-select.css">
     <!-- perfect scrollbar css -->
     <link rel="stylesheet" href="<?=base_url()?>assets/css/plugins/perfect-scrollbar.css">
     <!-- light gallery css -->
-    <link rel="stylesheet" href="<?=base_url()?>assets/css/plugins/lightgallery.min.css">
+    <link rel="stylesheet" href="<?=base_url('assets/css/plugins/lightgallery.min.css')?>">
     <!-- Main Style CSS -->
-    <link rel="stylesheet" href="<?=base_url()?>assets/css/style.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="<?=base_url('assets/css/style.css')?>">
      <script src="<?=base_url()?>assets/js/vendor/modernizr-3.6.0.min.js"></script>
     <!-- jQuery JS -->
     <script src="<?=base_url()?>assets/js/vendor/jquery-3.6.0.min.js"></script>

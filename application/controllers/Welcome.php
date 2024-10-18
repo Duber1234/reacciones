@@ -34,6 +34,16 @@ class Welcome extends CI_Controller {
 		$this->load->view('usuarios/usuarios',$data);
 		$this->load->view('base/footer.php');
 	}
+	public function index2()
+	{	
+		
+		$this->welcome->cargar();
+		$data['lista_p']=$this->welcome->get_lista_publicaciones();
+
+		$this->load->view('base/header.php');
+		$this->load->view('usuarios/usuarios',$data);
+		$this->load->view('base/footer.php');
+	}
 	public function publicar1(){
 		
 		if($_POST['share']!=null && $_POST['share']!="" ){
