@@ -102,5 +102,15 @@ public function get_user_name($id){
      
       return $texto;
     }
-    
+    function convertir_a_embed($url) {
+    // Verifica si la URL contiene un ID de video de YouTube
+    if (preg_match('/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/i', $url, $matches)) {
+        // Extraer el ID del video
+        $video_id = $matches[1];
+        // Generar la URL del embed
+        return "https://www.youtube.com/embed/" . $video_id;
+    } else {
+        return false; // Si no es una URL válida de YouTube
+    }
+}
 }

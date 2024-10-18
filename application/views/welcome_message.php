@@ -294,7 +294,7 @@
                                 
                                 
                                  <div class="plyr__video-embed plyr-video">
-                                    <iframe  src="<?=$pl['texto']?>" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+                                    <iframe  src="<?=$this->welcome->convertir_a_embed($pl['texto'])?>" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
                                 </div>
                                <div class="plyr__video-embed plyr-video">
                                     <iframe  src="https://www.youtube.com/embed/odUtqDz4lEk" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
