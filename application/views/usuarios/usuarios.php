@@ -24,7 +24,7 @@
                                     <div class="profile-desc text-center">
                                         <h5 class="author"><a href="<?=base_url().'usuarios/perfil'?>">Usuario #<?=$_SESSION['user_var']->id ?></a></h5>
                                         <h4><?= $_SESSION['ip_user'] ?></h4>
-                                        <h6 class="author"> <a href="https://drive.google.com/file/d/1MkE8N9TtMP96Tibbc1lt1R17MFZbsDWb/view?usp=sharing">Descarga el apk</a></h6>
+                                        <h6 class="author"> <a href="https://drive.google.com/file/d/1MkE8N9TtMP96Tibbc1lt1R17MFZbsDWb/view?usp=sharing" style="color: green;">Descarga el apk <br> aqui</a></h6>
                                         <p>Hay Vamos, Gracias a Dios <img class="emoji1" src="<?= base_url()."assets/images/emojis/enojado2.png" ?>"></p>
                                     </div>
                                 </div>
