@@ -44,7 +44,22 @@ class Usuarios extends CI_Controller {
 		$this->load->view('usuarios/perfil',$data);
 		$this->load->view('base/footer.php');
 	}
-	
+	public function publicar1(){
+		
+		if($_POST['share']!=null && $_POST['share']!="" ){
+			$data=array();
+			$data['texto']=$_POST['share'];
+			$data['usuario_publica']=$_SESSION['user_var']->id;
+			$data['fecha']=date("Y-m-d H:i:s");
+			$this->db->insert("publicacion",$data);
+			
+		}
+
+		header("Location: ".base_url());
+		die();
+
+		
+	}
 
 
 }
