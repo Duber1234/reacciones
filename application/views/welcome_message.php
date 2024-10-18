@@ -254,7 +254,7 @@
                         </div>
                         <!-- share box end -->
  <!-- inicio publicaciones -->
- 
+
  <?php foreach ($lista_p as $key => $pl) {?>
  <div class="card">
                             <!-- post title start -->
@@ -271,7 +271,7 @@
 
                                 <div class="posted-author">
                                     <h6 class="author"><a href="profile.html">william henry</a></h6>
-                                    <span class="post-time"><?=$this->welcome->diferencia_m($pl->fecha);  ?> min ago</span>
+                                    <span class="post-time"><?=$this->welcome->diferencia_m($pl->fecha);  ?></span>
                                 </div>
 
                                 <div class="post-settings-bar">
