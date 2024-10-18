@@ -81,10 +81,10 @@ $texto="";
 // Mostrar la diferencia en el formato adecuado
 if ($dias > 0) {
     // Si han pasado más de 1 día
-    $texto=echo "Hace $dias días con $horas horas y $minutos minutos.";
+    $texto= "Hace $dias días con $horas horas y $minutos minutos.";
 } elseif ($horas > 0) {
     // Si han pasado más de 1 hora pero menos de 1 día
-    $texto=echo "Hace $horas horas con $minutos minutos.";
+    $texto= "Hace $horas horas con $minutos minutos.";
 } else {
     // Si han pasado menos de 1 hora
     $texto= "Hace $minutos minutos.";
