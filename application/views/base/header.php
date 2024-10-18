@@ -18,13 +18,13 @@
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900" rel="stylesheet">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="<?=base_url()?>assets/css/vendor/bootstrap.min.css">
     <!-- Icon Font CSS -->
-    <link rel="stylesheet" href="assets/css/vendor/bicon.min.css">
+    <link rel="stylesheet" href="<?=base_url()?>assets/css/vendor/bicon.min.css">
     <!-- Flat Icon CSS -->
-    <link rel="stylesheet" href="assets/css/vendor/flaticon.css">
+    <link rel="stylesheet" href="<?=base_url()?>assets/css/vendor/flaticon.css">
     <!-- audio & video player CSS -->
-    <link rel="stylesheet" href="assets/css/plugins/plyr.css">
+    <link rel="stylesheet" href="<?=base_url()?>assets/css/plugins/plyr.css">
     <!-- Slick CSS -->
     <link rel="stylesheet" href="assets/css/plugins/slick.min.css">
     <!-- nice-select CSS -->
