@@ -83,7 +83,7 @@ if ($minutos_diferencia >= 1440) {
     $dias = floor($minutos_diferencia / (24 * 60)); // Obtener días completos
     $horas_restantes = floor(($minutos_diferencia % (24 * 60)) / 60); // Obtener horas restantes
     $minutos_restantes = $minutos_diferencia % 60; // Obtener minutos restantes
-    $texto="hace ".$dias." d".$horas_restantes." h ".$minutos_diferencia." min";
+    $texto="".$dias." d ".$horas_restantes." h ".$minutos_diferencia." min";
 } else if($minutos_diferencia>100){
     $horas = floor($minutos_diferencia / 60); // Obtener horas completas
     $minutos_restantes = $minutos_diferencia % 60; // Obtener los minutos restantes
