@@ -223,7 +223,7 @@
                                 <!-- share content box start -->
                                 <div class="share-content-box w-100">
                                     <form class="share-text-box" action="<?=base_url(); ?>welcome/publicar1" method="post">
-                                        <textarea name="share" class="share-text-field" aria-disabled="true" autofocus placeholder="Di algunas cosas" ></textarea>
+                                        <textarea name="share" class="share-text-field" aria-disabled="true" autofocus  placeholder="Di algunas cosas" ></textarea>
                                         <button class="btn-share" type="submit">R</button>
                                     </form>
                                 </div>
@@ -259,7 +259,7 @@
 $url_emb=$this->welcome->convertir_a_embed($pl['texto']);
 if($url_emb==true){
     ?>
- <div class="card">
+ <div class="card video-iframe" data-id-iframe="#video<?=$pl['id']  ?>">
                             <!-- post title start -->
                             <div class="post-title d-flex align-items-center">
                                 <!-- profile picture end -->
@@ -296,8 +296,8 @@ if($url_emb==true){
                                     
                                 
                                 
-                                 <div class="plyr__video-embed">
-                                <iframe src="<?=$url_emb ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
+                                 <div class="plyr__video-embed ">
+                                <iframe id="video<?=$pl['id']  ?>" class="framesx" src="<?=$url_emb ?>?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  web-share;"  allowfullscreen ></iframe>
                                 </div>
 
                                 <div class="post-meta">
@@ -530,3 +530,43 @@ if($url_emb==true){
             </div>
         </div>
 
+<script>
+     // Función para reproducir el video
+    function playVideo(iframe) {
+        iframe[0].contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+    }
+
+    // Función para pausar el video
+    function pauseVideo(iframe) {
+        iframe[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+    }
+
+    // Configurar el IntersectionObserver para detectar cuando el iframe es visible
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {console.log(entry.target.id);
+            const iframe = $('#'+entry.target.id); // Selecciona el iframe
+
+            if (entry.isIntersecting) {
+                // Si el iframe está en el área visible, reproducir el video
+                console.log('El video es visible, reproduciendo...');
+                                    playVideo(iframe);    
+
+                
+            } else {
+                // Si el iframe no está visible, pausar el video
+                console.log('El video no es visible, pausando...');
+                 pauseVideo(iframe);
+                
+            }
+        });
+    }, { threshold: 1.0 }); // 50% del iframe debe estar visible
+$('.video-iframe').each(function() {
+    var el=$(this).data("id-iframe");
+
+    observer.observe(document.querySelector(el));    
+});
+
+    // Iniciar la observación del iframe
+   
+
+</script>
