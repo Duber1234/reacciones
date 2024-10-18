@@ -78,7 +78,13 @@ $diferencia = $fecha_actual->diff($fecha_x);
 $minutos_diferencia = ($diferencia->days * 24 * 60) + ($diferencia->h * 60) + $diferencia->i;
 
 // Mostrar la diferencia en minutos
-if($minutos_diferencia>100){
+if ($minutos_diferencia >= 1440) {
+    // Más de 24 horas (1440 minutos)
+    $dias = floor($minutos_diferencia / (24 * 60)); // Obtener días completos
+    $horas_restantes = floor(($minutos_diferencia % (24 * 60)) / 60); // Obtener horas restantes
+    $minutos_restantes = $minutos_diferencia % 60; // Obtener minutos restantes
+    $texto="hace ".$dias."d".$horas." h ".$minutos_diferencia." min";
+} else if($minutos_diferencia>100){
     $horas = floor($minutos_diferencia / 60); // Obtener horas completas
     $minutos_restantes = $minutos_diferencia % 60; // Obtener los minutos restantes
     $texto="hace ".$horas." h ".$minutos_diferencia." min";
