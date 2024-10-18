@@ -91,6 +91,16 @@ if ($dias > 0) {
 }
 return $texto;
     }
-
+public function get_user_name($id){
+      $user=$this->db->get_where("usuarios",array("id"=>$id))->row();
+       $texto="";
+      if($user->nombre==null){
+          $texto="Usuario #".$id;
+      }else{
+          $texto=$user->nombre;
+      }
+     
+      return $texto;
+    }
     
 }
