@@ -1,7 +1,7 @@
 <style type="text/css">
     .divs_frame{
         width: 100%;
-        height: 500px;
+        height: 420px;
     }
 
 </style>
