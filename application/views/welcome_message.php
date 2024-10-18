@@ -222,7 +222,7 @@
 
                                 <!-- share content box start -->
                                 <div class="share-content-box w-100">
-                                    <form class="share-text-box" action="<?=base_url(); ?>welcome/publicar1" method="post">
+                                    <form id="pl1" class="share-text-box" action="<?=base_url(); ?>welcome/publicar1" method="post">
                                         <textarea name="share" class="share-text-field" aria-disabled="true" autofocus  placeholder="Di algunas cosas" ></textarea>
                                         <button class="btn-share" type="submit">R</button>
                                     </form>
@@ -531,10 +531,6 @@ if($url_emb==true){
         </div>
 
 <script>
-    setTimeout(function() {
-        document.elementFromPoint(1, 1).click();
-    }, 1000);
-    
 
      // Función para reproducir el video
     function playVideo(iframe) {

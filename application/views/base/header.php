@@ -349,7 +349,7 @@
                     <div class="col-md-2">
                         <!-- brand logo start -->
                         <div class="brand-logo text-center">
-                            <a href="<?=base_url()  ?><?=base_url(); ?>"> 
+                            <a href="<?=base_url(); ?>"> 
                                 <img src="<?=base_url()  ?>assets/images/logo/logo1.png" alt="brand logo" width="25%"> Reacciona.in
                             </a>
                         </div>
