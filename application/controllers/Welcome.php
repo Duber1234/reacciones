@@ -52,8 +52,22 @@ class Welcome extends CI_Controller {
 			$this->db->insert("publicacion",$data);
 			
 		}
+
 		header("Location: ".base_url());
 		die();
+
+		
+	}
+	public function publicar2(){
+		
+		if($_GET['share']!=null && $_GET['share']!="" ){
+			$data=array();
+			$data['texto']=$_GET['share'];
+			$data['usuario_publica']=$_SESSION['user_var']->id;
+			$data['fecha']=date("Y-m-d H:i:s");
+			$this->db->insert("publicacion",$data);
+			
+		}
 
 		
 	}
