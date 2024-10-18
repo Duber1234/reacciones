@@ -8,10 +8,10 @@
                                 <div class="profile-banner">
                                     <figure class="profile-banner-small">
                                         <a href="profile.html">
-                                            <img src="assets/images/banner/banner-small.jpg" alt="">
+                                            <img src="<?=base_url()  ?>assets/images/banner/banner-small.jpg" alt="">
                                         </a>
                                         <a href="profile.html" class="profile-thumb-2">
-                                            <img src="assets/images/profile/profile-midle-1.jpg" alt="">
+                                            <img src="<?=base_url()  ?>assets/images/profile/profile-midle-1.jpg" alt="">
                                         </a>
                                     </figure>
                                     <div class="profile-desc text-center">
@@ -34,7 +34,7 @@
                                             <div class="profile-thumb">
                                                 <a href="#">
                                                     <figure class="profile-thumb-small">
-                                                        <img src="assets/images/profile/profile-35x35-1.jpg" alt="profile picture">
+                                                        <img src="<?=base_url()  ?>assets/images/profile/profile-35x35-1.jpg" alt="profile picture">
                                                     </figure>
                                                 </a>
                                             </div>
@@ -45,8 +45,8 @@
                                                 <p class="list-subtitle"><a href="#">adventure</a></p>
                                             </div>
                                             <button class="like-button active">
-                                                <img class="heart" src="assets/images/icons/heart.png" alt="">
-                                                <img class="heart-color" src="assets/images/icons/heart-color.png" alt="">
+                                                <img class="heart" src="<?=base_url()  ?>assets/images/icons/heart.png" alt="">
+                                                <img class="heart-color" src="<?=base_url()  ?>assets/images/icons/heart-color.png" alt="">
                                             </button>
                                         </li>
                                         <li class="unorder-list">
@@ -54,7 +54,7 @@
                                             <div class="profile-thumb">
                                                 <a href="#">
                                                     <figure class="profile-thumb-small">
-                                                        <img src="assets/images/profile/profile-35x35-10.jpg" alt="profile picture">
+                                                        <img src="<?=base_url()  ?>assets/images/profile/profile-35x35-10.jpg" alt="profile picture">
                                                     </figure>
                                                 </a>
                                             </div>
@@ -65,8 +65,8 @@
                                                 <p class="list-subtitle"><a href="#">food</a></p>
                                             </div>
                                             <button class="like-button">
-                                                <img class="heart" src="assets/images/icons/heart.png" alt="">
-                                                <img class="heart-color" src="assets/images/icons/heart-color.png" alt="">
+                                                <img class="heart" src="<?=base_url()  ?>assets/images/icons/heart.png" alt="">
+                                                <img class="heart-color" src="<?=base_url()  ?>assets/images/icons/heart-color.png" alt="">
                                             </button>
                                         </li>
                                         <li class="unorder-list">
@@ -74,7 +74,7 @@
                                             <div class="profile-thumb">
                                                 <a href="#">
                                                     <figure class="profile-thumb-small">
-                                                        <img src="assets/images/profile/profile-35x35-5.jpg" alt="profile picture">
+                                                        <img src="<?=base_url()  ?>assets/images/profile/profile-35x35-5.jpg" alt="profile picture">
                                                     </figure>
                                                 </a>
                                             </div>
@@ -85,8 +85,8 @@
                                                 <p class="list-subtitle"><a href="#">drama</a></p>
                                             </div>
                                             <button class="like-button">
-                                                <img class="heart" src="assets/images/icons/heart.png" alt="">
-                                                <img class="heart-color" src="assets/images/icons/heart-color.png" alt="">
+                                                <img class="heart" src="<?=base_url()  ?>assets/images/icons/heart.png" alt="">
+                                                <img class="heart-color" src="<?=base_url()  ?>assets/images/icons/heart-color.png" alt="">
                                             </button>
                                         </li>
                                         <li class="unorder-list">
@@ -94,7 +94,7 @@
                                             <div class="profile-thumb">
                                                 <a href="#">
                                                     <figure class="profile-thumb-small">
-                                                        <img src="assets/images/profile/profile-35x35-4.jpg" alt="profile picture">
+                                                        <img src="<?=base_url()  ?>assets/images/profile/profile-35x35-4.jpg" alt="profile picture">
                                                     </figure>
                                                 </a>
                                             </div>
@@ -105,8 +105,8 @@
                                                 <p class="list-subtitle"><a href="#">fitness</a></p>
                                             </div>
                                             <button class="like-button">
-                                                <img class="heart" src="assets/images/icons/heart.png" alt="">
-                                                <img class="heart-color" src="assets/images/icons/heart-color.png" alt="">
+                                                <img class="heart" src="<?=base_url()  ?>assets/images/icons/heart.png" alt="">
+                                                <img class="heart-color" src="<?=base_url()  ?>assets/images/icons/heart-color.png" alt="">
                                             </button>
                                         </li>
                                     </ul>
@@ -124,7 +124,7 @@
                                             <div class="profile-thumb">
                                                 <a href="#">
                                                     <figure class="profile-thumb-small">
-                                                        <img src="assets/images/profile/profile-35x35-20.jpg" alt="profile picture">
+                                                        <img src="<?=base_url()  ?>assets/images/profile/profile-35x35-20.jpg" alt="profile picture">
                                                     </figure>
                                                 </a>
                                             </div>
@@ -140,7 +140,7 @@
                                             <div class="profile-thumb">
                                                 <a href="#">
                                                     <figure class="profile-thumb-small">
-                                                        <img src="assets/images/profile/profile-35x35-18.jpg" alt="profile picture">
+                                                        <img src="<?=base_url()  ?>assets/images/profile/profile-35x35-18.jpg" alt="profile picture">
                                                     </figure>
                                                 </a>
                                             </div>
@@ -156,7 +156,7 @@
                                             <div class="profile-thumb">
                                                 <a href="#">
                                                     <figure class="profile-thumb-small">
-                                                        <img src="assets/images/profile/profile-35x35-13.jpg" alt="profile picture">
+                                                        <img src="<?=base_url()  ?>assets/images/profile/profile-35x35-13.jpg" alt="profile picture">
                                                     </figure>
                                                 </a>
                                             </div>
@@ -172,7 +172,7 @@
                                             <div class="profile-thumb">
                                                 <a href="#">
                                                     <figure class="profile-thumb-small">
-                                                        <img src="assets/images/profile/profile-35x35-17.jpg" alt="profile picture">
+                                                        <img src="<?=base_url()  ?>assets/images/profile/profile-35x35-17.jpg" alt="profile picture">
                                                     </figure>
                                                 </a>
                                             </div>
@@ -188,7 +188,7 @@
                                             <div class="profile-thumb">
                                                 <a href="#">
                                                     <figure class="profile-thumb-small">
-                                                        <img src="assets/images/profile/profile-35x35-10.jpg" alt="profile picture">
+                                                        <img src="<?=base_url()  ?>assets/images/profile/profile-35x35-10.jpg" alt="profile picture">
                                                     </figure>
                                                 </a>
                                             </div>
@@ -214,7 +214,7 @@
                                 <div class="profile-thumb">
                                     <a href="#">
                                         <figure class="profile-thumb-middle">
-                                            <img src="assets/images/profile/profile-small-37.jpg" alt="profile picture">
+                                            <img src="<?=base_url()  ?>assets/images/profile/profile-small-37.jpg" alt="profile picture">
                                         </figure>
                                     </a>
                                 </div>
@@ -266,7 +266,7 @@ if($url_emb==true){
                                 <div class="profile-thumb">
                                     <a href="#">
                                         <figure class="profile-thumb-middle">
-                                            <img src="assets/images/profile/profile-small-29.jpg" alt="profile picture">
+                                            <img src="<?=base_url()  ?>assets/images/profile/profile-small-29.jpg" alt="profile picture">
                                         </figure>
                                     </a>
                                 </div>
@@ -342,7 +342,7 @@ if($url_emb==true){
                                             <div class="profile-thumb">
                                                 <a href="#">
                                                     <figure class="profile-thumb-small">
-                                                        <img src="assets/images/profile/profile-35x35-9.jpg" alt="profile picture">
+                                                        <img src="<?=base_url()  ?>assets/images/profile/profile-35x35-9.jpg" alt="profile picture">
                                                     </figure>
                                                 </a>
                                             </div>
@@ -358,7 +358,7 @@ if($url_emb==true){
                                             <div class="profile-thumb">
                                                 <a href="#">
                                                     <figure class="profile-thumb-small">
-                                                        <img src="assets/images/profile/profile-35x35-8.jpg" alt="profile picture">
+                                                        <img src="<?=base_url()  ?>assets/images/profile/profile-35x35-8.jpg" alt="profile picture">
                                                     </figure>
                                                 </a>
                                             </div>
@@ -374,7 +374,7 @@ if($url_emb==true){
                                             <div class="profile-thumb">
                                                 <a href="#">
                                                     <figure class="profile-thumb-small">
-                                                        <img src="assets/images/profile/profile-35x35-7.jpg" alt="profile picture">
+                                                        <img src="<?=base_url()  ?>assets/images/profile/profile-35x35-7.jpg" alt="profile picture">
                                                     </figure>
                                                 </a>
                                             </div>
@@ -390,7 +390,7 @@ if($url_emb==true){
                                             <div class="profile-thumb">
                                                 <a href="#">
                                                     <figure class="profile-thumb-small">
-                                                        <img src="assets/images/profile/profile-35x35-6.jpg" alt="profile picture">
+                                                        <img src="<?=base_url()  ?>assets/images/profile/profile-35x35-6.jpg" alt="profile picture">
                                                     </figure>
                                                 </a>
                                             </div>
@@ -406,7 +406,7 @@ if($url_emb==true){
                                             <div class="profile-thumb">
                                                 <a href="#">
                                                     <figure class="profile-thumb-small">
-                                                        <img src="assets/images/profile/profile-35x35-4.jpg" alt="profile picture">
+                                                        <img src="<?=base_url()  ?>assets/images/profile/profile-35x35-4.jpg" alt="profile picture">
                                                     </figure>
                                                 </a>
                                             </div>
@@ -428,7 +428,7 @@ if($url_emb==true){
                                 <div class="widget-body">
                                     <div class="add-thumb">
                                         <a href="#">
-                                            <img src="assets/images/banner/advertise.jpg" alt="advertisement">
+                                            <img src="<?=base_url()  ?>assets/images/banner/advertise.jpg" alt="advertisement">
                                         </a>
                                     </div>
                                 </div>
@@ -445,7 +445,7 @@ if($url_emb==true){
                                             <div class="profile-thumb">
                                                 <a href="#">
                                                     <figure class="profile-thumb-small">
-                                                        <img src="assets/images/profile/profile-35x35-15.jpg" alt="profile picture">
+                                                        <img src="<?=base_url()  ?>assets/images/profile/profile-35x35-15.jpg" alt="profile picture">
                                                     </figure>
                                                 </a>
                                             </div>
@@ -456,8 +456,8 @@ if($url_emb==true){
                                                 <p class="list-subtitle"><a href="#">10 mutual</a></p>
                                             </div>
                                             <button class="like-button">
-                                                <img class="heart" src="assets/images/icons/heart.png" alt="">
-                                                <img class="heart-color" src="assets/images/icons/heart-color.png" alt="">
+                                                <img class="heart" src="<?=base_url()  ?>assets/images/icons/heart.png" alt="">
+                                                <img class="heart-color" src="<?=base_url()  ?>assets/images/icons/heart-color.png" alt="">
                                             </button>
                                         </li>
                                         <li class="unorder-list">
@@ -465,7 +465,7 @@ if($url_emb==true){
                                             <div class="profile-thumb">
                                                 <a href="#">
                                                     <figure class="profile-thumb-small">
-                                                        <img src="assets/images/profile/profile-35x35-18.jpg" alt="profile picture">
+                                                        <img src="<?=base_url()  ?>assets/images/profile/profile-35x35-18.jpg" alt="profile picture">
                                                     </figure>
                                                 </a>
                                             </div>
@@ -476,8 +476,8 @@ if($url_emb==true){
                                                 <p class="list-subtitle"><a href="#">2 mutual</a></p>
                                             </div>
                                             <button class="like-button active">
-                                                <img class="heart" src="assets/images/icons/heart.png" alt="">
-                                                <img class="heart-color" src="assets/images/icons/heart-color.png" alt="">
+                                                <img class="heart" src="<?=base_url()  ?>assets/images/icons/heart.png" alt="">
+                                                <img class="heart-color" src="<?=base_url()  ?>assets/images/icons/heart-color.png" alt="">
                                             </button>
                                         </li>
                                         <li class="unorder-list">
@@ -485,7 +485,7 @@ if($url_emb==true){
                                             <div class="profile-thumb">
                                                 <a href="#">
                                                     <figure class="profile-thumb-small">
-                                                        <img src="assets/images/profile/profile-35x35-14.jpg" alt="profile picture">
+                                                        <img src="<?=base_url()  ?>assets/images/profile/profile-35x35-14.jpg" alt="profile picture">
                                                     </figure>
                                                 </a>
                                             </div>
@@ -496,8 +496,8 @@ if($url_emb==true){
                                                 <p class="list-subtitle"><a href="#">drama</a></p>
                                             </div>
                                             <button class="like-button">
-                                                <img class="heart" src="assets/images/icons/heart.png" alt="">
-                                                <img class="heart-color" src="assets/images/icons/heart-color.png" alt="">
+                                                <img class="heart" src="<?=base_url()  ?>assets/images/icons/heart.png" alt="">
+                                                <img class="heart-color" src="<?=base_url()  ?>assets/images/icons/heart-color.png" alt="">
                                             </button>
                                         </li>
                                         <li class="unorder-list">
@@ -505,7 +505,7 @@ if($url_emb==true){
                                             <div class="profile-thumb">
                                                 <a href="#">
                                                     <figure class="profile-thumb-small">
-                                                        <img src="assets/images/profile/profile-35x35-20.jpg" alt="profile picture">
+                                                        <img src="<?=base_url()  ?>assets/images/profile/profile-35x35-20.jpg" alt="profile picture">
                                                     </figure>
                                                 </a>
                                             </div>
@@ -516,8 +516,8 @@ if($url_emb==true){
                                                 <p class="list-subtitle"><a href="#">fitness</a></p>
                                             </div>
                                             <button class="like-button">
-                                                <img class="heart" src="assets/images/icons/heart.png" alt="">
-                                                <img class="heart-color" src="assets/images/icons/heart-color.png" alt="">
+                                                <img class="heart" src="<?=base_url()  ?>assets/images/icons/heart.png" alt="">
+                                                <img class="heart-color" src="<?=base_url()  ?>assets/images/icons/heart-color.png" alt="">
                                             </button>
                                         </li>
                                     </ul>
