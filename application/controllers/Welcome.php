@@ -64,5 +64,13 @@ class Welcome extends CI_Controller {
 
 		
 	}
+	public function perfil(){
+		$this->welcome->cargar();
+		$data['lista_p']=$this->welcome->get_lista_publicaciones();
+
+		$this->load->view('base/header.php');
+		$this->load->view('perfil',$data);
+		$this->load->view('base/footer.php');
+	}
 
 }

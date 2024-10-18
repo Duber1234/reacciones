@@ -7,15 +7,15 @@
                             <div class="card card-profile widget-item p-0">
                                 <div class="profile-banner">
                                     <figure class="profile-banner-small">
-                                        <a href="profile.html">
+                                        <a href="<?=base_url().'welcome/perfil'?>">
                                             <img src="<?=base_url()  ?>assets/images/banner/banner-small.jpg" alt="">
                                         </a>
-                                        <a href="profile.html" class="profile-thumb-2">
+                                        <a href="<?=base_url().'welcome/perfil'?>" class="profile-thumb-2">
                                             <img src="<?=base_url()  ?>assets/images/profile/profile-midle-1.jpg" alt="">
                                         </a>
                                     </figure>
                                     <div class="profile-desc text-center">
-                                        <h5 class="author"><a href="profile.html">Usuario #<?=$_SESSION['user_var']->id ?></a></h5>
+                                        <h5 class="author"><a href="<?=base_url().'welcome/perfil'?>">Usuario #<?=$_SESSION['user_var']->id ?></a></h5>
                                         <h4><?= $ip ?></h4>
                                         <h6 class="author">Desarrollador y Cantautor</h6>
                                         <p>Es tu ip no la mia bueno es la de cada uno pues <img class="emoji1" src="<?= base_url()."assets/images/emojis/enojado2.png" ?>"></p>
@@ -273,7 +273,7 @@ if($url_emb==true){
                                 <!-- profile picture end -->
 
                                 <div class="posted-author">
-                                    <h6 class="author"><a href="profile.html"><?=$this->welcome->get_user_name($pl['usuario_publica']);  ?></a></h6>
+                                    <h6 class="author"><a href="<?=base_url().'welcome/perfil'?>"><?=$this->welcome->get_user_name($pl['usuario_publica']);  ?></a></h6>
                                     <span class="post-time"><?=$this->welcome->diferencia_m($pl['fecha']);  ?></span>
                                 </div>
 
