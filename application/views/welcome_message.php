@@ -293,7 +293,7 @@
                                     
                                 
                                 <div class="plyr__video-embed plyr-youtube">
-                                    <iframe src="<?=$pl['texto'] ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
+                                    <iframe src="<?=$pl['texto'] ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin1" allowfullscreen ></iframe>
                               
                                 </div>
                                 <div class="post-meta">
