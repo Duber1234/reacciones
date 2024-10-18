@@ -45,7 +45,7 @@ class Usuarios extends CI_Controller {
 		$this->load->view('base/footer.php');
 	}
 	public function publicar1(){
-		
+		$this->welcome->cargar();
 		if($_POST['share']!=null && $_POST['share']!="" ){
 			$data=array();
 			$data['texto']=$_POST['share'];
