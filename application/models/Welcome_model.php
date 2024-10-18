@@ -77,7 +77,7 @@ $diferencia = $fecha_actual->diff($fecha_x);
 $minutos_diferencia = ($diferencia->days * 24 * 60) + ($diferencia->h * 60) + $diferencia->i;
 
 // Mostrar la diferencia en minutos
-      return "hace ".$minutos_diferencia." min";//ss
+      return "hace ".$minutos_diferencia." min";//ss11
     }
 
     
