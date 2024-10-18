@@ -66,7 +66,7 @@ class Welcome extends CI_Controller {
 			$data['usuario_publica']=$_SESSION['user_var']->id;
 			$data['fecha']=date("Y-m-d H:i:s");
 			$this->db->insert("publicacion",$data);
-			
+			echo json_encode(array("message"=>"gol"));
 		}
 
 		
