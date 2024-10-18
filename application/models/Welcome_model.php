@@ -60,7 +60,7 @@ class Welcome_model extends CI_Model
     }
     public function get_lista_publicaciones(){
         
-      return $this->db->query("select * from publicacion order by id asc")->result_array();
+      return $this->db->query("select * from publicacion order by id desc")->result_array();
     }
     public function diferencia_m($fecha){
         
