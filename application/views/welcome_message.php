@@ -297,7 +297,7 @@
                                     <iframe id="<?=$pl['id'] ?>" src="<?=$pl['texto']?>" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
                                 </div>
                                <div class="plyr__video-embed plyr-video">
-                                    <iframe id="https://youtube.com/watch?v=fCyZTuYL2Tk" src="<?=$pl['texto']?>" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+                                    <iframe id="https://www.youtube.com/embed/odUtqDz4lEk" src="<?=$pl['texto']?>" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
                                 </div>
                                 <div class="post-meta">
                                     <button class="post-meta-like">
