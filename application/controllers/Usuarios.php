@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Usuarios extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -27,40 +27,24 @@ class Welcome extends CI_Controller {
 	public function index()
 	{	
 		
-		header("Location: ".base_url()."usuarios/index");
-		die();
+		$this->welcome->cargar();
+		$data['lista_p']=$this->welcome->get_lista_publicaciones();
+
+		$this->load->view('base/header.php');
+		$this->load->view('usuarios/usuarios',$data);
+		$this->load->view('base/footer.php');
 	}
-
-	public function publicar1(){
-		
-		if($_POST['share']!=null && $_POST['share']!="" ){
-			$data=array();
-			$data['texto']=$_POST['share'];
-			$data['usuario_publica']=$_SESSION['user_var']->id;
-			$data['fecha']=date("Y-m-d H:i:s");
-			$this->db->insert("publicacion",$data);
-			
-		}
-
-		header("Location: ".base_url());
-		die();
-
-		
-	}
-	public function publicar2(){
+	public function perfil()
+	{	 
 		
 		$this->welcome->cargar();
-		if($_GET['share']!=null && $_GET['share']!="" ){
-			$data=array();
-			$data['texto']=$_GET['share'];
-			$data['usuario_publica']=$_SESSION['user_var']->id;
-			$data['fecha']=date("Y-m-d H:i:s");
-			$this->db->insert("publicacion",$data);
-			echo json_encode(array("message"=>"publicado"));
-		}
+		$data['lista_p']=$this->welcome->get_lista_publicaciones();
 
-		
+		$this->load->view('base/header.php');
+		$this->load->view('usuarios/perfil',$data);
+		$this->load->view('base/footer.php');
 	}
 	
+
 
 }

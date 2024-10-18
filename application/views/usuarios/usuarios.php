@@ -7,15 +7,15 @@
                             <div class="card card-profile widget-item p-0">
                                 <div class="profile-banner">
                                     <figure class="profile-banner-small">
-                                        <a href="<?=base_url().'welcome/perfil'?>">
+                                        <a href="<?=base_url().'usuarios/perfil'?>">
                                             <img src="<?=base_url()  ?>assets/images/banner/banner-small.jpg" alt="">
                                         </a>
-                                        <a href="<?=base_url().'welcome/perfil'?>" class="profile-thumb-2">
+                                        <a href="<?=base_url().'usuarios/perfil'?>" class="profile-thumb-2">
                                             <img src="<?=base_url()  ?>assets/images/profile/profile-midle-1.jpg" alt="">
                                         </a>
                                     </figure>
                                     <div class="profile-desc text-center">
-                                        <h5 class="author"><a href="<?=base_url().'welcome/perfil'?>">Usuario #<?=$_SESSION['user_var']->id ?></a></h5>
+                                        <h5 class="author"><a href="<?=base_url().'usuarios/perfil'?>">Usuario #<?=$_SESSION['user_var']->id ?></a></h5>
                                         <h4><?= $ip ?></h4>
                                         <h6 class="author">Desarrollador y Cantautor</h6>
                                         <p>Es tu ip no la mia bueno es la de cada uno pues <img class="emoji1" src="<?= base_url()."assets/images/emojis/enojado2.png" ?>"></p>
@@ -222,7 +222,7 @@
 
                                 <!-- share content box start -->
                                 <div class="share-content-box w-100">
-                                    <form id="pl1" class="share-text-box" action="<?=base_url(); ?>welcome/publicar1" method="post">
+                                    <form id="pl1" class="share-text-box" action="<?=base_url(); ?>usuarios/publicar1" method="post">
                                         <textarea name="share" class="share-text-field" aria-disabled="true" autofocus  placeholder="Di algunas cosas" ></textarea>
                                         <button class="btn-share" type="submit">R</button>
                                     </form>
@@ -273,7 +273,7 @@ if($url_emb==true){
                                 <!-- profile picture end -->
 
                                 <div class="posted-author">
-                                    <h6 class="author"><a href="<?=base_url().'welcome/perfil'?>"><?=$this->welcome->get_user_name($pl['usuario_publica']);  ?></a></h6>
+                                    <h6 class="author"><a href="<?=base_url().'usuarios/perfil'?>"><?=$this->welcome->get_user_name($pl['usuario_publica']);  ?></a></h6>
                                     <span class="post-time"><?=$this->welcome->diferencia_m($pl['fecha']);  ?></span>
                                 </div>
 
