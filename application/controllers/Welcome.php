@@ -49,8 +49,8 @@ class Welcome extends CI_Controller {
 		$data['texto']=$_POST['share'];
 		$data['usuario_publica']=$_SESSION['user_var']->id;
 		$data['fecha']=date("Y-m-d H:i:s");
-		$this->db->insert($data);
-		echo "ya casi ".$_POST['share'];
+		$this->db->insert($data,"publicacion");
+		echo $_POST['share'];
 		
 	}
 
