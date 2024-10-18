@@ -296,7 +296,7 @@ if($url_emb==true){
                                     
                                 
                                 
-                                 <div class="plyr__video-embed plyr-video">
+                                 <div class="plyr__video-embed">
                                 <iframe src="<?=$url_emb ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
                                 </div>
 
