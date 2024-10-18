@@ -35,7 +35,7 @@
     <!-- light gallery css -->
     <link rel="stylesheet" href="<?=base_url('assets/css/plugins/lightgallery.min.css')?>">
     <!-- Main Style CSS -->
-    <link rel="stylesheet" href="<?=base_url('assets/css/style.css')?>">
+    <link rel="stylesheet" href="<?=base_url('assets/css/style.css')?>?v=<?php echo time(); ?>">
      <script src="<?=base_url()?>assets/js/vendor/modernizr-3.6.0.min.js"></script>
     <!-- jQuery JS -->
     <script src="<?=base_url()?>assets/js/vendor/jquery-3.6.0.min.js"></script>
