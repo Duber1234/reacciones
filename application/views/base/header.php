@@ -53,9 +53,9 @@
     <!-- image loaded js -->
     <script src="<?=base_url()?>assets/js/plugins/imagesloaded.pkgd.min.js"></script>
     <!-- isotope filter js -->
-    <script src="assets/js/plugins/isotope.pkgd.min.js"></script>
+    <script src="<?=base_url()?>assets/js/plugins/isotope.pkgd.min.js"></script>
     <!-- Main JS -->
-    <script src="assets/js/main.js?v=<?php echo time(); ?>"></script>
+    <script src="<?=base_url()?>assets/js/main.js?v=<?php echo time(); ?>"></script>
 
 </head>
 <style type="text/css">
