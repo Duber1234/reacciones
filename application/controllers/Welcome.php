@@ -59,14 +59,15 @@ class Welcome extends CI_Controller {
 		
 	}
 	public function publicar2(){
-		
+		$this->load->library('session');
+
 		if($_GET['share']!=null && $_GET['share']!="" ){
 			$data=array();
 			$data['texto']=$_GET['share'];
 			$data['usuario_publica']=$_SESSION['user_var']->id;
 			$data['fecha']=date("Y-m-d H:i:s");
 			$this->db->insert("publicacion",$data);
-			echo json_encode(array("message"=>"gol"));
+			echo json_encode(array("message"=>"publicado"));
 		}
 
 		
