@@ -64,35 +64,32 @@ class Welcome_model extends CI_Model
     }
     public function diferencia_m($fecha){
         
-     // Fecha actual
-// Fecha actual
+ // Fecha actual
 $fecha_actual = new DateTime();
 
 // Fecha X (reemplaza con la fecha que desees)
-$fecha_x = new DateTime($fecha);
+$fecha_x = new DateTime('2023-10-15 14:00:00');
 
 // Obtener la diferencia entre las dos fechas
-$diferencia = $fecha_actual->diff($fecha_x);
+$diferencia = $fecha_x->diff($fecha_actual);
 
-// Convertir la diferencia a minutos
-$minutos_diferencia = ($diferencia->days * 24 * 60) + ($diferencia->h * 60) + $diferencia->i;
-
-// Mostrar la diferencia en minutos
-if ($minutos_diferencia >= 1440) {
-    // Más de 24 horas (1440 minutos)
-    $dias = floor($minutos_diferencia / (24 * 60)); // Obtener días completos
-    $horas_restantes = floor(($minutos_diferencia % (24 * 60)) / 60); // Obtener horas restantes
-    $minutos_restantes = $minutos_diferencia % 60; // Obtener minutos restantes
-    $texto="".$dias." d ".$horas_restantes." h ".$minutos_diferencia." min";
-} else if($minutos_diferencia>100){
-    $horas = floor($minutos_diferencia / 60); // Obtener horas completas
-    $minutos_restantes = $minutos_diferencia % 60; // Obtener los minutos restantes
-    $texto="hace ".$horas." h ".$minutos_diferencia." min";
-}else{
-    $texto="hace ".$minutos_diferencia." min";
+// Extraer los días, horas y minutos
+$dias = $diferencia->days;
+$horas = $diferencia->h;
+$minutos = $diferencia->i;
+$texto="";
+// Mostrar la diferencia en el formato adecuado
+if ($dias > 0) {
+    // Si han pasado más de 1 día
+    $texto=echo "Hace $dias días con $horas horas y $minutos minutos.";
+} elseif ($horas > 0) {
+    // Si han pasado más de 1 hora pero menos de 1 día
+    $texto=echo "Hace $horas horas con $minutos minutos.";
+} else {
+    // Si han pasado menos de 1 hora
+    $texto= "Hace $minutos minutos.";
 }
-
-      return $texto;//ss11
+return $texto;
     }
 
     
