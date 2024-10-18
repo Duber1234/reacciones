@@ -40,7 +40,7 @@ class Welcome_model extends CI_Model
     
     }
     public function cargar(){
-      $ip=$this->->get_ip();
+      $ip=$this->get_ip();
       $user=$this->db->get_where("usuarios",array("ip"=>$ip) )->row();
 
         if(empty($user)){
