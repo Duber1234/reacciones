@@ -28,6 +28,8 @@ class Welcome extends CI_Controller {
 	{	
 		
 		$this->welcome->cargar();
+		$data['lista_p']=$this->welcome->get_lista_publicaciones();
+
 		$this->load->view('base/header.php');
 		$this->load->view('welcome_message',$data);
 		$this->load->view('base/footer.php');

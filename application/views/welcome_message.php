@@ -253,7 +253,73 @@
                             </div>
                         </div>
                         <!-- share box end -->
+ <!-- inicio publicaciones -->
+ <?php var_dump($lista_p) ?>
+ <?php foreach ($lista_p as $key => $pl) {?>
+ <div class="card">
+                            <!-- post title start -->
+                            <div class="post-title d-flex align-items-center">
+                                <!-- profile picture end -->
+                                <div class="profile-thumb">
+                                    <a href="#">
+                                        <figure class="profile-thumb-middle">
+                                            <img src="assets/images/profile/profile-small-29.jpg" alt="profile picture">
+                                        </figure>
+                                    </a>
+                                </div>
+                                <!-- profile picture end -->
 
+                                <div class="posted-author">
+                                    <h6 class="author"><a href="profile.html">william henry</a></h6>
+                                    <span class="post-time"><?=$pl->fecha  ?> min ago</span>
+                                </div>
+
+                                <div class="post-settings-bar">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <div class="post-settings arrow-shape">
+                                        <ul>
+                                            <li><button>copy link to adda</button></li>
+                                            <li><button>edit post</button></li>
+                                            <li><button>embed adda</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- post title start -->
+                            <div class="post-content">
+                                <?php //echo '<p class="post-desc"></p>' ?>
+                                    
+                                
+                                <div class="plyr__video-embed plyr-youtube">
+                                    <iframe src="https://www.youtube.com/embed/ugzB87QzIK0?si=BlpACYWzcyVcR2cx" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
+                              
+                                </div>
+                                <div class="post-meta">
+                                    <button class="post-meta-like">
+                                        <i class="bi bi-heart-beat"></i>
+                                        <span>You and 112 people like this</span>
+                                        <strong>112</strong>
+                                    </button>
+                                    <ul class="comment-share-meta">
+                                        <li>
+                                            <button class="post-comment">
+                                                <i class="bi bi-chat-bubble"></i>
+                                                <span>36</span>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="post-share">
+                                                <i class="bi bi-share"></i>
+                                                <span>08</span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    <?php } ?>
                         <!-- post status start -->
                         <div class="card">
                             <!-- post title start -->
@@ -269,7 +335,7 @@
                                 <!-- profile picture end -->
 
                                 <div class="posted-author">
-                                    <h6 class="author"><a href="profile.html">merry watson</a></h6>
+                                    <h6 class="author"><a href="profile.html">merry watson 1</a></h6>
                                     <span class="post-time">20 min ago</span>
                                 </div>
 

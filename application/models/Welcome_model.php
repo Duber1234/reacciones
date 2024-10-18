@@ -58,6 +58,10 @@ class Welcome_model extends CI_Model
         }
 
     }
+    public function get_lista_publicaciones(){
+        
+      return $this->db->get_where("publicacion")->result();
+    }
 
     
 }
