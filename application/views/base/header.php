@@ -11,51 +11,51 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="<?=base_url()  ?>assets/images/favicon2.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon2.png">
 
     <!-- CSS
 	============================================ -->
     <!-- google fonts -->
-    <link href="<?=base_url()  ?>https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900" rel="stylesheet">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="<?=base_url()  ?>assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
     <!-- Icon Font CSS -->
-    <link rel="stylesheet" href="<?=base_url()  ?>assets/css/vendor/bicon.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/bicon.min.css">
     <!-- Flat Icon CSS -->
-    <link rel="stylesheet" href="<?=base_url()  ?>assets/css/vendor/flaticon.css">
+    <link rel="stylesheet" href="assets/css/vendor/flaticon.css">
     <!-- audio & video player CSS -->
-    <link rel="stylesheet" href="<?=base_url()  ?>assets/css/plugins/plyr.css">
+    <link rel="stylesheet" href="assets/css/plugins/plyr.css">
     <!-- Slick CSS -->
-    <link rel="stylesheet" href="<?=base_url()  ?>assets/css/plugins/slick.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/slick.min.css">
     <!-- nice-select CSS -->
-    <link rel="stylesheet" href="<?=base_url()  ?>assets/css/plugins/nice-select.css">
+    <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
     <!-- perfect scrollbar css -->
-    <link rel="stylesheet" href="<?=base_url()  ?>assets/css/plugins/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/css/plugins/perfect-scrollbar.css">
     <!-- light gallery css -->
-    <link rel="stylesheet" href="<?=base_url()  ?>assets/css/plugins/lightgallery.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/lightgallery.min.css">
     <!-- Main Style CSS -->
-    <link rel="stylesheet" href="<?=base_url()  ?>assets/css/style.css?v=<?php echo time(); ?>">
-     <script src="<?=base_url()  ?>assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css?v=<?php echo time(); ?>">
+     <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
     <!-- jQuery JS -->
-    <script src="<?=base_url()  ?>assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
     <!-- Bootstrap JS -->
-    <script src="<?=base_url()  ?>assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
     <!-- Slick Slider JS -->
-    <script src="<?=base_url()  ?>assets/js/plugins/slick.min.js"></script>
+    <script src="assets/js/plugins/slick.min.js"></script>
     <!-- nice select JS -->
-    <script src="<?=base_url()  ?>assets/js/plugins/nice-select.min.js"></script>
+    <script src="assets/js/plugins/nice-select.min.js"></script>
     <!-- audio video player JS -->
-    <script src="<?=base_url()  ?>assets/js/plugins/plyr.min.js"></script>
+    <script src="assets/js/plugins/plyr.min.js"></script>
     <!-- perfect scrollbar js -->
-    <script src="<?=base_url()  ?>assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/plugins/perfect-scrollbar.min.js"></script>
     <!-- light gallery js -->
-    <script src="<?=base_url()  ?>assets/js/plugins/lightgallery-all.min.js"></script>
+    <script src="assets/js/plugins/lightgallery-all.min.js"></script>
     <!-- image loaded js -->
-    <script src="<?=base_url()  ?>assets/js/plugins/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/plugins/imagesloaded.pkgd.min.js"></script>
     <!-- isotope filter js -->
-    <script src="<?=base_url()  ?>assets/js/plugins/isotope.pkgd.min.js"></script>
+    <script src="assets/js/plugins/isotope.pkgd.min.js"></script>
     <!-- Main JS -->
-    <script src="<?=base_url()  ?>assets/js/main.js?v=<?php echo time(); ?>"></script>
+    <script src="assets/js/main.js?v=<?php echo time(); ?>"></script>
 
 </head>
 <style type="text/css">
@@ -77,7 +77,7 @@
                                 <ul>
                                     <li class="msg-trigger">
                           
-                                         <a class="msg-trigger-btn" href="<?=base_url()  ?>#a1">S. <label class="notification request-trigger btn-mnu"><i class="flaticon-users"></i>
+                                         <a class="msg-trigger-btn" href="#a1">S. <label class="notification request-trigger btn-mnu"><i class="flaticon-users"></i>
                                             <span>03</span>
                                         </label></a>
 
@@ -94,14 +94,14 @@
                                                     <!-- profile picture end -->
                                                     <div class="profile-thumb">
                                                         <figure class="profile-thumb-middle">
-                                                            <img src="<?=base_url()  ?>assets/images/profile/profile-small-3.jpg" alt="profile picture">
+                                                            <img src="assets/images/profile/profile-small-3.jpg" alt="profile picture">
                                                         </figure>
                                                     </div>
                                                     <!-- profile picture end -->
 
                                                     <!-- message content start -->
                                                     <div class="msg-content">
-                                                        <h6 class="author"><a href="<?=base_url()  ?>profile.html">Mili Raoulin</a></h6>
+                                                        <h6 class="author"><a href="profile.html">Mili Raoulin</a></h6>
                                                         <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default</p>
                                                     </div>
                                                     <!-- message content end -->
@@ -116,14 +116,14 @@
                                                     <!-- profile picture end -->
                                                     <div class="profile-thumb">
                                                         <figure class="profile-thumb-middle">
-                                                            <img src="<?=base_url()  ?>assets/images/profile/profile-small-4.jpg" alt="profile picture">
+                                                            <img src="assets/images/profile/profile-small-4.jpg" alt="profile picture">
                                                         </figure>
                                                     </div>
                                                     <!-- profile picture end -->
 
                                                     <!-- message content start -->
                                                     <div class="msg-content">
-                                                        <h6 class="author"><a href="<?=base_url()  ?>profile.html">Jhon Doe</a></h6>
+                                                        <h6 class="author"><a href="profile.html">Jhon Doe</a></h6>
                                                         <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default</p>
                                                     </div>
                                                     <!-- message content end -->
@@ -138,14 +138,14 @@
                                                     <!-- profile picture end -->
                                                     <div class="profile-thumb">
                                                         <figure class="profile-thumb-middle">
-                                                            <img src="<?=base_url()  ?>assets/images/profile/profile-small-5.jpg" alt="profile picture">
+                                                            <img src="assets/images/profile/profile-small-5.jpg" alt="profile picture">
                                                         </figure>
                                                     </div>
                                                     <!-- profile picture end -->
 
                                                     <!-- message content start -->
                                                     <div class="msg-content">
-                                                        <h6 class="author"><a href="<?=base_url()  ?>profile.html">Jon Wileyam</a></h6>
+                                                        <h6 class="author"><a href="profile.html">Jon Wileyam</a></h6>
                                                         <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default</p>
                                                     </div>
                                                     <!-- message content end -->
@@ -165,7 +165,7 @@
                                     </li>
                                     <li class="msg-trigger">
                           
-                                        <a class="msg-trigger-btn" href="<?=base_url()  ?>#z">C. <label class="notification request-trigger btn-mnu"><i class="flaticon-chats"></i>
+                                        <a class="msg-trigger-btn" href="#z">C. <label class="notification request-trigger btn-mnu"><i class="flaticon-chats"></i>
                                             <span>03</span>
                                         </label></a>
 
@@ -182,14 +182,14 @@
                                                     <!-- profile picture end -->
                                                     <div class="profile-thumb">
                                                         <figure class="profile-thumb-middle">
-                                                            <img src="<?=base_url()  ?>assets/images/profile/profile-small-3.jpg" alt="profile picture">
+                                                            <img src="assets/images/profile/profile-small-3.jpg" alt="profile picture">
                                                         </figure>
                                                     </div>
                                                     <!-- profile picture end -->
 
                                                     <!-- message content start -->
                                                     <div class="msg-content">
-                                                        <h6 class="author"><a href="<?=base_url()  ?>profile.html">Mili Raoulin</a></h6>
+                                                        <h6 class="author"><a href="profile.html">Mili Raoulin</a></h6>
                                                         <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default</p>
                                                     </div>
                                                     <!-- message content end -->
@@ -204,14 +204,14 @@
                                                     <!-- profile picture end -->
                                                     <div class="profile-thumb">
                                                         <figure class="profile-thumb-middle">
-                                                            <img src="<?=base_url()  ?>assets/images/profile/profile-small-4.jpg" alt="profile picture">
+                                                            <img src="assets/images/profile/profile-small-4.jpg" alt="profile picture">
                                                         </figure>
                                                     </div>
                                                     <!-- profile picture end -->
 
                                                     <!-- message content start -->
                                                     <div class="msg-content">
-                                                        <h6 class="author"><a href="<?=base_url()  ?>profile.html">Jhon Doe</a></h6>
+                                                        <h6 class="author"><a href="profile.html">Jhon Doe</a></h6>
                                                         <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default</p>
                                                     </div>
                                                     <!-- message content end -->
@@ -226,14 +226,14 @@
                                                     <!-- profile picture end -->
                                                     <div class="profile-thumb">
                                                         <figure class="profile-thumb-middle">
-                                                            <img src="<?=base_url()  ?>assets/images/profile/profile-small-5.jpg" alt="profile picture">
+                                                            <img src="assets/images/profile/profile-small-5.jpg" alt="profile picture">
                                                         </figure>
                                                     </div>
                                                     <!-- profile picture end -->
 
                                                     <!-- message content start -->
                                                     <div class="msg-content">
-                                                        <h6 class="author"><a href="<?=base_url()  ?>profile.html">Jon Wileyam</a></h6>
+                                                        <h6 class="author"><a href="profile.html">Jon Wileyam</a></h6>
                                                         <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default</p>
                                                     </div>
                                                     <!-- message content end -->
@@ -253,7 +253,7 @@
                                     </li>
                                     <li class="msg-trigger">
                           
-                                        <a class="msg-trigger-btn " href="<?=base_url()  ?>#b">R. <label class="notification request-trigger btn-mnu"><i class="flaticon-notification"></i>
+                                        <a class="msg-trigger-btn " href="#b">R. <label class="notification request-trigger btn-mnu"><i class="flaticon-notification"></i>
                                             <span>03</span>
                                         </label></a>
 
@@ -270,14 +270,14 @@
                                                     <!-- profile picture end -->
                                                     <div class="profile-thumb">
                                                         <figure class="profile-thumb-middle">
-                                                            <img src="<?=base_url()  ?>assets/images/profile/profile-small-3.jpg" alt="profile picture">
+                                                            <img src="assets/images/profile/profile-small-3.jpg" alt="profile picture">
                                                         </figure>
                                                     </div>
                                                     <!-- profile picture end -->
 
                                                     <!-- message content start -->
                                                     <div class="msg-content">
-                                                        <h6 class="author"><a href="<?=base_url()  ?>profile.html">Mili Raoulin</a></h6>
+                                                        <h6 class="author"><a href="profile.html">Mili Raoulin</a></h6>
                                                         <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default</p>
                                                     </div>
                                                     <!-- message content end -->
@@ -292,14 +292,14 @@
                                                     <!-- profile picture end -->
                                                     <div class="profile-thumb">
                                                         <figure class="profile-thumb-middle">
-                                                            <img src="<?=base_url()  ?>assets/images/profile/profile-small-4.jpg" alt="profile picture">
+                                                            <img src="assets/images/profile/profile-small-4.jpg" alt="profile picture">
                                                         </figure>
                                                     </div>
                                                     <!-- profile picture end -->
 
                                                     <!-- message content start -->
                                                     <div class="msg-content">
-                                                        <h6 class="author"><a href="<?=base_url()  ?>profile.html">Jhon Doe</a></h6>
+                                                        <h6 class="author"><a href="profile.html">Jhon Doe</a></h6>
                                                         <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default</p>
                                                     </div>
                                                     <!-- message content end -->
@@ -314,14 +314,14 @@
                                                     <!-- profile picture end -->
                                                     <div class="profile-thumb">
                                                         <figure class="profile-thumb-middle">
-                                                            <img src="<?=base_url()  ?>assets/images/profile/profile-small-5.jpg" alt="profile picture">
+                                                            <img src="assets/images/profile/profile-small-5.jpg" alt="profile picture">
                                                         </figure>
                                                     </div>
                                                     <!-- profile picture end -->
 
                                                     <!-- message content start -->
                                                     <div class="msg-content">
-                                                        <h6 class="author"><a href="<?=base_url()  ?>profile.html">Jon Wileyam</a></h6>
+                                                        <h6 class="author"><a href="profile.html">Jon Wileyam</a></h6>
                                                         <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default</p>
                                                     </div>
                                                     <!-- message content end -->
@@ -350,7 +350,7 @@
                         <!-- brand logo start -->
                         <div class="brand-logo text-center">
                             <a href="<?=base_url(); ?>"> 
-                                <img src="<?=base_url()  ?>assets/images/logo/logo1.png" alt="brand logo" width="25%"> Reacciona.in
+                                <img src="assets/images/logo/logo1.png" alt="brand logo" width="25%"> Reacciona.in
                             </a>
                         </div>
                         <!-- brand logo end -->
@@ -370,25 +370,25 @@
                             <!-- profile picture start -->
                             <div class="profile-setting-box">
                                 <div class="profile-thumb-small">
-                                    <a href="<?=base_url()  ?>javascript:void(0)" class="profile-triger">
+                                    <a href="javascript:void(0)" class="profile-triger">
                                         <figure>
-                                            <img src="<?=base_url()  ?>assets/images/profile/profile-35x35-1.jpg" alt="profile picture">
+                                            <img src="assets/images/profile/profile-35x35-1.jpg" alt="profile picture">
                                         </figure>
                                     </a>
                                     <div class="profile-dropdown">
                                         <div class="profile-head">
-                                            <h5 class="name"><a href="<?=base_url()  ?>#">Madison Howard</a></h5>
-                                            <a class="mail" href="<?=base_url()  ?>#">mailnam@mail.com</a>
+                                            <h5 class="name"><a href="#">Madison Howard</a></h5>
+                                            <a class="mail" href="#">mailnam@mail.com</a>
                                         </div>
                                         <div class="profile-body">
                                             <ul>
-                                                <li><a href="<?=base_url()  ?>profile.html"><i class="flaticon-user"></i>Profile</a></li>
-                                                <li><a href="<?=base_url()  ?>#"><i class="flaticon-message"></i>Inbox</a></li>
-                                                <li><a href="<?=base_url()  ?>#"><i class="flaticon-document"></i>Activity</a></li>
+                                                <li><a href="profile.html"><i class="flaticon-user"></i>Profile</a></li>
+                                                <li><a href="#"><i class="flaticon-message"></i>Inbox</a></li>
+                                                <li><a href="#"><i class="flaticon-document"></i>Activity</a></li>
                                             </ul>
                                             <ul>
-                                                <li><a href="<?=base_url()  ?>#"><i class="flaticon-settings"></i>Setting</a></li>
-                                                <li><a href="<?=base_url()  ?>signup.html"><i class="flaticon-unlock"></i>Sing out</a></li>
+                                                <li><a href="#"><i class="flaticon-settings"></i>Setting</a></li>
+                                                <li><a href="signup.html"><i class="flaticon-unlock"></i>Sing out</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -407,8 +407,8 @@
         <div class="mobile-header-wrapper sticky d-block d-lg-none">
             <div class="mobile-header position-relative ">
                 <div class="mobile-logo">
-                    <a href="<?=base_url()  ?>index.html">
-                        <img src="<?=base_url()  ?>assets/images/logo/logo1.png" alt="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo/logo1.png" alt="logo">
                     </a>
                 </div>
                 <div class="mobile-menu w-100">
@@ -421,12 +421,12 @@
                                 <li>
                                     <div class="frnd-request-member">
                                         <figure class="request-thumb">
-                                            <a href="<?=base_url()  ?>profile.html">
-                                                <img src="<?=base_url()  ?>assets/images/profile/profile-midle-1.jpg" alt="proflie author">
+                                            <a href="profile.html">
+                                                <img src="assets/images/profile/profile-midle-1.jpg" alt="proflie author">
                                             </a>
                                         </figure>
                                         <div class="frnd-content">
-                                            <h6 class="author"><a href="<?=base_url()  ?>profile.html">merry watson</a></h6>
+                                            <h6 class="author"><a href="profile.html">merry watson</a></h6>
                                             <p class="author-subtitle">Works at HasTech</p>
                                             <div class="request-btn-inner">
                                                 <button class="frnd-btn">confirm</button>
@@ -438,12 +438,12 @@
                                 <li>
                                     <div class="frnd-request-member">
                                         <figure class="request-thumb">
-                                            <a href="<?=base_url()  ?>profile.html">
-                                                <img src="<?=base_url()  ?>assets/images/profile/profile-midle-2.jpg" alt="proflie author">
+                                            <a href="profile.html">
+                                                <img src="assets/images/profile/profile-midle-2.jpg" alt="proflie author">
                                             </a>
                                         </figure>
                                         <div class="frnd-content">
-                                            <h6 class="author"><a href="<?=base_url()  ?>profile.html">merry watson</a></h6>
+                                            <h6 class="author"><a href="profile.html">merry watson</a></h6>
                                             <p class="author-subtitle">Works at HasTech</p>
                                             <div class="request-btn-inner">
                                                 <button class="frnd-btn">confirm</button>
@@ -455,12 +455,12 @@
                                 <li>
                                     <div class="frnd-request-member">
                                         <figure class="request-thumb">
-                                            <a href="<?=base_url()  ?>profile.html">
-                                                <img src="<?=base_url()  ?>assets/images/profile/profile-midle-3.jpg" alt="proflie author">
+                                            <a href="profile.html">
+                                                <img src="assets/images/profile/profile-midle-3.jpg" alt="proflie author">
                                             </a>
                                         </figure>
                                         <div class="frnd-content">
-                                            <h6 class="author"><a href="<?=base_url()  ?>profile.html">merry watson</a></h6>
+                                            <h6 class="author"><a href="profile.html">merry watson</a></h6>
                                             <p class="author-subtitle">Works at HasTech</p>
                                             <div class="request-btn-inner">
                                                 <button class="frnd-btn">confirm</button>
@@ -484,20 +484,20 @@
                                 <div class="live-chat-title">
                                     <!-- profile picture end -->
                                     <div class="profile-thumb">
-                                        <a href="<?=base_url()  ?>profile.html">
+                                        <a href="profile.html">
                                             <figure class="profile-thumb-small profile-active">
-                                                <img src="<?=base_url()  ?>assets/images/profile/profile-35x35-13.jpg" alt="profile picture">
+                                                <img src="assets/images/profile/profile-35x35-13.jpg" alt="profile picture">
                                             </figure>
                                         </a>
                                     </div>
                                     <!-- profile picture end -->
                                     <div class="posted-author">
-                                        <h6 class="author"><a href="<?=base_url()  ?>profile.html">Robart Marloyan</a></h6>
+                                        <h6 class="author"><a href="profile.html">Robart Marloyan</a></h6>
                                         <span class="active-pro">active now</span>
                                     </div>
                                     <div class="live-chat-settings ml-auto">
-                                        <button class="chat-settings"><img src="<?=base_url()  ?>assets/images/icons/settings.png" alt=""></button>
-                                        <button class="close-btn"><img src="<?=base_url()  ?>assets/images/icons/close.png" alt=""></button>
+                                        <button class="chat-settings"><img src="assets/images/icons/settings.png" alt=""></button>
+                                        <button class="close-btn"><img src="assets/images/icons/close.png" alt=""></button>
                                     </div>
                                 </div>
                                 <div class="message-list-inner">
@@ -531,7 +531,7 @@
                                 <div class="chat-text-field mob-text-box">
                                     <textarea class="live-chat-field custom-scroll" placeholder="Text Message"></textarea>
                                     <button class="chat-message-send" type="submit" value="submit">
-                                        <img src="<?=base_url()  ?>assets/images/icons/plane.png" alt="">
+                                        <img src="assets/images/icons/plane.png" alt="">
                                     </button>
                                 </div>
                             </div>
@@ -553,25 +553,25 @@
                 <div class="mobile-header-profile">
                     <!-- profile picture end -->
                     <div class="profile-thumb profile-setting-box">
-                        <a href="<?=base_url()  ?>javascript:void(0)" class="profile-triger">
+                        <a href="javascript:void(0)" class="profile-triger">
                             <figure class="profile-thumb-middle">
-                                <img src="<?=base_url()  ?>assets/images/profile/profile-small-1.jpg" alt="profile picture">
+                                <img src="assets/images/profile/profile-small-1.jpg" alt="profile picture">
                             </figure>
                         </a>
                         <div class="profile-dropdown text-left">
                             <div class="profile-head">
-                                <h5 class="name"><a href="<?=base_url()  ?>#">Madison Howard</a></h5>
-                                <a class="mail" href="<?=base_url()  ?>#">mailnam@mail.com</a>
+                                <h5 class="name"><a href="#">Madison Howard</a></h5>
+                                <a class="mail" href="#">mailnam@mail.com</a>
                             </div>
                             <div class="profile-body">
                                 <ul>
-                                    <li><a href="<?=base_url()  ?>profile.html"><i class="flaticon-user"></i>Profile</a></li>
-                                    <li><a href="<?=base_url()  ?>#"><i class="flaticon-message"></i>Inbox</a></li>
-                                    <li><a href="<?=base_url()  ?>#"><i class="flaticon-document"></i>Activity</a></li>
+                                    <li><a href="profile.html"><i class="flaticon-user"></i>Profile</a></li>
+                                    <li><a href="#"><i class="flaticon-message"></i>Inbox</a></li>
+                                    <li><a href="#"><i class="flaticon-document"></i>Activity</a></li>
                                 </ul>
                                 <ul>
-                                    <li><a href="<?=base_url()  ?>#"><i class="flaticon-settings"></i>Setting</a></li>
-                                    <li><a href="<?=base_url()  ?>signup.html"><i class="flaticon-unlock"></i>Sing out</a></li>
+                                    <li><a href="#"><i class="flaticon-settings"></i>Setting</a></li>
+                                    <li><a href="signup.html"><i class="flaticon-unlock"></i>Sing out</a></li>
                                 </ul>
                             </div>
                         </div>
