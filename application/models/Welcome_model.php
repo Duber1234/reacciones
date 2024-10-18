@@ -39,6 +39,25 @@ class Welcome_model extends CI_Model
             return $ip;
     
     }
+    public function cargar(){
+      $ip=$this->->get_ip();
+      $user=$this->db->get_where("usuarios",array("ip"=>$ip) )->row();
+
+        if(empty($user)){
+          //crear un row
+          $data=array("ip"=>$ip);
+          $data['fecha_ultima_coneccion']=date("Y-m-d H:i:s");
+          $this->db->insert("usuarios",$data);
+          $user=$this->db->get_where("usuarios",array("ip"=>$ip) )->row();
+          $_SESSION['user_var']=$user;
+        }else{
+          $data2=array();
+          $data2['fecha_ultima_coneccion']=date("Y-m-d H:i:s");
+          $this->db->update("usuarios",$data2,array("id"=>$user->id));
+          $_SESSION['user_var']=$user;
+        }
+
+    }
 
     
 }
