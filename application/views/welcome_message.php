@@ -270,8 +270,8 @@
                                 <!-- profile picture end -->
 
                                 <div class="posted-author">
-                                    <h6 class="author"><a href="profile.html"><?=$this->welcome->get_user_name($pl->usuario_publica);  ?></a></h6>
-                                    <span class="post-time"><?=$this->welcome->diferencia_m($pl->fecha);  ?></span>
+                                    <h6 class="author"><a href="profile.html"><?=$this->welcome->get_user_name($pl['usuario_publica']);  ?></a></h6>
+                                    <span class="post-time"><?=$this->welcome->diferencia_m($pl['fecha']);  ?></span>
                                 </div>
 
                                 <div class="post-settings-bar">
