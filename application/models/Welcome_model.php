@@ -68,7 +68,7 @@ class Welcome_model extends CI_Model
 $fecha_actual = new DateTime();
 
 // Fecha X (reemplaza con la fecha que desees)
-$fecha_x = new DateTime('2023-10-15 14:00:00');
+$fecha_x = new DateTime($fecha);
 
 // Obtener la diferencia entre las dos fechas
 $diferencia = $fecha_x->diff($fecha_actual);
