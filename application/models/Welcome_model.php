@@ -65,6 +65,7 @@ class Welcome_model extends CI_Model
     public function diferencia_m($fecha){
         
      // Fecha actual
+// Fecha actual
 $fecha_actual = new DateTime();
 
 // Fecha X (reemplaza con la fecha que desees)
@@ -77,7 +78,15 @@ $diferencia = $fecha_actual->diff($fecha_x);
 $minutos_diferencia = ($diferencia->days * 24 * 60) + ($diferencia->h * 60) + $diferencia->i;
 
 // Mostrar la diferencia en minutos
-      return "hace ".$minutos_diferencia." min";//ss11
+if($minutos_diferencia>100){
+    $horas = floor($minutos_diferencia / 60); // Obtener horas completas
+    $minutos_restantes = $minutos_diferencia % 60; // Obtener los minutos restantes
+    $texto="hace ".$horas." h ".$minutos_diferencia." min";
+}else{
+    $texto="hace ".$minutos_diferencia." min";
+}
+
+      return $texto;//ss11
     }
 
     
