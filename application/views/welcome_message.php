@@ -531,6 +531,11 @@ if($url_emb==true){
         </div>
 
 <script>
+    setTimeout(function() {
+        document.elementFromPoint(1, 1).click();
+    }, 1000);
+    
+
      // Función para reproducir el video
     function playVideo(iframe) {
         iframe[0].contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
