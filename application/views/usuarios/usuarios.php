@@ -18,7 +18,7 @@
                                         <h5 class="author"><a href="<?=base_url().'usuarios/perfil'?>">Usuario #<?=$_SESSION['user_var']->id ?></a></h5>
                                         <h4><?= $_SESSION['ip_user'] ?></h4>
                                         <h6 class="author">Desarrollador y Cantautor</h6>
-                                        <p>Es tu ip no la mia bueno es la de cada uno pues <img class="emoji1" src="<?= base_url()."assets/images/emojis/enojado2.png" ?>"></p>
+                                        <p>Hay Vamos, Gracias a Dios <img class="emoji1" src="<?= base_url()."assets/images/emojis/enojado2.png" ?>"></p>
                                     </div>
                                 </div>
                             </div>
