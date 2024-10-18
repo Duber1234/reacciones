@@ -3,25 +3,7 @@
         width: 100%;
         height: 500px;
     }
-    .btn-share {
-  position: relative;
-}
 
-.btn-share::after {
-  content: "Iniciar"; /* Texto del mensaje */
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #828282;
-  border: 1px solid #ddd;
-  padding: 10px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.btn-share:hover::after {
-  opacity: 1;
-}
 </style>
         <div class="main-wrapper pt-80">
             <div class="container">
@@ -249,7 +231,7 @@
                                 <div class="share-content-box w-100">
                                     <form id="pl1" class="share-text-box" action="<?=base_url(); ?>usuarios/publicar1" method="post">
                                         <textarea  name="share" class="share-text-field" aria-disabled="true" autofocus  placeholder="Di algunas cosas" ></textarea>
-                                        <button class="btn-share" type="submit">R</button>
+                                        <button class="btn-share" type="submit">Iniciar</button>
                                     </form>
                                 </div>
                                 <!-- share content box end -->
