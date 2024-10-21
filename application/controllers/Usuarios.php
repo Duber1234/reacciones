@@ -60,6 +60,16 @@ class Usuarios extends CI_Controller {
 
 		
 	}
+	public function reaccionar(){
+		$reaccion=$this->db->get_where("reacciones_a_publicacion",array("id_usuario_reacciona"=>$_SESSION['user_var']->id,"id_publicacion"=>$_POST['id_publicacion'],"id_reaccion"=>$_POST['id_reaccion']))->row();
+			if(empty($reaccion)){
+				$this->db->insert("reacciones_a_publicacion",array("id_usuario_reacciona"=>$_SESSION['user_var']->id,"id_publicacion"=>$_POST['id_publicacion'],"id_reaccion"=>$_POST['id_reaccion']));		
+			}
+		
+		
+		$numero=$this->welcome->get_reacciones($_POST['id_publicacion']);
+		echo json_encode(array("numero_iterezantes"=>$numero));
+	}
 
 
 }

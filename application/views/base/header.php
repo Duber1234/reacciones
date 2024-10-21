@@ -63,6 +63,9 @@
     cursor: pointer;
 }
 </style>
+<script type="text/javascript">
+    var baseurl="<?=base_url() ?>";
+</script>
 <body>
 
     <!-- header area start -->
@@ -78,7 +81,7 @@
                                     <li class="msg-trigger">
                           
                                          <a class="msg-trigger-btn" href="#a1">S. <label class="notification request-trigger btn-mnu"><i class="flaticon-users"></i>
-                                            <span>03</span>
+                                            <span>05</span>
                                         </label></a>
 
                                         <div class="message-dropdown" id="a1">
@@ -166,7 +169,7 @@
                                     <li class="msg-trigger">
                           
                                         <a class="msg-trigger-btn" href="#z">C. <label class="notification request-trigger btn-mnu"><i class="flaticon-chats"></i>
-                                            <span>03</span>
+                                            <span>05</span>
                                         </label></a>
 
                                         <div class="message-dropdown" id="z">
@@ -254,7 +257,7 @@
                                     <li class="msg-trigger">
                           
                                         <a class="msg-trigger-btn " href="#b">R. <label class="notification request-trigger btn-mnu"><i class="flaticon-notification"></i>
-                                            <span>03</span>
+                                            <span>05</span>
                                         </label></a>
 
                                         <div class="message-dropdown" id="b">
@@ -415,7 +418,7 @@
                     <ul>
                         <li>
                             <button class="notification request-trigger"><i class="flaticon-users"></i>
-                                <span>03</span>
+                                <span>05</span>
                             </button>
                             <ul class="frnd-request-list">
                                 <li>
@@ -473,7 +476,7 @@
                         </li>
                         <li>
                             <button class="notification"><i class="flaticon-notification"></i>
-                                <span>03</span>
+                                <span>05</span>
                             </button>
                         </li>
                         <li>

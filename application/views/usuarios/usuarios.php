@@ -311,10 +311,13 @@ if($url_emb==true){
                                 </div>
 
                                 <div class="post-meta">
-                                    <button class="post-meta-like">
-                                        <i class="bi bi-heart-beat"></i>
-                                        <span>You and 112 people like this</span>
-                                        <strong>112</strong>
+                                    <?php $reacciones_p=$this->welcome->get_reacciones($pl['id']); 
+                                            $reaccione_us=$this->welcome->get_reaccione($pl['id']);
+                                    ?>
+                                    <button class="post-meta-like" data-id-publicacion="<?=$pl['id'] ?>">
+                                        <i <?= (!empty($reaccione_us))?'style="color:red"':''  ?> class="bi bi-heart-beat" id="icono_reacciona-pl-<?=$pl['id'] ?>"></i>
+                                        <span id="interezantes-span-pl-<?=$pl['id'] ?>"><?=$reacciones_p ?> Interezantes</span>
+                                        
                                     </button>
                                     <ul class="comment-share-meta">
                                         <li>
@@ -541,7 +544,15 @@ if($url_emb==true){
         </div>
 
 <script>
+$(document).on("click",".post-meta-like",function (ev){
+    var id_publicacion=$(this).data('id-publicacion');
+    $.post(baseurl+"usuarios/reaccionar",{"id_publicacion": id_publicacion,"id_reaccion":"1"},function(data){
+console.log(data);
+$("#interezantes-span-pl-"+id_publicacion).html(data.numero_iterezantes+" Interezantes");
+$("#icono_reacciona-pl-"+id_publicacion).css("color","red");
 
+    },"json");
+});
      // Función para reproducir el video
     function playVideo(iframe) {
         iframe[0].contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');

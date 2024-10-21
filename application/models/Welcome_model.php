@@ -116,4 +116,14 @@ public function get_user_name($id){
         return false; // Si no es una URL válida de YouTube
     }
 }
+public function get_reacciones ($id_publicacion){
+    $numero=$this->db->query("select count(*) as numero from reacciones_a_publicacion where id_publicacion=".$id_publicacion)->result_array();     
+        $numero=$numero[0]['numero'];
+        return $numero;
+}
+public function get_reaccione ($id_publicacion){
+    
+    $reaccion=$this->db->get_where("reacciones_a_publicacion",array("id_usuario_reacciona"=>$_SESSION['user_var']->id,"id_publicacion"=>$id_publicacion))->row();
+    return $reaccion;
+}
 }
