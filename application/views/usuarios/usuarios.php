@@ -546,10 +546,11 @@ if($url_emb==true){
 <script>
 $(document).on("click",".post-meta-like",function (ev){
     var id_publicacion=$(this).data('id-publicacion');
+    $("#icono_reacciona-pl-"+id_publicacion).css("color","red");
     $.post(baseurl+"usuarios/reaccionar",{"id_publicacion": id_publicacion,"id_reaccion":"1"},function(data){
 console.log(data);
 $("#interezantes-span-pl-"+id_publicacion).html(data.numero_iterezantes+" Interezantes");
-$("#icono_reacciona-pl-"+id_publicacion).css("color","red");
+
 
     },"json");
 });
