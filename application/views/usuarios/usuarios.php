@@ -553,7 +553,7 @@ $(document).on("click",".post-meta-like",function (ev){
     var id_publicacion=$(this).data('id-publicacion');
     $("#icono_reacciona-pl-"+id_publicacion).css("color","red");
     $.post(baseurl+"usuarios/reaccionar",{"id_publicacion": id_publicacion,"id_reaccion":"1"},function(data){
-//console.log(data);
+console.log(data);
 $("#interezantes-span-pl-"+id_publicacion).html("");
 $("#div-interezantes-span-pl-"+id_publicacion).html(data.numero_iterezantes+" Interezantes");
 
@@ -572,18 +572,18 @@ $("#div-interezantes-span-pl-"+id_publicacion).html(data.numero_iterezantes+" In
 
     // Configurar el IntersectionObserver para detectar cuando el iframe es visible
     const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {//console.log(entry.target.id);
+        entries.forEach(entry => {console.log(entry.target.id);
             const iframe = $('#'+entry.target.id); // Selecciona el iframe
 
             if (entry.isIntersecting) {
                 // Si el iframe está en el área visible, reproducir el video
-                //console.log('El video es visible, reproduciendo...');
+                console.log('El video es visible, reproduciendo...');
                                     playVideo(iframe);    
 
                 
             } else {
                 // Si el iframe no está visible, pausar el video
-                //console.log('El video no es visible, pausando...');
+                console.log('El video no es visible, pausando...');
                  pauseVideo(iframe);
                 
             }
@@ -602,12 +602,12 @@ $("#div-interezantes-span-pl-"+id_publicacion).html(data.numero_iterezantes+" In
                     }else{
                         
                     }
-                    //console.log("yes"+id_publicacion);
+                    console.log("yes"+id_publicacion);
                     if(inicia){
                  var view_ok=$(iframe).data('view-ok');
                  if(view_ok=="no"){
                         $.post(baseurl+"usuarios/views",{"id_publicacion": id_publicacion},function(data){
-                             //console.log(data);
+                             console.log(data);
                              $(iframe).data('view-ok',"si");
                                 $("#views-span-pl-"+id_publicacion).html("");
                                 $("#div-views-span-pl-"+id_publicacion).html(data.conteo);
