@@ -231,7 +231,7 @@
                                 <div class="share-content-box w-100">
                                     <form id="pl1" class="share-text-box" action="<?=base_url(); ?>usuarios/publicar1" method="post">
                                         <textarea  name="share" class="share-text-field" aria-disabled="true" autofocus  placeholder="Di algunas cosas" ></textarea>
-                                        <button class="btn-share" type="submit">Iniciar</button>
+                                        <button class="btn-share" type="submit">Publicar</button>
 
                                     </form>
                                 </div>
