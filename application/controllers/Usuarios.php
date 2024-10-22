@@ -95,7 +95,8 @@ $diff_in_seconds = $interval->h * 60 + $interval->i;
 		}else{
 			$this->db->insert("view_user_publicacion",array("id_publicacion"=>$_POST['id_publicacion'],"id_usuario"=>$_SESSION['user_var']->id,"conteo"=>1,"fecha"=>date("Y-m-d H:i:s")));
 		}
-		echo json_encode(array("conteo"=>$count,"s"=>$diff_in_seconds,"id"=>$vista->id,"fe"=>$date_now_datetime->format("Y-m-d H:i:s")));
+		$numero=$this->welcome->get_vistas($_POST['id_publicacion']);
+		echo json_encode(array("conteo"=>$numero,"s"=>$diff_in_seconds,"id"=>$vista->id,"fe"=>$date_now_datetime->format("Y-m-d H:i:s")));
 	}
 
 
