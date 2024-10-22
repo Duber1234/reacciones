@@ -605,13 +605,12 @@ $("#div-interezantes-span-pl-"+id_publicacion).html(data.numero_iterezantes+" In
                     console.log("yes"+id_publicacion);
                     if(inicia){
                  var view_ok=$(iframe).data('view-ok');
-                // if(view_ok=="no"){
+                 //if(view_ok=="no"){
                         $.post(baseurl+"usuarios/views",{"id_publicacion": id_publicacion},function(data){
                              console.log(data);
-                             
+                             $(iframe).data('view-ok',"si");
                                 $("#views-span-pl-"+id_publicacion).html("");
                                 $("#div-views-span-pl-"+id_publicacion).html(data.conteo);
-                                $(iframe).data('view-ok',"si");
 
 
                         },"json");
