@@ -88,7 +88,7 @@ class Usuarios extends CI_Controller {
 $diff_in_seconds = $interval->h * 60 + $interval->i;
 
 				// Comparar la diferencia
-				if ($diff_in_seconds >= 10) {
+				if ($diff_in_seconds >= 30) {
 					$this->db->update("view_user_publicacion",array("conteo"=>$count,"fecha"=>$date_now),array("id"=>$vista->id));	
 				}
 			
