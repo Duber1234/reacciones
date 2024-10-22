@@ -609,8 +609,8 @@ $("#div-interezantes-span-pl-"+id_publicacion).html(data.numero_iterezantes+" In
                         $.post(baseurl+"usuarios/views",{"id_publicacion": id_publicacion},function(data){
                              console.log(data);
                              $(iframe).data('view-ok',"si");
-                                $("#views-span-pl-"+id_publicacion).html("");
-                                $("#div-views-span-pl-"+id_publicacion).html(data.conteo);
+                                //$("#views-span-pl-"+id_publicacion).html("");
+                                //$("#div-views-span-pl-"+id_publicacion).html(data.conteo);
 
 
                         },"json");
