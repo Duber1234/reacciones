@@ -263,7 +263,7 @@
                         <!-- share box end -->
  <!-- inicio publicaciones -->
 
- <?php $i1=0; foreach ($lista_p as $key => $pl) {
+ <?php $i1=0; $id_ultimo=$lista_p[0]['id'];foreach ($lista_p as $key => $pl) {
 $url_emb=$this->welcome->convertir_a_embed($pl['texto']);
 if($url_emb==true){
     ?>
@@ -547,6 +547,8 @@ if($url_emb==true){
         </div>
 
 <script>
+    var inicia=false;
+    var sw=false;
 $(document).on("click",".post-meta-like",function (ev){
     var id_publicacion=$(this).data('id-publicacion');
     $("#icono_reacciona-pl-"+id_publicacion).css("color","red");
@@ -585,7 +587,23 @@ $("#div-interezantes-span-pl-"+id_publicacion).html(data.numero_iterezantes+" In
                  pauseVideo(iframe);
                 
             }
-            var id_publicacion=$(iframe).data('id-publicacion');
+
+            
+                
+                    var id_publicacion=$(iframe).data('id-publicacion');
+                    if(id_publicacion==<?=$id_ultimo ?>){
+                        if(sw==false){
+                            sw=true;
+                        }else{
+                            inicia=true;
+                        }
+                        
+                        
+                    }else{
+                        
+                    }
+                    console.log("yes"+id_publicacion);
+                    if(inicia){
                  var view_ok=$(iframe).data('view-ok');
                  if(view_ok=="no"){
                         $.post(baseurl+"usuarios/views",{"id_publicacion": id_publicacion},function(data){
@@ -597,6 +615,7 @@ $("#div-interezantes-span-pl-"+id_publicacion).html(data.numero_iterezantes+" In
 
                         },"json");
                  }
+            }
                     
         });
     }, { threshold: 1.0 }); // 50% del iframe debe estar visible

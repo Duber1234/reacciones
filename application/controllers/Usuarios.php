@@ -88,14 +88,14 @@ class Usuarios extends CI_Controller {
 $diff_in_seconds = $interval->h * 60 + $interval->i;
 
 				// Comparar la diferencia
-				if ($diff_in_seconds >= 50) {
-					$this->db->update("view_user_publicacion",array("conteo"=>$count),array("id"=>$vista->id));	
+				if ($diff_in_seconds >= 10) {
+					$this->db->update("view_user_publicacion",array("conteo"=>$count,"fecha"=>$date_now),array("id"=>$vista->id));	
 				}
 			
 		}else{
 			$this->db->insert("view_user_publicacion",array("id_publicacion"=>$_POST['id_publicacion'],"id_usuario"=>$_SESSION['user_var']->id,"conteo"=>1,"fecha"=>date("Y-m-d H:i:s")));
 		}
-		echo json_encode(array("conteo"=>$count,"s"=>$diff_in_seconds));
+		echo json_encode(array("conteo"=>$count,"s"=>$diff_in_seconds,"id"=>$vista->id,"fe"=>$date_now_datetime->format("Y-m-d H:i:s")));
 	}
 
 
