@@ -307,7 +307,7 @@ if($url_emb==true){
                                 <?php } ?>
                                 
                                  <div class=""  >
-                                <iframe id="video<?=$pl['id']  ?>" class="framesx divs_frame" src="<?=$url_emb ?>?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  web-share;"  allowfullscreen ></iframe>
+                                <iframe data-view-ok="no" data-id-publicacion="<?=$pl['id'] ?>" id="video<?=$pl['id']  ?>" class="framesx divs_frame" src="<?=$url_emb ?>?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  web-share;"  allowfullscreen ></iframe>
                                 </div>
 
                                 <div class="post-meta">
@@ -328,8 +328,11 @@ if($url_emb==true){
                                         </li>
                                         <li>
                                             <button class="post-share">
-                                                <i class="bi bi-share"></i>
-                                                <span>08</span>
+                                                <?php $vistas_p=$this->welcome->get_vistas($pl['id']); 
+                                            
+                                    ?>
+                                                <i <?= ($vistas_p>0)?'style="color:red"':''  ?> class="bi bi-play-button" id="icono_view-pl-<?=$pl['id'] ?>"></i>
+                                                    <span id="views-span-pl-<?=$pl['id'] ?>"></span><small id="div-views-span-pl-<?=$pl['id'] ?>"><?=$vistas_p ?></small>
                                             </button>
                                         </li>
                                     </ul>
@@ -582,6 +585,19 @@ $("#div-interezantes-span-pl-"+id_publicacion).html(data.numero_iterezantes+" In
                  pauseVideo(iframe);
                 
             }
+            var id_publicacion=$(iframe).data('id-publicacion');
+                 var view_ok=$(iframe).data('view-ok');
+                 if(view_ok=="no"){
+                        $.post(baseurl+"usuarios/views",{"id_publicacion": id_publicacion},function(data){
+                             console.log(data);
+                             $(iframe).data('view-ok',"si");
+                                $("#views-span-pl-"+id_publicacion).html("");
+                                $("#div-views-span-pl-"+id_publicacion).html(data.conteo);
+
+
+                        },"json");
+                 }
+                    
         });
     }, { threshold: 1.0 }); // 50% del iframe debe estar visible
 $('.video-iframe').each(function() {

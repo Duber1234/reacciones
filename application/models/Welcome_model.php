@@ -126,4 +126,9 @@ public function get_reaccione ($id_publicacion){
     $reaccion=$this->db->get_where("reacciones_a_publicacion",array("id_usuario_reacciona"=>$_SESSION['user_var']->id,"id_publicacion"=>$id_publicacion))->row();
     return $reaccion;
 }
+public function get_vistas($id_publicacion){
+    $numero=$this->db->query("select sum(conteo) as numero from view_user_publicacion where id_publicacion=".$id_publicacion)->result_array();     
+    $numero=$numero[0]['numero'];
+    return $numero;
+}
 }

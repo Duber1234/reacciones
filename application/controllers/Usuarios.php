@@ -70,6 +70,33 @@ class Usuarios extends CI_Controller {
 		$numero=$this->welcome->get_reacciones($_POST['id_publicacion']);
 		echo json_encode(array("numero_iterezantes"=>$numero));
 	}
+	public function views(){
+		$vista=$this->db->get_where("view_user_publicacion",array("id_usuario"=>$_SESSION['user_var']->id,"id_publicacion"=>$_POST['id_publicacion']))->row();
+		$count=1;
+		$diff_in_seconds=1;
+		if(isset($vista)){
+			$count=$vista->conteo;
+			$count++;
+			
+			$date_now=date("Y-m-d H:i:s");
+
+			$fecha_last_datetime = new DateTime($vista->fecha);
+				$date_now_datetime = new DateTime();
+
+				// Calcular la diferencia en minutos
+				$interval = $date_now_datetime->diff($fecha_last_datetime);
+$diff_in_seconds = $interval->h * 60 + $interval->i;
+
+				// Comparar la diferencia
+				if ($diff_in_seconds >= 50) {
+					$this->db->update("view_user_publicacion",array("conteo"=>$count),array("id"=>$vista->id));	
+				}
+			
+		}else{
+			$this->db->insert("view_user_publicacion",array("id_publicacion"=>$_POST['id_publicacion'],"id_usuario"=>$_SESSION['user_var']->id,"conteo"=>1,"fecha"=>date("Y-m-d H:i:s")));
+		}
+		echo json_encode(array("conteo"=>$count,"s"=>$diff_in_seconds));
+	}
 
 
 }
