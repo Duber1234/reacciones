@@ -57,6 +57,16 @@
     <script src="<?=base_url()?>assets/js/plugins/isotope.pkgd.min.js"></script>
     <!-- Main JS -->
     <script src="<?=base_url()?>assets/js/main.js?v=<?php echo time(); ?>"></script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16573589143">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16573589143');
+</script>
 </head>
 <style type="text/css">
 .btn-mnu{
