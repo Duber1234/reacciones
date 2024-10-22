@@ -316,7 +316,7 @@ if($url_emb==true){
                                     ?>
                                     <button class="post-meta-like" data-id-publicacion="<?=$pl['id'] ?>">
                                         <i <?= (!empty($reaccione_us))?'style="color:red"':''  ?> class="bi bi-heart-beat" id="icono_reacciona-pl-<?=$pl['id'] ?>"></i>
-                                        <span id="interezantes-span-pl-<?=$pl['id'] ?>"><?=$reacciones_p ?> Interezantes</span>
+                                        <span id="interezantes-span-pl-<?=$pl['id'] ?>"></span><small id="div-interezantes-span-pl-<?=$pl['id'] ?>"><?=$reacciones_p ?> Interezantes</small>
                                         
                                     </button>
                                     <ul class="comment-share-meta">
@@ -549,7 +549,8 @@ $(document).on("click",".post-meta-like",function (ev){
     $("#icono_reacciona-pl-"+id_publicacion).css("color","red");
     $.post(baseurl+"usuarios/reaccionar",{"id_publicacion": id_publicacion,"id_reaccion":"1"},function(data){
 console.log(data);
-$("#interezantes-span-pl-"+id_publicacion).html(data.numero_iterezantes+" Interezantes");
+$("#interezantes-span-pl-"+id_publicacion).html("");
+$("#div-interezantes-span-pl-"+id_publicacion).html(data.numero_iterezantes+" Interezantes");
 
 
     },"json");
