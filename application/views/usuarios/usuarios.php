@@ -3,6 +3,10 @@
         width: 100%;
         height: 440px;
     }
+    .divs_videos{
+        width: 100%;
+        height: 380px;
+    }
 
 </style>
         <div class="main-wrapper pt-80">
@@ -317,9 +321,10 @@ if($url_emb!=false){
                                
                                 </div>
                             <?php }else{?>
-                                <h1><?=$pl['titulo'] ?></h1>
+                                <h3><?=$pl['titulo'] ?></h1>
+                                <h4><?=$pl['genero'] ?></h1>
                                <div class="plyr-video">
-                                    <video controls  preload   class="divs_frame">
+                                    <video controls  preload   class="divs_videos">
                                   <source src="<?=base_url() ?>/assets/PELICULAS/<?=$pl['texto'] ?>" type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
