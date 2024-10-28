@@ -265,7 +265,7 @@
  <!-- inicio publicaciones -->
 <div class="plyr__video-embed plyr-video">
  <video controls autoplay loop muted width="100%" height="240">
-                                  <source src="<?=base_url() ?>/assets/PELICULAS/pelicula_romantica_1.avi" type="video/mp4">
+                                  <source src="<?=base_url() ?>/assets/PELICULAS/1.mp4" type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
                                     <div class="plyr__video-embed plyr-video">
