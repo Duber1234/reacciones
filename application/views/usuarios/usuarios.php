@@ -263,7 +263,12 @@
                         </div>
                         <!-- share box end -->
  <!-- inicio publicaciones -->
-
+<div class="plyr__video-embed plyr-video">
+ <video controls autoplay loop muted width="100%" height="240">
+                                  <source src="<?=base_url() ?>/assets/PELICULAS/pelicula_romantica_1.avi" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <div class="plyr__video-embed plyr-video">
  <?php $i1=0; $id_ultimo=$lista_p[0]['id'];foreach ($lista_p as $key => $pl) {
 $url_emb=$this->welcome->convertir_a_embed($pl['texto']);
 if($url_emb==true){
@@ -311,12 +316,6 @@ if($url_emb==true){
                                 <iframe data-view-ok="no" data-id-publicacion="<?=$pl['id'] ?>" id="video<?=$pl['id']  ?>" class="framesx divs_frame" src="<?=$url_emb ?>?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  web-share;"  allowfullscreen ></iframe>
                                
                                 </div>
-                                <div class="plyr__video-embed plyr-video">
- <video controls autoplay loop muted width="100%" height="240">
-                                  <source src="<?=base_url() ?>/assets/PELICULAS/pelicula_romantica_1.avi" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                    <div class="plyr__video-embed plyr-video">
                                 <div class="post-meta">
                                     <?php $reacciones_p=$this->welcome->get_reacciones($pl['id']); 
                                             $reaccione_us=$this->welcome->get_reaccione($pl['id']);
