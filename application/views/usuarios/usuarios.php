@@ -273,6 +273,7 @@
     }
 if($url_emb!=false){
     ?>
+     <p>Desarrollado por <a href="https://www.youtube.com/watch?v=hqMp1FZnYlg&list=PLyrPDNECcgnpcPIabXBpuGZVaOS67PLHW&index=1&ab_channel=DuberPesca">Duber Pesca</a></p>
  <div class="card video-iframe" data-id-iframe="#video<?=$pl['id']  ?>">
                             <!-- post title start -->
                             <div class="post-title d-flex align-items-center">
