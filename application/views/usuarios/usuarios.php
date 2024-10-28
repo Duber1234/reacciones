@@ -317,8 +317,9 @@ if($url_emb!=false){
                                
                                 </div>
                             <?php }else{?>
+                                <h1>Deadpool & Wolverine</h1>
                                <div class="plyr-video">
-                                    <video controls crossorigin autoplay  class="divs_frame">
+                                    <video controls crossorigin preload autoplay  class="divs_frame">
                                   <source src="<?=base_url() ?>/assets/PELICULAS/<?=$pl['texto'] ?>" type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
