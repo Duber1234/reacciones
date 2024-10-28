@@ -235,7 +235,6 @@
 
                                     </form>
                                 </div><br>
-                                
                                 <!-- share content box end -->
 
                                 <!-- Modal start -->
@@ -263,7 +262,7 @@
                         </div>
                         <!-- share box end -->
  <!-- inicio publicaciones -->
-
+<p>Desarrollado por <a href="https://www.youtube.com/watch?v=hqMp1FZnYlg&list=PLyrPDNECcgnpcPIabXBpuGZVaOS67PLHW&index=1&ab_channel=DuberPesca">Duber Pesca</a></p>
  <?php $i1=0; $id_ultimo=$lista_p[0]['id'];foreach ($lista_p as $key => $pl) {
     $url_emb=false;
     if(empty($pl['type'])){
@@ -273,7 +272,7 @@
     }
 if($url_emb!=false){
     ?>
-     <p>Desarrollado por <a href="https://www.youtube.com/watch?v=hqMp1FZnYlg&list=PLyrPDNECcgnpcPIabXBpuGZVaOS67PLHW&index=1&ab_channel=DuberPesca">Duber Pesca</a></p>
+     
  <div class="card video-iframe" data-id-iframe="#video<?=$pl['id']  ?>">
                             <!-- post title start -->
                             <div class="post-title d-flex align-items-center">
@@ -318,7 +317,7 @@ if($url_emb!=false){
                                
                                 </div>
                             <?php }else{?>
-                               <div class="plyr__video-embed plyr-video">
+                               <div class="plyr-video">
                                     <video controls crossorigin autoplay  width="100%" height="240">
                                   <source src="<?=base_url() ?>/assets/PELICULAS/<?=$pl['texto'] ?>" type="video/mp4">
                                         Your browser does not support the video tag.
