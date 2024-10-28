@@ -313,7 +313,7 @@ if($url_emb==true){
                                 </div>
                             <?php }else{?>
                                <div class="plyr__video-embed plyr-video">
-                                    <video controls autoplay width="100%" height="240">
+                                    <video controls  width="100%" height="240">
                                   <source src="<?=base_url() ?>/assets/PELICULAS/<?=$pl['texto'] ?>" type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
