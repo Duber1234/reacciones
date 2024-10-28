@@ -265,8 +265,13 @@
  <!-- inicio publicaciones -->
 
  <?php $i1=0; $id_ultimo=$lista_p[0]['id'];foreach ($lista_p as $key => $pl) {
-$url_emb=$this->welcome->convertir_a_embed($pl['texto']);
-if($url_emb==true){
+    $url_emb=false;
+    if(empty($pl['type'])){
+        $url_emb=$this->welcome->convertir_a_embed($pl['texto']);
+    }else if($pl['type']==1){
+        $url_emb=true;
+    }
+if($url_emb!=false){
     ?>
  <div class="card video-iframe" data-id-iframe="#video<?=$pl['id']  ?>">
                             <!-- post title start -->
