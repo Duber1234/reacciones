@@ -230,7 +230,7 @@
                                 <!-- share content box start -->
                                 <div class="share-content-box w-100">
                                     <form id="pl1" class="share-text-box" action="<?=base_url(); ?>usuarios/publicar1" method="post">
-                                        <textarea  name="share" class="share-text-field" aria-disabled="true" autofocus  placeholder="Pega un enlace de Youtube / Paste a Youtube link" ></textarea>
+                                        <textarea  name="share" class="share-text-field" aria-disabled="true" placeholder="Pega un enlace de Youtube / Paste a Youtube link" ></textarea>
                                         <button class="btn-share" type="submit">Publicar</button>
 
                                     </form>
@@ -317,8 +317,8 @@ if($url_emb!=false){
                                
                                 </div>
                             <?php }else{?>
-                               <div class=" plyr-video">
-                                    <video controls crossorigin a  width="100%" height="240">
+                               <div class="plyr__video-embed plyr-video">
+                                    <video controls crossorigin autoplay  width="100%" height="240">
                                   <source src="<?=base_url() ?>/assets/PELICULAS/<?=$pl['texto'] ?>" type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
