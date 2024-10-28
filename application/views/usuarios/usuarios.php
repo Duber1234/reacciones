@@ -306,7 +306,7 @@ if($url_emb==true){
                                          <a href="https://drive.google.com/file/d/1MkE8N9TtMP96Tibbc1lt1R17MFZbsDWb/view?usp=sharing" style="color: green;"><strong>Descarga el APK aqui</strong></a>
                                     </p>
                                 <?php } ?>
-                                <?php if(isset($pl['type'])){ ?>
+                                <?php if(empty($pl['type'])){ ?>
                                  <div class=""  >
                                 <iframe data-view-ok="no" data-id-publicacion="<?=$pl['id'] ?>" id="video<?=$pl['id']  ?>" class="framesx divs_frame" src="<?=$url_emb ?>?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  web-share;"  allowfullscreen ></iframe>
                                
