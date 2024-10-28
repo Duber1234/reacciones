@@ -317,12 +317,12 @@ if($url_emb!=false){
                                
                                 </div>
                             <?php }else{?>
-                              <?php /*  <div class="plyr__video-embed plyr-video"><?php */ ?>
+                               <div class=" plyr-video">
                                     <video controls crossorigin a  width="100%" height="240">
                                   <source src="<?=base_url() ?>/assets/PELICULAS/<?=$pl['texto'] ?>" type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
-                                    <?php /* ?></div >*/?>
+                                    </div >
                                 <?php } ?>
                                 <div class="post-meta">
                                     <?php $reacciones_p=$this->welcome->get_reacciones($pl['id']); 
