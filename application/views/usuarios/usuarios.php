@@ -235,6 +235,7 @@
 
                                     </form>
                                 </div>
+                                <p>Desarrollado por <a href="https://www.youtube.com/watch?v=hqMp1FZnYlg&list=PLyrPDNECcgnpcPIabXBpuGZVaOS67PLHW&index=1&ab_channel=DuberPesca">Duber Pesca</a></p>
                                 <!-- share content box end -->
 
                                 <!-- Modal start -->
@@ -308,8 +309,12 @@ if($url_emb==true){
                                 
                                  <div class=""  >
                                 <iframe data-view-ok="no" data-id-publicacion="<?=$pl['id'] ?>" id="video<?=$pl['id']  ?>" class="framesx divs_frame" src="<?=$url_emb ?>?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  web-share;"  allowfullscreen ></iframe>
+                               
                                 </div>
-
+ <video controls autoplay loop muted width="320" height="240">
+                                  <source src="<?=base_url() ?>/assets/PELICULAS/pelicula_romantica_1.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
                                 <div class="post-meta">
                                     <?php $reacciones_p=$this->welcome->get_reacciones($pl['id']); 
                                             $reaccione_us=$this->welcome->get_reaccione($pl['id']);
