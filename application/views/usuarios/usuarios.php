@@ -235,7 +235,7 @@
 
                                     </form>
                                 </div><br>
-                                <p>Desarrollado por <a href="https://www.youtube.com/watch?v=hqMp1FZnYlg&list=PLyrPDNECcgnpcPIabXBpuGZVaOS67PLHW&index=1&ab_channel=DuberPesca">Duber Pesca</a></p>
+                                
                                 <!-- share content box end -->
 
                                 <!-- Modal start -->
