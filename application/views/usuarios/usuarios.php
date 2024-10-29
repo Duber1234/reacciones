@@ -329,12 +329,12 @@ if($url_emb!=false){
                                 <h3><?=$pl['titulo'] ?></h1>
                                 <h6><?=$pl['genero'] ?></h6>
                                 
-                               <div class="video-js divs_videos">
-                                    <video controls preload="none" width="100%" height="300px" crossOrigin  poster="<?=base_url()  ?>assets/images/logo/logo1.png" data-setup="{}">
+                              
+                                    <video class="video-js divs_videos" controls preload="none" width="100%" height="300px" crossOrigin  poster="<?=base_url()  ?>assets/images/logo/logo1.png" data-setup="{}" data-id-publicacion="<?=$pl['id'] ?>">
                                   <source src="<?=base_url() ?>/assets/PELICULAS/<?=$pl['texto'] ?>" type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
-                                    </div >
+                                   
                                     <!--div class="divs_videos">
                                     <div id="plyr-video2" >
                                     
@@ -725,6 +725,11 @@ elementosConClase.forEach(elemento => {
       //elemento.classList.add('animacion'); // Agregar una clase para activar una animación
     }
   });
+});
+const elementosConClase3 = document.querySelectorAll('.divs_videos');
+elementosConClase3.forEach(function (elm){
+    var idx1 =$(elm).data("id-publicacion");
+    var player = videojs(idx1);
 });
 const elementosConClase2 = document.querySelectorAll('.video-patrocinador');
 
