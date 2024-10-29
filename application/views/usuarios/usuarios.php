@@ -15,7 +15,7 @@
 }
 
 .pelicula h3 {
-  font-size: 28px;
+  
   font-weight: bold;
   color: #fff;
   background-color: #3498db;
@@ -26,7 +26,7 @@
 }
 
 .pelicula h6 {
-  font-size: 18px;
+ 
   color: red;
   font-weight: normal;
   text-transform: uppercase;
