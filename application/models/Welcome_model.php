@@ -131,4 +131,7 @@ public function get_vistas($id_publicacion){
     $numero=$numero[0]['numero'];
     return $numero;
 }
+public function get_patrocinadores_anuncios(){
+   return $this->db->get_where("publicacion",array("type"=>2))->result_array();
+}
 }

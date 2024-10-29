@@ -29,6 +29,7 @@ class Usuarios extends CI_Controller {
 		
 		$this->welcome->cargar();
 		$data['lista_p']=$this->welcome->get_lista_publicaciones();
+		$data['lista_patrocinadores_anuncios']=$this->welcome->get_patrocinadores_anuncios();
 
 		$this->load->view('base/header.php');
 		$this->load->view('usuarios/usuarios',$data);
@@ -88,7 +89,7 @@ class Usuarios extends CI_Controller {
 $diff_in_seconds = $interval->h * 60 + $interval->i;
 
 				// Comparar la diferencia
-				if ($diff_in_seconds >= 30) {
+				if ($diff_in_seconds >= 15) {
 					$this->db->update("view_user_publicacion",array("conteo"=>$count,"fecha"=>$date_now),array("id"=>$vista->id));	
 				}
 			

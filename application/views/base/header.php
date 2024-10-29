@@ -57,6 +57,7 @@
     <script src="<?=base_url()?>assets/js/plugins/isotope.pkgd.min.js"></script>
     <!-- Main JS -->
     <script src="<?=base_url()?>assets/js/main.js?v=<?php echo time(); ?>"></script>
+    <script src="<?=base_url()?>assets/js/jquery.waypoints.js"></script>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16573589143">
 </script>

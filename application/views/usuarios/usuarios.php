@@ -267,7 +267,7 @@
                         <!-- share box end -->
  <!-- inicio publicaciones -->
 <p>Desarrollado por <a href="https://www.youtube.com/watch?v=hqMp1FZnYlg&list=PLyrPDNECcgnpcPIabXBpuGZVaOS67PLHW&index=1&ab_channel=DuberPesca">Duber Pesca</a></p>
- <?php $i1=0; $id_ultimo=$lista_p[0]['id'];foreach ($lista_p as $key => $pl) {
+ <?php $i1=0;$i2=0; $id_ultimo=$lista_p[0]['id'];foreach ($lista_p as $key => $pl) {
     $url_emb=false;
     if(empty($pl['type'])){
         $url_emb=$this->welcome->convertir_a_embed($pl['texto']);
@@ -275,9 +275,14 @@
         $url_emb=true;
     }
 if($url_emb!=false){
+    if($i2==count($lista_patrocinadores_anuncios)){
+        $i2=0;
+    }
+    $pl_patrocinador=$lista_patrocinadores_anuncios[$i2];
+    $i2++
     ?>
      
- <div class="card video-iframe" data-id-iframe="#video<?=$pl['id']  ?>">
+ <div class="card video-iframe " data-id-iframe="<?=$pl['id']  ?>" data-id-publicacion="<?=$pl['id']  ?>">
                             <!-- post title start -->
                             <div class="post-title d-flex align-items-center">
                                 <!-- profile picture end -->
@@ -343,7 +348,7 @@ if($url_emb!=false){
                                         <li>
                                             <button class="post-comment">
                                                 <i class="bi bi-chat-bubble"></i>
-                                                <span>36</span>
+                                                <span>0</span>
                                             </button>
                                         </li>
                                         <li>
@@ -353,6 +358,43 @@ if($url_emb!=false){
                                     ?>
                                                 <i <?= ($vistas_p>0)?'style="color:red"':''  ?> class="bi bi-play-button" id="icono_view-pl-<?=$pl['id'] ?>"></i>
                                                     <span id="views-span-pl-<?=$pl['id'] ?>"></span><small id="div-views-span-pl-<?=$pl['id'] ?>"><?=$vistas_p ?></small>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card video-patrocinador" data-id-publicacion="<?=$pl_patrocinador['id']  ?>">
+                            <!-- post title start -->
+                            <div class="post-title d-flex align-items-center">
+                                Patrocinador
+                            </div>
+                            <!-- post title start -->
+                            <div class="post-content">
+                              
+                                <div class="post-meta">
+                                    <?php $reacciones_p=$this->welcome->get_reacciones($pl_patrocinador['id']); 
+                                            $reaccione_us=$this->welcome->get_reaccione($pl_patrocinador['id']);
+                                    ?>
+                                    <button class="post-meta-like-p" data-id-publicacion="<?=$pl_patrocinador['id'] ?>">
+                                        <i <?= (!empty($reaccione_us))?'style="color:red"':''  ?> class="bi bi-heart-beat icono_reacciona-pl-p-<?=$pl_patrocinador['id'] ?>" id="icono_reacciona-pl-p-<?=$pl_patrocinador['id'] ?>"></i>
+                                        <span class="interezantes-span-pl-p-<?=$pl_patrocinador['id'] ?>" id="interezantes-span-pl-p-<?=$pl_patrocinador['id'] ?>"></span><small class="div-interezantes-span-pl-p-<?=$pl_patrocinador['id'] ?>" id="div-interezantes-span-pl-p-<?=$pl_patrocinador['id'] ?>"><?=$reacciones_p ?> Interezantes</small>
+                                        
+                                    </button>
+                                    <ul class="comment-share-meta">
+                                        <li>
+                                            <button class="post-comment">
+                                                <i class="bi bi-chat-bubble"></i>
+                                                <span>0</span>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="post-share">
+                                                <?php $vistas_p=$this->welcome->get_vistas($pl_patrocinador['id']); 
+                                            
+                                    ?>
+                                                <i <?= ($vistas_p>0)?'style="color:red"':''  ?> class="bi bi-play-button icono_view-pl-p-<?=$pl_patrocinador['id'] ?>" id="icono_view-pl-p-<?=$pl_patrocinador['id'] ?>"></i>
+                                                    <span  class="views-span-pl-p-<?=$pl_patrocinador['id']?>" id="views-span-pl-p-<?=$pl_patrocinador['id'] ?>"></span><small class="div-views-span-pl-p-<?=$pl_patrocinador['id']?>" id="div-views-span-pl-p-<?=$pl_patrocinador['id'] ?>"><?=$vistas_p ?></small>
                                             </button>
                                         </li>
                                     </ul>
@@ -571,15 +613,58 @@ if($url_emb!=false){
     var sw=false;
 $(document).on("click",".post-meta-like",function (ev){
     var id_publicacion=$(this).data('id-publicacion');
-    $("#icono_reacciona-pl-"+id_publicacion).css("color","red");
+   interezantes_mov(id_publicacion,1);
+});
+$(document).on("click",".post-meta-like-p",function (ev){
+    var id_publicacion=$(this).data('id-publicacion');
+       interezantes_mov(id_publicacion,2);
+});
+
+function interezantes_mov(id_publicacion,type){
+    
+    if(type==1){
+            $("#icono_reacciona-pl-"+id_publicacion).css("color","red");
+    }else{
+            $(".icono_reacciona-pl-p-"+id_publicacion).css("color","red");
+    }
     $.post(baseurl+"usuarios/reaccionar",{"id_publicacion": id_publicacion,"id_reaccion":"1"},function(data){
-console.log(data);
-$("#interezantes-span-pl-"+id_publicacion).html("");
-$("#div-interezantes-span-pl-"+id_publicacion).html(data.numero_iterezantes+" Interezantes");
+        //console.log(data);
+        if(type==1){
+                    $("#interezantes-span-pl-"+id_publicacion).html("");
+                    $("#div-interezantes-span-pl-"+id_publicacion).html(data.numero_iterezantes+" Interezantes");            
+        }else{
+                    $(".interezantes-span-pl-p-"+id_publicacion).html("");
+            $(".div-interezantes-span-pl-p-"+id_publicacion).html(data.numero_iterezantes+" Interezantes");
+        }
+
 
 
     },"json");
-});
+}
+function views_mov(obj,tipo){
+                    var id_publicacion=$(obj).data('id-publicacion');
+                   
+                    console.log("yes"+id_publicacion);
+                    
+                 var view_ok=$(obj).data('view-ok');
+                 //if(view_ok=="no"){
+                        $.post(baseurl+"usuarios/views",{"id_publicacion": id_publicacion},function(data){
+                             //console.log(data);
+                             $(obj).data('view-ok',"si");
+                             if(tipo==1){
+                                $("#views-span-pl-"+id_publicacion).html("");
+                                $("#div-views-span-pl-"+id_publicacion).html(data.conteo);
+                             }else{
+                                $(".views-span-pl-p-"+id_publicacion).html("");
+                                $(".div-views-span-pl-p-"+id_publicacion).html(data.conteo);
+                             }
+                                
+
+
+                        },"json");
+                 //}
+            
+}
      // Función para reproducir el video
     function playVideo(iframe) {
         iframe[0].contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
@@ -591,61 +676,64 @@ $("#div-interezantes-span-pl-"+id_publicacion).html(data.numero_iterezantes+" In
     }
 
     // Configurar el IntersectionObserver para detectar cuando el iframe es visible
-    const observer = new IntersectionObserver((entries, observer) => {
+   /* const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {console.log(entry.target.id);
             const iframe = $('#'+entry.target.id); // Selecciona el iframe
 
             if (entry.isIntersecting) {
                 // Si el iframe está en el área visible, reproducir el video
                 console.log('El video es visible, reproduciendo...');
-                                    playVideo(iframe);    
+                                    //playVideo(iframe);    
 
                 
             } else {
                 // Si el iframe no está visible, pausar el video
                 console.log('El video no es visible, pausando...');
-                 pauseVideo(iframe);
+                // pauseVideo(iframe);
                 
             }
 
             
-                
-                    var id_publicacion=$(iframe).data('id-publicacion');
-                    if(id_publicacion==<?=$id_ultimo ?>){
-                        if(sw==false){
-                            sw=true;
-                        }else{
-                            inicia=true;
-                        }
-                        
-                        
-                    }else{
-                        
-                    }
-                    console.log("yes"+id_publicacion);
-                    if(inicia){
-                 var view_ok=$(iframe).data('view-ok');
-                 //if(view_ok=="no"){
-                        $.post(baseurl+"usuarios/views",{"id_publicacion": id_publicacion},function(data){
-                             console.log(data);
-                             $(iframe).data('view-ok',"si");
-                                $("#views-span-pl-"+id_publicacion).html("");
-                                $("#div-views-span-pl-"+id_publicacion).html(data.conteo);
-
-
-                        },"json");
-                 //}
-            }
+                var id_publicacion=$(iframe).data('id-publicacion');
+                   views_mov(id_publicacion);
                     
         });
-    }, { threshold: 1.0 }); // 50% del iframe debe estar visible
-$('.video-iframe').each(function() {
-    var el=$(this).data("id-iframe");
+    }, { threshold: 1.0 }); // 50% del iframe debe estar visible*/
 
-    observer.observe(document.querySelector(el));    
-});
+
+
 
     // Iniciar la observación del iframe
    
+const elementosConClase = document.querySelectorAll('.video-iframe');
 
+// Iterar sobre cada elemento y crear un Waypoint
+elementosConClase.forEach(elemento => {
+  new Waypoint({
+    element: elemento,
+ 
+    handler: function() {
+      views_mov(elemento,1)
+      // Aquí coloca tu código para ejecutar cuando el elemento sea visible
+      // Por ejemplo, mostrar un modal, iniciar una animación, etc.
+      //elemento.classList.add('animacion'); // Agregar una clase para activar una animación
+    }
+  });
+});
+const elementosConClase2 = document.querySelectorAll('.video-patrocinador');
+
+// Iterar sobre cada elemento y crear un Waypoint
+elementosConClase2.forEach(elemento => {
+  new Waypoint({
+    element: elemento,
+    offset: '50%', 
+    handler: function() {
+        console.log("sss")
+      views_mov(elemento,2)
+      // Aquí coloca tu código para ejecutar cuando el elemento sea visible
+      // Por ejemplo, mostrar un modal, iniciar una animación, etc.
+      //elemento.classList.add('animacion'); // Agregar una clase para activar una animación
+    }
+  });
+});
 </script>
