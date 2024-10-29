@@ -368,7 +368,7 @@ if($url_emb!=false){
                                 <h6><?=$pl['genero'] ?></h6>
                                 
                               
-                                    <video class="video-js divs_videos" controls preload="none" width="100%" height="300px" crossOrigin  poster="<?=base_url()  ?>assets/images/logo/logo1.png" data-setup="{}" data-id-publicacion="<?=$pl['id'] ?>" id="cinta-<?=$pl['id'] ?>">
+                                    <video class="video-js divs_videos" controls preload="none" width="100%" height="300px" poster="<?=base_url()  ?>assets/images/logo/logo1.png" data-setup="{}" data-id-publicacion="<?=$pl['id'] ?>" id="cinta-<?=$pl['id'] ?>">
                                   <source src="<?=base_url() ?>/assets/PELICULAS/<?=$pl['texto'] ?>" type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
