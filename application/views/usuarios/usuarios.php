@@ -770,7 +770,7 @@ elementosConClase3.forEach(function (elm){
     var idx1 =$(elm).data("id-publicacion");
     console.log(idx1);
     var idx1="cinta-"+idx1;
-    var player = videojs(idx1,{  preload: 'auto',
+    var player = videojs(idx1,{  preload: 'metadata',
   techOrder: ['html5'],
   html5: {
     hls: {
