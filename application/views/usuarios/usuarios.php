@@ -22,6 +22,7 @@
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .pelicula h6 {
@@ -29,6 +30,7 @@
   color: #666;
   font-weight: normal;
   text-transform: uppercase;
+  text-align: right;
 }
 
 </style>
