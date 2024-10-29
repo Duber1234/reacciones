@@ -732,7 +732,14 @@ elementosConClase3.forEach(function (elm){
     var idx1 =$(elm).data("id-publicacion");
     console.log(idx1);
     var idx1="cinta-"+idx1;
-    var player = videojs(""+idx1);
+    var player = videojs(idx1,{techOrder: ['html5'],
+          html5: {
+            hls: {
+              overrideNative: true
+            }
+          },
+          bufferSize: 300 // Tamaño del buffer en segundos
+    });
     player.on('fullscreenchange', function() {
     if (document.fullscreenElement) {
         // Si el video está en pantalla completa
