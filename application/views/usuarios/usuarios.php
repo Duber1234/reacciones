@@ -711,7 +711,7 @@ const elementosConClase = document.querySelectorAll('.video-iframe');
 elementosConClase.forEach(elemento => {
   new Waypoint({
     element: elemento,
- 
+ offset: '50%', 
     handler: function() {
       views_mov(elemento,1)
       // Aquí coloca tu código para ejecutar cuando el elemento sea visible
