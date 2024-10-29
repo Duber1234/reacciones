@@ -62,7 +62,7 @@
                                     <div class="profile-desc text-center">
                                         <h5 class="author"><a href="<?=base_url().'usuarios/perfil'?>">Usuario #<?=$_SESSION['user_var']->id ?></a></h5>
                                         <h4><?= $_SESSION['ip_user'] ?></h4>
-                                        <h6 class="author"> <a href="https://drive.google.com/file/d/1MkE8N9TtMP96Tibbc1lt1R17MFZbsDWb/view?usp=sharing" style="color: green;">Descarga el apk <br> aqui</a></h6>
+                                        <h6 class="author"> <a href="https://drive.google.com/file/d/1MkE8N9TtMP96Tibbc1lt1R17MFZbsDWb/view?usp=sharing" style="color: green;">Descarga el apk <br> aqui <img class="emoji2" width="10%" src="<?= base_url()."assets/images/icons/androide.png" ?>"></a></h6>
                                         <p>Hay Vamos, Gracias a Dios </p>
                                     </div>
                                 </div>
@@ -771,7 +771,7 @@ elementosConClase3.forEach(function (elm){
     console.log(idx1);
     var idx1="cinta-"+idx1;
     var player = videojs(idx1,{
-          bufferSize: 700 // Tamaño del buffer en segundos
+          bufferSize: 300 // Tamaño del buffer en segundos
     });
     player.on('fullscreenchange', function() {
     if (document.fullscreenElement) {
