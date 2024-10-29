@@ -234,7 +234,7 @@
                                 <!-- share content box start -->
                                 <div class="share-content-box w-100">
                                     <form id="pl1" class="share-text-box" action="<?=base_url(); ?>usuarios/publicar1" method="post">
-                                        <textarea  name="share" class="share-text-field" aria-disabled="true" placeholder="Pega un enlace de Youtube / Paste a Youtube link" ></textarea>
+                                        <textarea  name="share" class="share-text-field" aria-disabled="true" placeholder="Link Paster" ></textarea>
                                         <button class="btn-share" type="submit">Publicar</button>
 
                                     </form>
