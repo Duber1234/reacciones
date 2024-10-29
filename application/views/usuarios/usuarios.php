@@ -5,7 +5,7 @@
     }
     .divs_videos{
         width: 100%;
-        height: 150%;
+        //height: 150%;
     }
 
 </style>
@@ -328,6 +328,7 @@ if($url_emb!=false){
                             <?php }else{?>
                                 <h3><?=$pl['titulo'] ?></h1>
                                 <h6><?=$pl['genero'] ?></h6>
+                                <br><br>
                                <div class="plyr-video">
                                     <video controls class="divs_videos">
                                   <source src="<?=base_url() ?>/assets/PELICULAS/<?=$pl['texto'] ?>" type="video/mp4">
