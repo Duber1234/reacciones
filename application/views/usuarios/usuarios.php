@@ -329,8 +329,8 @@ if($url_emb!=false){
                                 <h3><?=$pl['titulo'] ?></h1>
                                 <h6><?=$pl['genero'] ?></h6>
                                 
-                               <div class="video-js ">
-                                    <video width="100%" height="300px" controls poster="<?=base_url()  ?>assets/images/logo/logo1.png" data-setup="{}">
+                               <div class="video-js divs_videos">
+                                    <video width="100%" height="300px" crossOrigin controls poster="<?=base_url()  ?>assets/images/logo/logo1.png" data-setup="{}">
                                   <source src="<?=base_url() ?>/assets/PELICULAS/<?=$pl['texto'] ?>" type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
