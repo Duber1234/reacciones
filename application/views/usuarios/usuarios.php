@@ -733,6 +733,15 @@ elementosConClase3.forEach(function (elm){
     console.log(idx1);
     var idx1="cinta-"+idx1;
     var player = videojs(""+idx1);
+    player.on('fullscreenchange', function() {
+    if (document.fullscreenElement) {
+        // Si el video está en pantalla completa
+            if (screen.orientation.type === 'portrait-primary') {
+              // Si el dispositivo está en orientación vertical
+              screen.orientation.lock('landscape'); // Forzar la orientación a horizontal
+            }
+          }
+    });
 });
 const elementosConClase2 = document.querySelectorAll('.video-patrocinador');
 
