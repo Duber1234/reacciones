@@ -293,7 +293,7 @@
                         </div> <?php */ ?>
                         <!-- share box end -->
  <!-- inicio publicaciones -->
- <div class="pelicula" style="text-align: center;padding-bottom: 10px; background-color: white;">
+ <div class="pelicula card" style="text-align: center;padding-bottom: 10px; background-color: white;">
 <h3>Desarrollado por <a href="https://www.youtube.com/watch?v=hqMp1FZnYlg&list=PLyrPDNECcgnpcPIabXBpuGZVaOS67PLHW&index=1&ab_channel=DuberPesca">Duber Pesca</a></h3>
 <p>Tambien Conocido Como <a href="https://www.youtube.com/watch?v=wvdFE9JSAMY&list=PL8YsFrZWXqYq0PH_OK84xK01twy9k0xZG&ab_channel=Matrix777COL">Matrix777Col</a></p>
 </div>
