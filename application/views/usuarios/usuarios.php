@@ -368,7 +368,14 @@ if($url_emb!=false){
                                 <h6><?=$pl['genero'] ?></h6>
                                 
                               
-                                    <video class="video-js divs_videos" controls preload="none" width="100%" height="300px" poster="<?=base_url()  ?>assets/images/logo/logo1.png" data-setup="{}" data-id-publicacion="<?=$pl['id'] ?>" id="cinta-<?=$pl['id'] ?>">
+                                    <video class="video-js divs_videos" controls preload="none" width="100%" height="300px" poster="<?=base_url()  ?>assets/images/logo/logo1.png" data-setup='{  preload: "metadata", techOrder: ["html5"],html5: {
+    hls: {
+      overrideNative: true,
+      // Configuraciones específicas de HLS para priorizar segmentos iniciales (si aplica)
+    }
+  },
+  bufferSize: 10
+    }' >
                                   <source src="<?=base_url() ?>/assets/PELICULAS/<?=$pl['texto'] ?>" type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
@@ -770,16 +777,7 @@ elementosConClase3.forEach(function (elm){
     var idx1 =$(elm).data("id-publicacion");
     console.log(idx1);
     var idx1="cinta-"+idx1;
-    var player = videojs(idx1,{  preload: 'metadata',
-  techOrder: ['html5'],
-  html5: {
-    hls: {
-      overrideNative: true,
-      // Configuraciones específicas de HLS para priorizar segmentos iniciales (si aplica)
-    }
-  },
-  bufferSize: 10
-    });
+    var player = videojs(idx1);
     player.on('fullscreenchange', function() {
     if (document.fullscreenElement) {
         // Si el video está en pantalla completa
@@ -791,7 +789,7 @@ elementosConClase3.forEach(function (elm){
     });
     player.on('loadedmetadata', function() {
   // Inicia la reproducción automáticamente
-  player.paused();
+ // player.paused();
 });
     //player.on('timeupdate', saveProgress(player));
 
