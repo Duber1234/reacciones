@@ -27,10 +27,12 @@
 
 .pelicula h6 {
   font-size: 18px;
-  color: #666;
+  color: red;
   font-weight: normal;
   text-transform: uppercase;
-  text-align: right;
+  text-align: center;
+  background-color: black;
+  padding-top: 15px;
 }
 
 </style>
