@@ -426,7 +426,7 @@
         <div class="mobile-header-wrapper sticky d-block d-lg-none">
             <div class="mobile-header position-relative ">
                 <div class="mobile-logo">
-                    <a href="index.html">
+                    <a href="<?=base_url() ?>">
                         <img src="<?=base_url()?>assets/images/logo/logo1.png" alt="logo">
                     </a>
                 </div>
