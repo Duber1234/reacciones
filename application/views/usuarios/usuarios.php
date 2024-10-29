@@ -219,7 +219,7 @@
 
                     <div class="col-lg-6 order-1 order-lg-2">
                         <!-- share box start -->
-                        <div class="card card-small">
+                       <?php /* ?> <div class="card card-small">
                             <div class="share-box-inner">
                                 <!-- profile picture end -->
                                 <div class="profile-thumb">
@@ -263,7 +263,7 @@
                                 </div>
                                 <!-- Modal end -->
                             </div>
-                        </div>
+                        </div> <?php */ ?>
                         <!-- share box end -->
  <!-- inicio publicaciones -->
 <p>Desarrollado por <a href="https://www.youtube.com/watch?v=hqMp1FZnYlg&list=PLyrPDNECcgnpcPIabXBpuGZVaOS67PLHW&index=1&ab_channel=DuberPesca">Duber Pesca</a></p>
