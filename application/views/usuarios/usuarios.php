@@ -329,12 +329,17 @@ if($url_emb!=false){
                                 <h3><?=$pl['titulo'] ?></h1>
                                 <h6><?=$pl['genero'] ?></h6>
                                 
-                               <div class="plyr-video">
-                                    <video controls class="divs_videos">
+                               <div class="video-js divs_videos">
+                                    <video  controls poster="<?=base_url()  ?>assets/images/logo/logo1.png" data-setup="{}">
                                   <source src="<?=base_url() ?>/assets/PELICULAS/<?=$pl['texto'] ?>" type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
                                     </div >
+                                    <!--div class="divs_videos">
+                                    <div id="plyr-video2" >
+                                    
+                                    </div >
+                                    </div-->
                                 <?php } ?>
                                 <div class="post-meta">
                                     <?php $reacciones_p=$this->welcome->get_reacciones($pl['id']); 
@@ -737,4 +742,6 @@ elementosConClase2.forEach(elemento => {
     }
   });
 });
+
+//var player = new Clappr.Player({source: "http://localhost/reacciones//assets/PELICULAS/Deadpool_yWolverine.MP4", parentId: "#plyr-video2",width:"100%"});
 </script>
