@@ -771,7 +771,7 @@ elementosConClase3.forEach(function (elm){
     console.log(idx1);
     var idx1="cinta-"+idx1;
     var player = videojs(idx1,{
-          bufferSize: 300 // Tamaño del buffer en segundos
+          bufferSize: 700 // Tamaño del buffer en segundos
     });
     player.on('fullscreenchange', function() {
     if (document.fullscreenElement) {
