@@ -371,7 +371,7 @@ if($url_emb!=false){
                             </div>
                             <!-- post title start -->
                             <div class="post-content">
-                              <img src="<?=base_url() ?>assets/images/logo/baner1.webp">
+                              <img src="<?=base_url()."assets/images/patrocinadores/".$pl_patrocinador['texto'] ?>">
                                 <div class="post-meta">
                                     <?php $reacciones_p=$this->welcome->get_reacciones($pl_patrocinador['id']); 
                                             $reaccione_us=$this->welcome->get_reaccione($pl_patrocinador['id']);
