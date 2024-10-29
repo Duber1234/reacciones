@@ -770,8 +770,15 @@ elementosConClase3.forEach(function (elm){
     var idx1 =$(elm).data("id-publicacion");
     console.log(idx1);
     var idx1="cinta-"+idx1;
-    var player = videojs(idx1,{
-          bufferSize: 500 // Tamaño del buffer en segundos
+    var player = videojs(idx1,{  preload: 'auto',
+  techOrder: ['html5'],
+  html5: {
+    hls: {
+      overrideNative: true,
+      // Configuraciones específicas de HLS para priorizar segmentos iniciales (si aplica)
+    }
+  },
+  bufferSize: 10
     });
     player.on('fullscreenchange', function() {
     if (document.fullscreenElement) {
@@ -782,6 +789,10 @@ elementosConClase3.forEach(function (elm){
             }
           }
     });
+    player.on('loadedmetadata', function() {
+  // Inicia la reproducción automáticamente
+  player.play();
+});
     //player.on('timeupdate', saveProgress(player));
 
     // Cargar el progreso al iniciar el reproductor
