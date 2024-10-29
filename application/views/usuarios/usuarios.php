@@ -782,10 +782,10 @@ elementosConClase3.forEach(function (elm){
             }
           }
     });
-    player.on('timeupdate', saveProgress(player));
+    //player.on('timeupdate', saveProgress(player));
 
     // Cargar el progreso al iniciar el reproductor
-    loadProgress();
+    //loadProgress();
 });
 const elementosConClase2 = document.querySelectorAll('.video-patrocinador');
 
