@@ -8,6 +8,29 @@
         height: 300px;
     }
 
+    .pelicula {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.pelicula h3 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #3498db;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.pelicula h6 {
+  font-size: 18px;
+  color: #666;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
 </style>
         <div class="main-wrapper pt-80">
             <div class="container">
@@ -314,7 +337,8 @@ if($url_emb!=false){
                                 </div>
                             </div>
                             <!-- post title start -->
-                            <div class="post-content">
+                            <br>
+                            <div class="post-content pelicula">
                                 <?php if($i1==0){ ?>
                                     <p class="post-desc">
                                          <a href="https://drive.google.com/file/d/1MkE8N9TtMP96Tibbc1lt1R17MFZbsDWb/view?usp=sharing" style="color: green;"><strong>Descarga el APK aqui</strong></a>
@@ -744,6 +768,10 @@ elementosConClase3.forEach(function (elm){
             }
           }
     });
+    player.on('timeupdate', saveProgress(player));
+
+    // Cargar el progreso al iniciar el reproductor
+    loadProgress();
 });
 const elementosConClase2 = document.querySelectorAll('.video-patrocinador');
 
@@ -763,4 +791,16 @@ elementosConClase2.forEach(elemento => {
 });
 
 //var player = new Clappr.Player({source: "http://localhost/reacciones//assets/PELICULAS/Deadpool_yWolverine.MP4", parentId: "#plyr-video2",width:"100%"});
+function saveProgress(player) {
+  localStorage.setItem('videoProgress', player.currentTime());
+}
+
+// Función para cargar el tiempo de reproducción desde localStorage
+function loadProgress() {
+  var savedTime = localStorage.getItem('videoProgress');
+  console.log(savedTime)
+  if (savedTime !== null) {
+    player.currentTime(savedTime);
+  }
+}
 </script>
