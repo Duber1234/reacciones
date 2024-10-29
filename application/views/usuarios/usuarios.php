@@ -330,7 +330,7 @@ if($url_emb!=false){
                                 <h6><?=$pl['genero'] ?></h6>
                                 
                               
-                                    <video class="video-js divs_videos" controls preload="none" width="100%" height="300px" crossOrigin  poster="<?=base_url()  ?>assets/images/logo/logo1.png" data-setup="{}" data-id-publicacion="<?=$pl['id'] ?>">
+                                    <video class="video-js divs_videos" controls preload="none" width="100%" height="300px" crossOrigin  poster="<?=base_url()  ?>assets/images/logo/logo1.png" data-setup="{}" data-id-publicacion="<?=$pl['id'] ?>" id="cinta-<?=$pl['id'] ?>">
                                   <source src="<?=base_url() ?>/assets/PELICULAS/<?=$pl['texto'] ?>" type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
@@ -728,8 +728,11 @@ elementosConClase.forEach(elemento => {
 });
 const elementosConClase3 = document.querySelectorAll('.divs_videos');
 elementosConClase3.forEach(function (elm){
+    
     var idx1 =$(elm).data("id-publicacion");
-    var player = videojs(idx1);
+    console.log(idx1);
+    var idx1="cinta-"+idx1;
+    var player = videojs(""+idx1);
 });
 const elementosConClase2 = document.querySelectorAll('.video-patrocinador');
 
