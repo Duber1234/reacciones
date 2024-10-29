@@ -9,7 +9,7 @@
     }
 
     .pelicula {
-  border: 1px solid #ccc;
+  
   padding: 2px;
   margin-bottom: 20px;
 }
