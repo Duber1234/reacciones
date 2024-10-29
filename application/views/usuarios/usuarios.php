@@ -5,7 +5,7 @@
     }
     .divs_videos{
         width: 100%;
-        height: 110%;
+        height: 150%;
     }
 
 </style>
