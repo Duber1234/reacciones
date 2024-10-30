@@ -62,7 +62,7 @@
                                     <div class="profile-desc text-center">
                                         <h5 class="author"><a href="<?=base_url().'usuarios/perfil'?>">Usuario #<?=$_SESSION['user_var']->id ?></a></h5>
                                         <h4><?= $_SESSION['ip_user'] ?></h4>
-                                        <h6 class="author"> <a href="https://drive.google.com/file/d/1MkE8N9TtMP96Tibbc1lt1R17MFZbsDWb/view?usp=sharing" style="color: green;">Descarga el apk <br> aqui <img class="emoji2" width="10%" src="<?= base_url()."assets/images/icons/androide.png" ?>"></a></h6>
+                                        <h6 class="author"> <!--a href="https://drive.google.com/file/d/1MkE8N9TtMP96Tibbc1lt1R17MFZbsDWb/view?usp=sharing" style="color: green;">Descarga el apk <br> aqui <img class="emoji2" width="10%" src="<?= base_url()."assets/images/icons/androide.png" ?>"></a-->Bendiciones</h6>
                                         <p>Hay Vamos, Gracias a Dios </p>
                                     </div>
                                 </div>
@@ -355,7 +355,7 @@ if($url_emb!=false){
                             <div class="post-content pelicula">
                                 <?php if($i1==0){ ?>
                                     <p class="post-desc">
-                                         <a class="descarga_apk" href="https://drive.google.com/file/d/1MkE8N9TtMP96Tibbc1lt1R17MFZbsDWb/view?usp=sharing" ><strong>Descarga el APK aqui</strong> <img class="emoji2" width="10%" src="<?= base_url()."assets/images/icons/androide.png" ?>"></a>
+                                         <!--a class="descarga_apk" href="https://drive.google.com/file/d/1MkE8N9TtMP96Tibbc1lt1R17MFZbsDWb/view?usp=sharing" ><strong>Descarga el APK aqui</strong> <img class="emoji2" width="10%" src="<?= base_url()."assets/images/icons/androide.png" ?>"></a-->
                                     </p>
                                 <?php } ?>
                                 <?php if(empty($pl['type'])){ ?>
