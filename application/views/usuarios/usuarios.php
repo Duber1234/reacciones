@@ -781,10 +781,10 @@ elementosConClase3.forEach(function (elm){
             }
           }
     });
-    player.on('loadedmetadata', function() {
+    /*player.on('loadedmetadata', function() {
   // Inicia la reproducción automáticamente
  // player.paused();
-});
+});*/
     //player.on('timeupdate', saveProgress(player));
 
     // Cargar el progreso al iniciar el reproductor
