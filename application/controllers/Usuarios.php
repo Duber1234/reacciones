@@ -26,6 +26,8 @@ class Usuarios extends CI_Controller {
     }
 	public function index()
 	{	
+		$this->load->library('Geolocalizacion');
+		$Geolocalizacion= new Geolocalizacion();
 		
 		$this->welcome->cargar();
 		$data['lista_p']=$this->welcome->get_lista_publicaciones();
