@@ -371,7 +371,7 @@ if($url_emb!=false){
 //$directorio_peliculas = $directorio_principal;
 $directorio_peliculas = str_replace("/public_html/", "", $directorio_principal);
 
-$ruta_absoluta = $directorio_peliculas . "/" . $pl['texto'];
+$ruta_absoluta = $directorio_peliculas . "/PELICULAS/" . $pl['texto'];
                                 var_dump($ruta_absoluta);
                                 ?>
 
