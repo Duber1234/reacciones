@@ -39,6 +39,7 @@
   border-radius: 5px;
   margin-bottom: 10px;
   text-align: center;
+   box-shadow: 0px 7px 17px rgba(5,5,5,5);
 }
 
 .pelicula h6 {
@@ -50,6 +51,7 @@
   background-color: black;
   padding-top: 15px;
   padding-bottom: 15px;
+   box-shadow: 0px 7px 17px rgba(5,5,5,5);
 }
 .descarga_apk{
     color: greenyellow;
