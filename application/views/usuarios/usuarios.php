@@ -369,7 +369,8 @@ if($url_emb!=false){
                                 
                                 <?php ; // Obtiene el directorio padre
 //$directorio_peliculas = $directorio_principal;
-$directorio_peliculas=$this->welcome->get_dir_prin();
+                                //=$this->welcome->get_dir_prin();
+$directorio_peliculas=base_url();
 $text1="assets/PELICULAS/" . $pl['texto'];
 if($ip!="::1"){
     $ruta_absoluta = $directorio_peliculas .$text1 ;    
