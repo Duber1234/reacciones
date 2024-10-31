@@ -822,7 +822,7 @@ function views_mov(obj,tipo){
                  var view_ok=$(obj).data('view-ok');
                  //if(view_ok=="no"){
                         $.post(baseurl+"usuarios/views",{"id_publicacion": id_publicacion},function(data){
-                             //console.log(data);
+                             console.log(data);
                              $(obj).data('view-ok',"si");
                              if(tipo==1){
                                 $("#views-span-pl-"+id_publicacion).html("");
@@ -839,5 +839,36 @@ function views_mov(obj,tipo){
             
 }
 
+/*const elementosConClase = document.querySelectorAll('.video-iframe');
 
+// Iterar sobre cada elemento y crear un Waypoint
+elementosConClase.forEach(elemento => {
+  new Waypoint({
+    element: elemento,
+ offset: '50%', 
+    handler: function() {
+      views_mov(elemento,1)
+      // Aquí coloca tu código para ejecutar cuando el elemento sea visible
+      // Por ejemplo, mostrar un modal, iniciar una animación, etc.
+      //elemento.classList.add('animacion'); // Agregar una clase para activar una animación
+    }
+  });
+}); cuando cargue la pelicula se oasa esto 
+*/
+const elementosConClase2 = document.querySelectorAll('.video-patrocinador');
+
+// Iterar sobre cada elemento y crear un Waypoint
+elementosConClase2.forEach(elemento => {
+  new Waypoint({
+    element: elemento,
+    offset: '100%', 
+    handler: function() {
+       
+      views_mov(elemento,2)
+      // Aquí coloca tu código para ejecutar cuando el elemento sea visible
+      // Por ejemplo, mostrar un modal, iniciar una animación, etc.
+      //elemento.classList.add('animacion'); // Agregar una clase para activar una animación
+    }
+  });
+});
 </script>

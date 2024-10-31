@@ -87,10 +87,8 @@ class Usuarios extends CI_Controller {
 
 				// Calcular la diferencia en segundos
 				$interval = $date_now_datetime->diff($fecha_last_datetime);
-$diff_in_seconds = $interval->s + $interval->i * 60 + $interval->h * 3600;
-
-				// Comparar la diferencia
-				if ($diff_in_seconds >= 900) {
+$diff_in_seconds = $interval->h * 60 + $interval->i;
+				if ($diff_in_seconds >= 50 || $fecha_last_datetime->format("d")!=$date_now_datetime->format("d") ) {
 					$this->db->update("view_user_publicacion",array("conteo"=>$count,"fecha"=>$date_now),array("id"=>$vista->id));	
 				}
 			
