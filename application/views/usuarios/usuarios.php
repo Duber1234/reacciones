@@ -4,7 +4,7 @@
         height: 440px;
     }
     
-    .imgs_pelis,{
+    .imgs_pelis{
         cursor: pointer;
         box-shadow: 0px 7px 17px rgba(5,5,5,5);
 
@@ -16,9 +16,9 @@
         cursor: pointer;
         box-shadow: 0px 7px 17px rgba(5,5,5,5);
     }
-    .imgs_pelis:hover {
+    .imgs_pelis:hover{
         cursor: pointer;
-          box-shadow: 0px 5px 15px rgba(0, 0, 0, 1);
+          box-shadow: 0px 17px 37px rgba(0, 0, 0, 1);
     }
     .divs_videos:hover{
           box-shadow: 0px 17px 37px rgba(0, 0, 0, 0.1);
