@@ -377,6 +377,7 @@ if($url_emb!=false){
                                     </div>
                                 </div>
                             </div>
+                            <?= ($key!=0)? '<br>':'' ?>
                             <!-- post title start -->
                             
                             <div class="post-content pelicula">
@@ -857,7 +858,7 @@ elementosConClase2.forEach(elemento => {
     element: elemento,
     offset: '50%', 
     handler: function() {
-        console.log("sss")
+        
       views_mov(elemento,2)
       // Aquí coloca tu código para ejecutar cuando el elemento sea visible
       // Por ejemplo, mostrar un modal, iniciar una animación, etc.
