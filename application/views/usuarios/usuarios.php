@@ -4,6 +4,7 @@
         height: 440px;
     }
     .divs_videos{
+        cursor: pointer;
         width: 100%;
         height: 100%;
     }
@@ -369,11 +370,12 @@ if($url_emb!=false){
                                 <h3><?=$pl['titulo'] ?></h1>
                                 <h6><?=$pl['genero'] ?></h6>
                                 <?php $ruta_peli=$this->welcome->get_ruta_file(1,$pl['texto']) ; ?>
-                                    <video id="cinta<?=$pl['id'] ?>" class="video-js divs_videos" controls  width="100%" height="300px" poster="<?=str_replace(".MP4","", $ruta_peli)  ?>.webp"  >
-                                  <source src="<?=$ruta_peli ?>" type="video/mp4">
+                                    <video  id="cinta<?=$pl['id'] ?>" class="video-js divs_videos" data-url1="<?=$ruta_peli ?>" data-id-publicacion="<?=$pl['id'] ?>" controls  width="100%" height="100%" poster="<?=str_replace(".MP4","", $ruta_peli)  ?>.webp"  >
+                                  <source  type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
-                                   
+                                    <br>
+                                 
                                     <!--div class="divs_videos">
                                     <div id="plyr-video2" >
                                     
@@ -401,7 +403,7 @@ if($url_emb!=false){
                                                 <?php $vistas_p=$this->welcome->get_vistas($pl['id']); 
                                             
                                     ?>
-                                                <i <?= ($vistas_p>0)?'style="color:red"':''  ?> class="bi bi-play-button" id="icono_view-pl-<?=$pl['id'] ?>"></i>
+                                                <i <?= ($vistas_p>0)?'style="color:red"':''  ?> class="bi bi-monitor" id="icono_view-pl-<?=$pl['id'] ?>"></i>
                                                     <span id="views-span-pl-<?=$pl['id'] ?>"></span><small id="div-views-span-pl-<?=$pl['id'] ?>"><?=$vistas_p ?></small>
                                             </button>
                                         </li>
@@ -664,6 +666,22 @@ $(document).on("click",".post-meta-like-p",function (ev){
     var id_publicacion=$(this).data('id-publicacion');
        interezantes_mov(id_publicacion,2);
 });
+$(document).on("click",".divs_videos",function (ev){
+    var id_publicacion=$(this).data('id-publicacion');
+    var url=$(this).data('url1');
+     var cargada=$(this).attr('src');
+     id_publicacion="cinta"+id_publicacion;
+     
+     if(cargada===undefined){
+            $("#"+id_publicacion)
+              .attr("src",url)
+              .on('loadeddata', function() {
+                this.play();
+              });    
+     }
+    
+});
+
 
 function interezantes_mov(id_publicacion,type){
     
