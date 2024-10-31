@@ -474,7 +474,7 @@ if($url_emb!=false){
                                                 <?php $vistas_p=$this->welcome->get_vistas($pl_patrocinador['id']); 
                                             
                                     ?>
-                                                <i <?= ($vistas_p>0)?'style="color:red"':''  ?> class="bi bi-play-button icono_view-pl-p-<?=$pl_patrocinador['id'] ?>" id="icono_view-pl-p-<?=$pl_patrocinador['id'] ?>"></i>
+                                                <i <?= ($vistas_p>0)?'style="color:red"':''  ?> class="bi bi-monitor icono_view-pl-p-<?=$pl_patrocinador['id'] ?>" id="icono_view-pl-p-<?=$pl_patrocinador['id'] ?>"></i>
                                                     <span  class="views-span-pl-p-<?=$pl_patrocinador['id']?>" id="views-span-pl-p-<?=$pl_patrocinador['id'] ?>"></span><small class="div-views-span-pl-p-<?=$pl_patrocinador['id']?>" id="div-views-span-pl-p-<?=$pl_patrocinador['id'] ?>"><?=$vistas_p ?></small>
                                             </button>
                                         </li>
