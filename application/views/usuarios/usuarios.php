@@ -416,7 +416,7 @@ if($url_emb!=false){
 
                                    <div style="width: 100%;" align="middle"> <a ><img class="imgs_pelis" src="<?=str_replace(".MP4","", $ruta_peli)  ?>.webp" data-temporalizador_play="false" data-url1="<?=$ruta_peli ?>" data-id-publicacion="<?=$pl['id'] ?>"></a><br>
                                     <small id="small_<?=$pl['id'] ?>" style="color:red"><b>Toca la imagen para reproducir </b><i class="bi bi-play-button"></i></small></div>
-                                    <video  id="cinta<?=$pl['id'] ?>" class="video-js divs_videos" >
+                                    <video  id="cinta<?=$pl['id'] ?>" class="divs_videos" >
                                   <source  type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
