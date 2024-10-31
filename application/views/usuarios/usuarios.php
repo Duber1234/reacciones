@@ -368,7 +368,7 @@ if($url_emb!=false){
                                 <h6><?=$pl['genero'] ?></h6>
                                 
                                 <?php $ruta_absoluta = APPPATH."/PELICULAS/'.$pl['texto']"; 
-                                var_dump($ruta_absoluta)
+                                var_dump($ruta_absoluta);
                                 ?>
 
                                     <video class="video-js divs_videos" controls  width="100%" height="300px" poster="<?=base_url()  ?>assets/images/logo/logo1.png"  >
