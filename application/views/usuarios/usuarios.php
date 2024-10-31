@@ -352,7 +352,7 @@ if($url_emb!=false){
                                 </div>
                             </div>
                             <!-- post title start -->
-                            <br>
+                            
                             <div class="post-content pelicula">
                                 <?php if($i1==0){ ?>
                                     <p class="post-desc">
