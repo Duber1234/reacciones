@@ -689,13 +689,16 @@ $(document).on("click",".imgs_pelis",function (ev){
     var id_etiqueda_v="#cinta"+id_publicacion;
     var url=$(this).data('url1');
      var cargada=$(id_etiqueda_v).attr('src');
-     id_publicacion="cinta"+id_publicacion;
+     var alto=$(this).css('height');
+     
+     console.log(alto);
      $(id_etiqueda_v).attr("controls",true);
+     $(id_etiqueda_v).css("height",alto);
      
      $(id_etiqueda_v).css('display',"block");
      $(this).css('display',"none");
      if(cargada===undefined){
-            $("#"+id_publicacion)
+            $(id_etiqueda_v)
               .attr("src",url)
               .on('loadeddata', function() {
                 this.play();
