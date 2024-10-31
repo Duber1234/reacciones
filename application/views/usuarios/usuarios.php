@@ -367,7 +367,10 @@ if($url_emb!=false){
                                 <h3><?=$pl['titulo'] ?></h1>
                                 <h6><?=$pl['genero'] ?></h6>
                                 
-                                <?php $ruta_absoluta = APPPATH."../PELICULAS/".$pl['texto']; 
+                                <?php $directorio_principal = dirname(__FILE__); // Obtiene el directorio padre
+$directorio_peliculas = $directorio_principal . "/../PELICULAS";
+$archivo = $pl['titulo'];
+$ruta_absoluta = $directorio_peliculas . "/" . $archivo;
                                 var_dump($ruta_absoluta);
                                 ?>
 
