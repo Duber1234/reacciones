@@ -768,7 +768,7 @@ const elementosConClase3 = document.querySelectorAll('.divs_videos');
 elementosConClase3.forEach(function (elm){
     
     var idx1 =$(elm).data("id-publicacion");
-    if(idx1!=undefined){
+    //if(idx1!=undefined){
     console.log(idx1);
     var idx1="cinta-"+idx1;
     var player = videojs(idx1);
@@ -789,7 +789,7 @@ elementosConClase3.forEach(function (elm){
 
     // Cargar el progreso al iniciar el reproductor
     //loadProgress();
-}
+//}
 });
 const elementosConClase2 = document.querySelectorAll('.video-patrocinador');
 
