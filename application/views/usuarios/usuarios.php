@@ -292,7 +292,7 @@
                     </div>
 
 
-                    <div class="col-lg-6 order-1 order-lg-2">
+                    <div class="col-lg-6 order-1 order-lg-2" id="todo_x">
                         <!-- share box start -->
                        <?php /* ?> <div class="card card-small">
                             <div class="share-box-inner">
@@ -419,7 +419,7 @@ if($url_emb!=false){
                                    <div style="width: 100%;" align="middle"> <a ><img id="poster<?=$pl['id'] ?>" class="imgs_pelis" src="<?=str_replace(".MP4","", $ruta_peli)  ?>.webp" data-temporalizador_play="false" data-url1="<?=$ruta_peli ?>" data-id-publicacion="<?=$pl['id'] ?>"></a><br>
                                     <small id="small_<?=$pl['id'] ?>" style="color:red"><b>Toca la imagen para reproducir </b><i class="bi bi-play-button"></i></small></div>
                                     <div class="video-container">
-                                    <video  id="cinta<?=$pl['id'] ?>" class="divs_videos " data-id-publicacion="<?=$pl['id'] ?>">
+                                    <video  id="cinta<?=$pl['id'] ?>" class="divs_videos" data-id-publicacion="<?=$pl['id'] ?>">
                                   <source  type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
@@ -714,6 +714,7 @@ if($url_emb!=false){
 <script>
     var inicia=false;
     var sw=false;
+    //let lista_video_conteneores={};
 $(document).on("click",".post-meta-like",function (ev){
     var id_publicacion=$(this).data('id-publicacion');
    interezantes_mov(id_publicacion,1);
@@ -756,11 +757,21 @@ $("#genero"+id_publicacion).css('display',"none");
                 $(this).css('display',"block");
                 $(this).data('temporalizador_play',"false");
                 views_mov(this,1);
+                //console.log(id_etiqueda_v);
               });    
      }
     
 });
-
+/*$(document).on("mouseleave",".pelicula",function (ev){
+    console.log("hi")
+});
+$(document).on("touchend",".pelicula",function (ev){
+    var x1ax= $(ev).data("id-publicacion");
+    console.log(lista_video_conteneores[1] );
+    console.log("marca");
+    x1ax =document.getElementById("cinta"+x1ax);
+   lista_video_conteneores[68].pause;
+});*/
 function progress_avance(id_publicacion){
     setTimeout(function() {
             var prox=$("#progress_small2"+id_publicacion).val();
@@ -840,22 +851,6 @@ function views_mov(obj,tipo){
             
 }
 
-/*const elementosConClase = document.querySelectorAll('.video-iframe');
-
-// Iterar sobre cada elemento y crear un Waypoint
-elementosConClase.forEach(elemento => {
-  new Waypoint({
-    element: elemento,
- offset: '50%', 
-    handler: function() {
-      views_mov(elemento,1)
-      // Aquí coloca tu código para ejecutar cuando el elemento sea visible
-      // Por ejemplo, mostrar un modal, iniciar una animación, etc.
-      //elemento.classList.add('animacion'); // Agregar una clase para activar una animación
-    }
-  });
-}); cuando cargue la pelicula se oasa esto 
-*/
 const elementosConClase2 = document.querySelectorAll('.video-patrocinador');
 
 // Iterar sobre cada elemento y crear un Waypoint
@@ -864,8 +859,10 @@ elementosConClase2.forEach(elemento => {
     element: elemento,
     offset: '100%', 
     handler: function() {
-       
-      views_mov(elemento,2)
+       //const x2w =document.getElementById("cinta68");
+        
+      views_mov(elemento,2);
+      
       // Aquí coloca tu código para ejecutar cuando el elemento sea visible
       // Por ejemplo, mostrar un modal, iniciar una animación, etc.
       //elemento.classList.add('animacion'); // Agregar una clase para activar una animación
