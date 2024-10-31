@@ -27,7 +27,7 @@
     .pelicula {
   
   padding: 2px;
-  margin-bottom: 20px;
+  
 }
 
 .pelicula h3 {
