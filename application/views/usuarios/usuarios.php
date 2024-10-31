@@ -378,6 +378,7 @@ if($ip!="::1"){
 }
 
                                 var_dump($ruta_absoluta);
+                                var_dump(is_dir($ruta_absoluta));
                                 ?>
 
                                     <video class="video-js divs_videos" controls  width="100%" height="300px" poster="<?=base_url()  ?>assets/images/logo/logo1.png"  >
