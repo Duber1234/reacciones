@@ -766,19 +766,20 @@ function progress_avance(id_publicacion){
             
 
            
-            
+            var sw1=false;
             if($(this).data('temporalizador_play')=="true" && prox>=100){
                     $("#progress_small2"+id_publicacion).val(20);
                     $("#porcentaje_cargue"+id_publicacion).text("20%");
                     $("#small2_div_"+id_publicacion).css('display',"block");
                     prox=20;
+                    sw1=true;
             }
 
             if($(this).data('temporalizador_play')=="true" || prox<100){
                 var x12=document.getElementById("cinta"+id_publicacion);
                 //console.log(x12.currentTime);
                 progress_avance(id_publicacion);
-            }else{
+            }else if(sw1==false){
                 $("#progress_small2"+id_publicacion).val(100);
                 $("#porcentaje_cargue"+id_publicacion).text("100%");
                 $("#small2_div_"+id_publicacion).css('display',"none");
