@@ -15,7 +15,7 @@ public $pais="x";
         }
         $record = $reader->city($ip);
         $this->pais=$record->country->name;
-        var_dump($this->pais);
+       // var_dump($this->pais);
         if($this->pais!="Colombia"){
           
         }
