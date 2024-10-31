@@ -752,7 +752,7 @@ $(document).on("click",".imgs_pelis",function (ev){
 function progress_avance(id_publicacion){
     setTimeout(function() {
             var prox=$("#progress_small2"+id_publicacion).val();
-            console.log(prox+"ss");
+            //console.log(prox+"ss");
             prox++;
             $("#progress_small2"+id_publicacion).val(prox);
             $("#porcentaje_cargue"+id_publicacion).text(prox+"%")
@@ -792,7 +792,7 @@ function interezantes_mov(id_publicacion,type){
 function views_mov(obj,tipo){
                     var id_publicacion=$(obj).data('id-publicacion');
                    
-                    console.log("yes"+id_publicacion);
+                    //console.log("yes"+id_publicacion);
                     
                  var view_ok=$(obj).data('view-ok');
                  //if(view_ok=="no"){
