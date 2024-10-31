@@ -40,6 +40,10 @@
   margin-bottom: 10px;
   text-align: center;
    box-shadow: 0px 7px 17px rgba(5,5,5,5);
+   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
 }
 
 .pelicula h6 {
@@ -386,8 +390,13 @@ if($url_emb!=false){
                                 <iframe data-view-ok="no" data-id-publicacion="<?=$pl['id'] ?>" id="video<?=$pl['id']  ?>" class="framesx divs_frame" src="<?=$url_emb ?>?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  web-share;"  allowfullscreen ></iframe>
                                
                                 </div>
-                            <?php }else{?>
-                                <h3><?=$pl['titulo'] ?></h1>
+                            <?php }else{
+                                $css_alto="";
+                                if(strlen($pl['titulo'])>20){
+                                    $css_alto='style="font-size: 90%;"';
+                                }
+                                ?>
+                                <h3 <?=$css_alto ?>><?=$pl['titulo'] ?></h3>
                                 <h6><?=$pl['genero'] ?></h6>
                                 
                                 <?php $ruta_peli=$this->welcome->get_ruta_file(1,$pl['texto']) ; ?>
