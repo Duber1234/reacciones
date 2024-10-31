@@ -772,7 +772,7 @@ elementosConClase3.forEach(function (elm){
     console.log(idx1);
     var idx1="cinta-"+idx1;
     var player = videojs(idx1);
-    player.on('fullscreenchange', function() {
+    /*player.on('fullscreenchange', function() {
     if (document.fullscreenElement) {
         // Si el video está en pantalla completa
             if (screen.orientation.type === 'portrait-primary') {
@@ -780,7 +780,7 @@ elementosConClase3.forEach(function (elm){
               screen.orientation.lock('landscape'); // Forzar la orientación a horizontal
             }
           }
-    });
+    });*/ //para los reproductores que la pantalla completa es vertical
     /*player.on('loadedmetadata', function() {
   // Inicia la reproducción automáticamente
  // player.paused();
