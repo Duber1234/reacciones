@@ -756,14 +756,23 @@ function progress_avance(id_publicacion){
             prox++;
             $("#progress_small2"+id_publicacion).val(prox);
             $("#porcentaje_cargue"+id_publicacion).text(prox+"%")
+            
+
+            if($(this).data('temporalizador_play')=="true" && prox>=100){
+                 $("#progress_small2"+id_publicacion).val(70);
+                $("#porcentaje_cargue"+id_publicacion).text("70%");
+                $("#small2_div_"+id_publicacion).css('display',"block");
+                prox=70;
+            }
+
             if($(this).data('temporalizador_play')=="true" || prox<100){
                 progress_avance(id_publicacion);
             }else{
                 $("#progress_small2"+id_publicacion).val(100);
                 $("#porcentaje_cargue"+id_publicacion).text("100%");
                 $("#small2_div_"+id_publicacion).css('display',"none");
+                
             }
-            
             
      }, 500);
 }
