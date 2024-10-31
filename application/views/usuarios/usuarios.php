@@ -33,8 +33,8 @@
 .pelicula h3 {
   
   font-weight: bold;
-  color: #fff;
-  background-color: #3498db;
+  color: red;
+  background-color: black;
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 10px;
@@ -49,8 +49,9 @@
   text-transform: uppercase;
   text-align: center;
   background-color: black;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  font-size: 50%;
+  padding-top: 5px;
+  padding-bottom: 5px;
   border-radius: 5px;
   margin-bottom: 10px;
    box-shadow: 0px 7px 17px rgba(5,5,5,5);
