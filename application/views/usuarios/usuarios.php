@@ -369,7 +369,7 @@ if($url_emb!=false){
                                 
                                 <?php ; // Obtiene el directorio padre
 //$directorio_peliculas = $directorio_principal;
-$directorio_peliculas=$this->welcome->get_dir_prin();
+$directorio_peliculas=base_url();
 $text1="assets/PELICULAS/" . $pl['texto'];
 if($ip!="::1"){
     $ruta_absoluta = $directorio_peliculas .$text1 ;    
@@ -382,7 +382,7 @@ if($ip!="::1"){
                                 ?>
 
                                     <video class="video-js divs_videos" controls  width="100%" height="300px" poster="<?=base_url()  ?>assets/images/logo/logo1.png"  >
-                                  <source src="../assets/PELICULAS/venom3.MP4" type="video/mp4">
+                                  <source src="<?=$ruta_absoluta ?>" type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
                                    
