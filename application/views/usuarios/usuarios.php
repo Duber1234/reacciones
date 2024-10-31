@@ -412,7 +412,7 @@ if($url_emb!=false){
                                 }
                                 ?>
                                 <h3 <?=$css_alto ?>><?=$pl['titulo'] ?></h3>
-                                <h6><?=$pl['genero'] ?></h6>
+                                <h6 id="genero<?=$pl['id'] ?>"><?=$pl['genero'] ?></h6>
                                 
                                 <?php $ruta_peli=$this->welcome->get_ruta_file(1,$pl['texto']) ; ?>
 
@@ -738,7 +738,7 @@ $(document).on("click",".imgs_pelis",function (ev){
      
      $(id_etiqueda_v).css('display',"block");
      $("#small2_div_"+id_publicacion).css('display',"block");
-
+$("#genero"+id_publicacion).css('display',"none");
      
      $(this).css('display',"none");
      
