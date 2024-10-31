@@ -4,9 +4,17 @@
         height: 440px;
     }
     .divs_videos{
-        cursor: pointer;
         width: 100%;
         height: 100%;
+        display: none;
+    }
+    .imgs_pelis{
+        cursor: pointer;
+
+    }
+    .imgs_pelis:hover {
+        cursor: pointer;
+          box-shadow: 0px 15px 30px rgba(1, 1, 1, 1);
     }
 
     .pelicula {
@@ -43,7 +51,7 @@
     padding: 5px;
 
 }
-
+.ima
 </style>
         <div class="main-wrapper pt-80">
             <div class="container">
@@ -369,8 +377,11 @@ if($url_emb!=false){
                             <?php }else{?>
                                 <h3><?=$pl['titulo'] ?></h1>
                                 <h6><?=$pl['genero'] ?></h6>
+                                <br>
                                 <?php $ruta_peli=$this->welcome->get_ruta_file(1,$pl['texto']) ; ?>
-                                    <video  id="cinta<?=$pl['id'] ?>" class="video-js divs_videos" data-url1="<?=$ruta_peli ?>" data-id-publicacion="<?=$pl['id'] ?>" controls  width="100%" height="100%" poster="<?=str_replace(".MP4","", $ruta_peli)  ?>.webp"  >
+
+                                    <a><img class="imgs_pelis" src="<?=str_replace(".MP4","", $ruta_peli)  ?>.webp" data-url1="<?=$ruta_peli ?>" data-id-publicacion="<?=$pl['id'] ?>"></a>
+                                    <video  id="cinta<?=$pl['id'] ?>" class="video-js divs_videos" >
                                   <source  type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
@@ -666,20 +677,22 @@ $(document).on("click",".post-meta-like-p",function (ev){
     var id_publicacion=$(this).data('id-publicacion');
        interezantes_mov(id_publicacion,2);
 });
-$(document).on("click",".divs_videos",function (ev){
+$(document).on("click",".imgs_pelis",function (ev){
     var id_publicacion=$(this).data('id-publicacion');
+    var id_etiqueda_v="#cinta"+id_publicacion;
     var url=$(this).data('url1');
-     var cargada=$(this).attr('src');
+     var cargada=$(id_etiqueda_v).attr('src');
      id_publicacion="cinta"+id_publicacion;
+     $(id_etiqueda_v).attr("controls",true);
      
+     $(id_etiqueda_v).css('display',"block");
+     $(this).css('display',"none");
      if(cargada===undefined){
             $("#"+id_publicacion)
               .attr("src",url)
               .on('loadeddata', function() {
                 this.play();
-              }).on('touchstart', function() {
-  this.play();
-}) ;   
+              });    
      }
     
 });
