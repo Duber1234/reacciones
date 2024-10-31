@@ -447,7 +447,7 @@ if($url_emb!=false){
                         <div class="card video-patrocinador" data-id-publicacion="<?=$pl_patrocinador['id']  ?>">
                             <!-- post title start -->
                             <div class="post-title d-flex align-items-center">
-                                Patrocinador
+                                <h6>Patrocinador<h6>
                             </div>
                             <!-- post title start -->
                             <div class="post-content">
