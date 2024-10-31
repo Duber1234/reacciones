@@ -747,6 +747,7 @@ $("#genero"+id_publicacion).css('display',"none");
             $(id_etiqueda_v)
               .attr("src",url)
               .on('loadeddata', function() {
+                this.currentTime = 5;
                 this.play();
                 $(id_etiqueda_v).attr("controls",true);
                 $(this).data('temporalizador_play',"false");
@@ -764,7 +765,7 @@ function progress_avance(id_publicacion){
             $("#porcentaje_cargue"+id_publicacion).text(prox+"%")
             
 
-            if($(this).data('temporalizador_play')=="true" && prox>=100){
+            if(prox>=100){
                  $("#progress_small2"+id_publicacion).val(70);
                 $("#porcentaje_cargue"+id_publicacion).text("70%");
                 $("#small2_div_"+id_publicacion).css('display',"block");
@@ -772,6 +773,8 @@ function progress_avance(id_publicacion){
             }
 
             if($(this).data('temporalizador_play')=="true" || prox<100){
+                var x12=document.getElementById("cinta"+id_publicacion);
+                //console.log(x12.currentTime);
                 progress_avance(id_publicacion);
             }else{
                 $("#progress_small2"+id_publicacion).val(100);
