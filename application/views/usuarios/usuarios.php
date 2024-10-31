@@ -416,11 +416,14 @@ if($url_emb!=false){
 
                                    <div style="width: 100%;" align="middle"> <a ><img class="imgs_pelis" src="<?=str_replace(".MP4","", $ruta_peli)  ?>.webp" data-temporalizador_play="false" data-url1="<?=$ruta_peli ?>" data-id-publicacion="<?=$pl['id'] ?>"></a><br>
                                     <small id="small_<?=$pl['id'] ?>" style="color:red"><b>Toca la imagen para reproducir </b><i class="bi bi-play-button"></i></small></div>
-                                    <video  id="cinta<?=$pl['id'] ?>" class="divs_videos" >
+                                    <div class="video-container">
+                                    <video  id="cinta<?=$pl['id'] ?>" class="divs_videos " >
                                   <source  type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
-                                   <br> 
+                                     <div id="video-bg<?=$pl['id']  ?>"></div>
+                                    </div>
+                                   
                                     <div style="width: 100%;display: none;" align="middle" id="small2_div_<?=$pl['id'] ?>">
                                         <progress style="width: 90%;" id="progress_small2<?=$pl['id'] ?>" value="30" max="100"></progress> <b style="width:10%" id="porcentaje_cargue<?=$pl['id'] ?>">31%</b>
 
@@ -722,12 +725,13 @@ $(document).on("click",".imgs_pelis",function (ev){
     var id_publicacion=$(this).data('id-publicacion');
     var id_etiqueda_v="#cinta"+id_publicacion;
     var url=$(this).data('url1');
+    var url_poster=$(this).attr('src');
      var cargada=$(id_etiqueda_v).attr('src');
      var alto=$(this).css('height');
-
+ $(id_etiqueda_v).css('background-color', 'black');
      $(this).data('temporalizador_play',"true");    
      progress_avance(id_publicacion);
-     
+    
      $(id_etiqueda_v).css("height",alto);
      
      $(id_etiqueda_v).css('display',"block");
