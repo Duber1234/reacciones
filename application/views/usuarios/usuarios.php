@@ -755,6 +755,7 @@ $("#genero"+id_publicacion).css('display',"none");
                 $(this).attr("controls",true);
                 $(this).css('display',"block");
                 $(this).data('temporalizador_play',"false");
+                views_mov(this,1);
               });    
      }
     
