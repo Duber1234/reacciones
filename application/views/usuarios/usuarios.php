@@ -427,7 +427,7 @@ if($url_emb!=false){
                                     </div>
                                    
                                     <div style="width: 100%;display: none;" align="middle" id="small2_div_<?=$pl['id'] ?>">
-                                        <progress style="width: 79%;" id="progress_small2<?=$pl['id'] ?>" value="30" max="100"></progress> <b style="width:10%" id="porcentaje_cargue<?=$pl['id'] ?>">31%</b>
+                                        <progress style="width: 79%;" id="progress_small2<?=$pl['id'] ?>" value="1" max="100"></progress> <b style="width:10%" id="porcentaje_cargue<?=$pl['id'] ?>">1%</b>
 
                                     <small  id="small2_<?=$pl['id'] ?>" style="color:red"><b>Espera Un Momento Por Favor, Mientras Conectamos Con el Servidor </b><i class="bi bi-play-button"></i></small><div class="loader"></div></div>
                                     
@@ -766,10 +766,10 @@ function progress_avance(id_publicacion){
             
 
             if(prox>=100){
-                 $("#progress_small2"+id_publicacion).val(70);
-                $("#porcentaje_cargue"+id_publicacion).text("70%");
+                 $("#progress_small2"+id_publicacion).val(20);
+                $("#porcentaje_cargue"+id_publicacion).text("20%");
                 $("#small2_div_"+id_publicacion).css('display',"block");
-                prox=70;
+                prox=20;
             }
 
             if($(this).data('temporalizador_play')=="true" || prox<100){
