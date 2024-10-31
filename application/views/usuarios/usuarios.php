@@ -5,7 +5,7 @@
     }
     .divs_videos{
         width: 100%;
-        height: 300px;
+        height: 100%;
     }
 
     .pelicula {
@@ -33,6 +33,7 @@
   text-align: center;
   background-color: black;
   padding-top: 15px;
+  padding-bottom: 15px;
 }
 .descarga_apk{
     color: greenyellow;
@@ -366,9 +367,9 @@ if($url_emb!=false){
                             <?php }else{?>
                                 <h3><?=$pl['titulo'] ?></h1>
                                 <h6><?=$pl['genero'] ?></h6>
-
-                                    <video class="video-js divs_videos" controls  width="100%" height="300px" poster="<?=base_url()  ?>assets/images/logo/logo1.png"  >
-                                  <source src="<?=$this->welcome->get_ruta_file(1,$pl['texto']) ?>" type="video/mp4">
+                                <?php $ruta_peli=$this->welcome->get_ruta_file(1,$pl['texto']) ; ?>
+                                    <video class="video-js divs_videos" controls  width="100%" height="300px" poster="<?=str_replace(".MP4","", $ruta_peli)  ?>.webp"  >
+                                  <source src="<?=$ruta_peli ?>" type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
                                    
