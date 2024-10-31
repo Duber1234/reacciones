@@ -67,7 +67,19 @@
     padding: 5px;
 
 }
-.ima
+.loader {
+  border: 16px solid #f3f3f3; /* Color de borde */
+  border-top: 16px solid #3498db; /* Color del círculo que gira */
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 </style>
         <div class="main-wrapper pt-80">
             <div class="container">
@@ -402,13 +414,18 @@ if($url_emb!=false){
                                 
                                 <?php $ruta_peli=$this->welcome->get_ruta_file(1,$pl['texto']) ; ?>
 
-                                   <div style="width: 100%;" align="middle"> <a ><img class="imgs_pelis" src="<?=str_replace(".MP4","", $ruta_peli)  ?>.webp" data-url1="<?=$ruta_peli ?>" data-id-publicacion="<?=$pl['id'] ?>"></a><br>
+                                   <div style="width: 100%;" align="middle"> <a ><img class="imgs_pelis" src="<?=str_replace(".MP4","", $ruta_peli)  ?>.webp" data-temporalizador_play="false" data-url1="<?=$ruta_peli ?>" data-id-publicacion="<?=$pl['id'] ?>"></a><br>
                                     <small id="small_<?=$pl['id'] ?>" style="color:red"><b>Toca la imagen para reproducir </b><i class="bi bi-play-button"></i></small></div>
                                     <video  id="cinta<?=$pl['id'] ?>" class="video-js divs_videos" >
                                   <source  type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
-                                    <br>
+                                   <br> 
+                                    <div style="width: 100%;display: none;" align="middle" id="small2_div_<?=$pl['id'] ?>">
+                                        <progress style="width: 90%;" id="progress_small2<?=$pl['id'] ?>" value="30" max="100"></progress> <b style="width:10%" id="porcentaje_cargue<?=$pl['id'] ?>">31%</b>
+
+                                    <small  id="small2_<?=$pl['id'] ?>" style="color:red"><b>Espera Un Momento Por Favor, Mientras Conectamos Con el Servidor </b><i class="bi bi-play-button"></i></small><div class="loader"></div></div>
+                                    
                                  
                                     <!--div class="divs_videos">
                                     <div id="plyr-video2" >
@@ -700,19 +717,25 @@ $(document).on("click",".post-meta-like-p",function (ev){
     var id_publicacion=$(this).data('id-publicacion');
        interezantes_mov(id_publicacion,2);
 });
+
 $(document).on("click",".imgs_pelis",function (ev){
     var id_publicacion=$(this).data('id-publicacion');
     var id_etiqueda_v="#cinta"+id_publicacion;
     var url=$(this).data('url1');
      var cargada=$(id_etiqueda_v).attr('src');
      var alto=$(this).css('height');
-     
-     console.log(alto);
+
+     $(this).data('temporalizador_play',"true");    
+     progress_avance(id_publicacion);
      
      $(id_etiqueda_v).css("height",alto);
      
      $(id_etiqueda_v).css('display',"block");
+     $("#small2_div_"+id_publicacion).css('display',"block");
+
+     
      $(this).css('display',"none");
+     
      if(cargada===undefined){
             $("#small_"+id_publicacion).remove();
             $(id_etiqueda_v)
@@ -720,11 +743,30 @@ $(document).on("click",".imgs_pelis",function (ev){
               .on('loadeddata', function() {
                 this.play();
                 $(id_etiqueda_v).attr("controls",true);
+                $(this).data('temporalizador_play',"false");
               });    
      }
     
 });
 
+function progress_avance(id_publicacion){
+    setTimeout(function() {
+            var prox=$("#progress_small2"+id_publicacion).val();
+            console.log(prox+"ss");
+            prox++;
+            $("#progress_small2"+id_publicacion).val(prox);
+            $("#porcentaje_cargue"+id_publicacion).text(prox+"%")
+            if($(this).data('temporalizador_play')=="true" || prox<100){
+                progress_avance(id_publicacion);
+            }else{
+                $("#progress_small2"+id_publicacion).val(100);
+                $("#porcentaje_cargue"+id_publicacion).text("100%");
+                $("#small2_div_"+id_publicacion).css('display',"none");
+            }
+            
+            
+     }, 500);
+}
 
 function interezantes_mov(id_publicacion,type){
     
