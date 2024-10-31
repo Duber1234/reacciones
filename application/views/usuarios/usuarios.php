@@ -368,7 +368,7 @@ if($url_emb!=false){
                                 <h3><?=$pl['titulo'] ?></h1>
                                 <h6><?=$pl['genero'] ?></h6>
                                 <?php $ruta_peli=$this->welcome->get_ruta_file(1,$pl['texto']) ; ?>
-                                    <video class="video-js divs_videos" controls  width="100%" height="300px" poster="<?=str_replace(".MP4","", $ruta_peli)  ?>.webp"  >
+                                    <video id="cinta<?=$pl['id'] ?>" class="video-js divs_videos" controls  width="100%" height="300px" poster="<?=str_replace(".MP4","", $ruta_peli)  ?>.webp"  >
                                   <source src="<?=$ruta_peli ?>" type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
@@ -821,4 +821,6 @@ function loadProgress() {
     player.currentTime(savedTime);
   }
 }
+
+
 </script>
