@@ -403,6 +403,7 @@ if($url_emb!=false){
                                 <?php $ruta_peli=$this->welcome->get_ruta_file(1,$pl['texto']) ; ?>
 
                                     <a><img class="imgs_pelis" src="<?=str_replace(".MP4","", $ruta_peli)  ?>.webp" data-url1="<?=$ruta_peli ?>" data-id-publicacion="<?=$pl['id'] ?>"></a>
+                                    <small style="color:red"><b>Toca la imagen para reproducir </b><i class="bi bi-play-button"></i></small>
                                     <video  id="cinta<?=$pl['id'] ?>" class="video-js divs_videos" >
                                   <source  type="video/mp4">
                                         Your browser does not support the video tag.
