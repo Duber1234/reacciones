@@ -677,7 +677,9 @@ $(document).on("click",".divs_videos",function (ev){
               .attr("src",url)
               .on('loadeddata', function() {
                 this.play();
-              });    
+              }).on('touchstart', function() {
+  this.play();
+}) ;   
      }
     
 });
