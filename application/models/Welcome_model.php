@@ -134,4 +134,9 @@ public function get_vistas($id_publicacion){
 public function get_patrocinadores_anuncios(){
    return $this->db->get_where("publicacion",array("type"=>2))->result_array();
 }
+public function get_dir_prin(){
+    $directorio_principal = APPPATH;
+    //$directorio_peliculas = str_replace("/public_html/", "", $directorio_principal);
+    return $directorio_principal
+}
 }
