@@ -49,7 +49,7 @@
   text-transform: uppercase;
   text-align: center;
   background-color: black;
-  font-size: 50%;
+  font-size: 70%;
   padding-top: 5px;
   padding-bottom: 5px;
   border-radius: 5px;
