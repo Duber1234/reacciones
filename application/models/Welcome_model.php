@@ -136,7 +136,7 @@ public function get_patrocinadores_anuncios(){
 }
 public function get_dir_prin(){
     $directorio_principal = APPPATH;
-    $directorio_principal = str_replace("/public_html/application/", "", $directorio_principal);
+    //$directorio_principal = str_replace("/public_html/application/", "", $directorio_principal);
 
     return $directorio_principal;
 }
