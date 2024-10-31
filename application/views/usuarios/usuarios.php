@@ -367,7 +367,7 @@ if($url_emb!=false){
                                 <h3><?=$pl['titulo'] ?></h1>
                                 <h6><?=$pl['genero'] ?></h6>
                                 
-                                <?php $ruta_absoluta = realpath(__DIR__ . '/../PELICULAS/'.$pl['texto']); 
+                                <?php $ruta_absoluta = realpath(__DIR__ . '../PELICULAS/'.$pl['texto']); 
                                 var_dump($ruta_absoluta)
                                 ?>
 
