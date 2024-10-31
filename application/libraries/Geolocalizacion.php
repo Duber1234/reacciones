@@ -17,7 +17,7 @@ public $pais="x";
         $this->pais=$record->country->name;
         var_dump($this->pais);
         if($this->pais!="Colombia"){
-            exit();
+        
         }
 
     }
