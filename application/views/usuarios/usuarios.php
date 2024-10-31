@@ -369,7 +369,7 @@ if($url_emb!=false){
                                 
                               
                                     <video class="video-js divs_videos" controls  width="100%" height="300px" poster="<?=base_url()  ?>assets/images/logo/logo1.png"  >
-                                  <source src="<?=base_url() ?><?=$pl['texto'] ?>" type="video/mp4">
+                                  <source src="<?=base_url() ?>../PELICULAS/<?=$pl['texto'] ?>" type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
                                    
