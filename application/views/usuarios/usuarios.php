@@ -425,7 +425,7 @@ if($url_emb!=false){
                                     </div>
                                    
                                     <div style="width: 100%;display: none;" align="middle" id="small2_div_<?=$pl['id'] ?>">
-                                        <progress style="width: 90%;" id="progress_small2<?=$pl['id'] ?>" value="30" max="100"></progress> <b style="width:10%" id="porcentaje_cargue<?=$pl['id'] ?>">31%</b>
+                                        <progress style="width: 89%;" id="progress_small2<?=$pl['id'] ?>" value="30" max="100"></progress> <b style="width:10%" id="porcentaje_cargue<?=$pl['id'] ?>">31%</b>
 
                                     <small  id="small2_<?=$pl['id'] ?>" style="color:red"><b>Espera Un Momento Por Favor, Mientras Conectamos Con el Servidor </b><i class="bi bi-play-button"></i></small><div class="loader"></div></div>
                                     
