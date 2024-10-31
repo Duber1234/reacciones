@@ -749,7 +749,7 @@ $("#genero"+id_publicacion).css('display',"none");
             $(id_etiqueda_v)
               .attr("src",url)
               .on('loadeddata', function() {
-                this.currentTime = 5;
+                //this.currentTime = 5;
                 this.play();
                 var idy1=$(this).data("id-publicacion");
                 $("#poster"+idy1).css('display',"none");
