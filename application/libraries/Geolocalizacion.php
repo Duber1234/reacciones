@@ -11,7 +11,7 @@ public $pais="x";
         $reader = new GeoIp2\Database\Reader('GeoLite2-City.mmdb');
         $ip =$_SERVER['REMOTE_ADDR'];
         if($ip=="::1"){
-            $ip="51.15.124.38";
+            $ip="186.168.232.230";
         }
         $record = $reader->city($ip);
         $this->pais=$record->country->name;
