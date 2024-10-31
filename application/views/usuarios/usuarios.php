@@ -370,8 +370,13 @@ if($url_emb!=false){
                                 <?php ; // Obtiene el directorio padre
 //$directorio_peliculas = $directorio_principal;
 $directorio_peliculas=$this->welcome->get_dir_prin();
+$text1="/assets/PELICULAS/" . $pl['texto'];
+if($ip!="::1"){
+    $ruta_absoluta = $directorio_peliculas .$text1 ;    
+}else{
+    $ruta_absoluta = "https://reacciona.in".$text1;
+}
 
-$ruta_absoluta = $directorio_peliculas . "/PELICULAS/" . $pl['texto'];
                                 var_dump($ruta_absoluta);
                                 ?>
 
