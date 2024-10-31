@@ -51,6 +51,7 @@
   background-color: black;
   padding-top: 15px;
   padding-bottom: 15px;
+  border-radius: 5px;
    box-shadow: 0px 7px 17px rgba(5,5,5,5);
 }
 .descarga_apk{
