@@ -426,8 +426,8 @@ if($url_emb!=false){
                                      <div id="video-bg<?=$pl['id']  ?>"></div>
                                     </div>
                                    
-                                    <div style="width: 100%;display: none;" align="middle" id="small2_div_<?=$pl['id'] ?>">
-                                        <progress style="width: 79%;" id="progress_small2<?=$pl['id'] ?>" value="1" max="100"></progress> <b style="width:10%" id="porcentaje_cargue<?=$pl['id'] ?>">1%</b>
+                                    <div style="width: 100%;display: none; margin-top: 5%;" align="middle" id="small2_div_<?=$pl['id'] ?>">
+                                        <progress style="width: 79%;" id="progress_small2<?=$pl['id'] ?>" value="1" max="100"></progress> <b style="width:10%" id="porcentaje_cargue<?=$pl['id'] ?>">1%</b><br>
 
                                     <small  id="small2_<?=$pl['id'] ?>" style="color:red"><b>Espera Un Momento Por Favor, Mientras Conectamos Con el Servidor </b><i class="bi bi-play-button"></i></small><div class="loader"></div></div>
                                     
