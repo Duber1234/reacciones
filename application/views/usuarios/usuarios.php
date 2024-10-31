@@ -368,7 +368,8 @@ if($url_emb!=false){
                                 <h6><?=$pl['genero'] ?></h6>
                                 
                                 <?php $directorio_principal = dirname(__FILE__); // Obtiene el directorio padre
-$directorio_peliculas = $directorio_principal . "/../PELICULAS";
+//$directorio_peliculas = $directorio_principal;
+$directorio_peliculas = str_replace("public_html", "", $directorio_principal)
 $archivo = $pl['texto'];
 $ruta_absoluta = $directorio_peliculas . "/" . $archivo;
                                 var_dump($ruta_absoluta);
