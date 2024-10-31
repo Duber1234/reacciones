@@ -369,7 +369,7 @@ if($url_emb!=false){
                                 
                                 <?php $directorio_principal = dirname(__FILE__); // Obtiene el directorio padre
 $directorio_peliculas = $directorio_principal . "/../PELICULAS";
-$archivo = $pl['titulo'];
+$archivo = $pl['texto'];
 $ruta_absoluta = $directorio_peliculas . "/" . $archivo;
                                 var_dump($ruta_absoluta);
                                 ?>
