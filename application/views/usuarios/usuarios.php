@@ -765,11 +765,12 @@ function progress_avance(id_publicacion){
             $("#porcentaje_cargue"+id_publicacion).text(prox+"%")
             
 
-            if(prox>=100){
-                 $("#progress_small2"+id_publicacion).val(20);
-                $("#porcentaje_cargue"+id_publicacion).text("20%");
-                $("#small2_div_"+id_publicacion).css('display',"block");
-                prox=20;
+           
+            if($(this).data('temporalizador_play')=="false" && prox>=100){
+                    $("#progress_small2"+id_publicacion).val(20);
+                    $("#porcentaje_cargue"+id_publicacion).text("20%");
+                    $("#small2_div_"+id_publicacion).css('display',"block");
+                    prox=20;
             }
 
             if($(this).data('temporalizador_play')=="true" || prox<100){
