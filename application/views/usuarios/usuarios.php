@@ -24,7 +24,7 @@
           box-shadow: 0px 17px 37px rgba(0, 0, 0, 0.1);
     }
 .video-container{
-    margin-top: -7%;
+    /*margin-top: -7%;*/
 }
     .pelicula {
   
@@ -416,10 +416,10 @@ if($url_emb!=false){
                                 
                                 <?php $ruta_peli=$this->welcome->get_ruta_file(1,$pl['texto']) ; ?>
 
-                                   <div style="width: 100%;" align="middle"> <a ><img class="imgs_pelis" src="<?=str_replace(".MP4","", $ruta_peli)  ?>.webp" data-temporalizador_play="false" data-url1="<?=$ruta_peli ?>" data-id-publicacion="<?=$pl['id'] ?>"></a><br>
+                                   <div style="width: 100%;" align="middle"> <a ><img id="poster<?=$pl['id'] ?>" class="imgs_pelis" src="<?=str_replace(".MP4","", $ruta_peli)  ?>.webp" data-temporalizador_play="false" data-url1="<?=$ruta_peli ?>" data-id-publicacion="<?=$pl['id'] ?>"></a><br>
                                     <small id="small_<?=$pl['id'] ?>" style="color:red"><b>Toca la imagen para reproducir </b><i class="bi bi-play-button"></i></small></div>
                                     <div class="video-container">
-                                    <video  id="cinta<?=$pl['id'] ?>" class="divs_videos " >
+                                    <video  id="cinta<?=$pl['id'] ?>" class="divs_videos " data-id-publicacion="<?=$pl['id'] ?>">
                                   <source  type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
@@ -730,17 +730,18 @@ $(document).on("click",".imgs_pelis",function (ev){
     var url_poster=$(this).attr('src');
      var cargada=$(id_etiqueda_v).attr('src');
      var alto=$(this).css('height');
+     var etiqueta=this;
  $(id_etiqueda_v).css('background-color', 'black');
      $(this).data('temporalizador_play',"true");    
-     progress_avance(id_publicacion);
+     
     
      $(id_etiqueda_v).css("height",alto);
      
-     $(id_etiqueda_v).css('display',"block");
+     
      $("#small2_div_"+id_publicacion).css('display',"block");
 $("#genero"+id_publicacion).css('display',"none");
+     progress_avance(id_publicacion);
      
-     $(this).css('display',"none");
      
      if(cargada===undefined){
             $("#small_"+id_publicacion).remove();
@@ -749,7 +750,10 @@ $("#genero"+id_publicacion).css('display',"none");
               .on('loadeddata', function() {
                 this.currentTime = 5;
                 this.play();
-                $(id_etiqueda_v).attr("controls",true);
+                var idy1=$(this).data("id-publicacion");
+                $("#poster"+idy1).css('display',"none");
+                $(this).attr("controls",true);
+                $(this).css('display',"block");
                 $(this).data('temporalizador_play',"false");
               });    
      }
