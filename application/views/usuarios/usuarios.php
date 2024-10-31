@@ -708,7 +708,7 @@ $(document).on("click",".imgs_pelis",function (ev){
      var alto=$(this).css('height');
      
      console.log(alto);
-     $(id_etiqueda_v).attr("controls",true);
+     
      $(id_etiqueda_v).css("height",alto);
      
      $(id_etiqueda_v).css('display',"block");
@@ -719,6 +719,7 @@ $(document).on("click",".imgs_pelis",function (ev){
               .attr("src",url)
               .on('loadeddata', function() {
                 this.play();
+                $(id_etiqueda_v).attr("controls",true);
               });    
      }
     
