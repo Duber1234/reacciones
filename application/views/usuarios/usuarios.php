@@ -24,7 +24,7 @@
           box-shadow: 0px 17px 37px rgba(0, 0, 0, 0.1);
     }
 .video-container{
-    margin-top: -5%;
+    margin-top: -7%;
 }
     .pelicula {
   
