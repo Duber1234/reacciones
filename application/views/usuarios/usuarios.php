@@ -367,9 +367,9 @@ if($url_emb!=false){
                                 <h3><?=$pl['titulo'] ?></h1>
                                 <h6><?=$pl['genero'] ?></h6>
                                 
-                              
+                                <?php $ruta_absoluta = realpath(__DIR__ . '/../PELICULAS/'.$pl['texto']); ?>
                                     <video class="video-js divs_videos" controls  width="100%" height="300px" poster="<?=base_url()  ?>assets/images/logo/logo1.png"  >
-                                  <source src="<?=base_url() ?>../PELICULAS/<?=$pl['texto'] ?>" type="video/mp4">
+                                  <source src="<?=$ruta_absoluta ?>" type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
                                    
