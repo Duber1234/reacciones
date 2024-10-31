@@ -134,10 +134,21 @@ public function get_vistas($id_publicacion){
 public function get_patrocinadores_anuncios(){
    return $this->db->get_where("publicacion",array("type"=>2))->result_array();
 }
-public function get_dir_prin(){
-    $directorio_principal = APPPATH;
-    //$directorio_principal = str_replace("/public_html/application/", "", $directorio_principal);
+public function get_ruta_file($tipo,$nombre){
+$directorio_peliculas=base_url();
+if($tipo==1){
+$text1="assets/PELICULAS/" . $nombre;    
+}else{
+    $text1="assets/images/patrocinadores/" . $nombre;
+}
 
-    return $directorio_principal;
+$ruta_absoluta="";
+if($_SERVER['SERVER_NAME'] === 'localhost'){
+    $ruta_absoluta = "https://reacciona.in/".$text1;
+        
+}else{
+    $ruta_absoluta = $directorio_peliculas .$text1 ;
+}
+    return $ruta_absoluta;
 }
 }

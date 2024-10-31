@@ -366,23 +366,9 @@ if($url_emb!=false){
                             <?php }else{?>
                                 <h3><?=$pl['titulo'] ?></h1>
                                 <h6><?=$pl['genero'] ?></h6>
-                                
-                                <?php ; // Obtiene el directorio padre
-//$directorio_peliculas = $directorio_principal;
-$directorio_peliculas=base_url();
-$text1="assets/PELICULAS/" . $pl['texto'];
-if($ip!="::1"){
-    $ruta_absoluta = $directorio_peliculas .$text1 ;    
-}else{
-    $ruta_absoluta = "https://reacciona.in/".$text1;
-}
-
-                                //var_dump($ruta_absoluta);
-                                //var_dump(is_dir($ruta_absoluta));
-                                ?>
 
                                     <video class="video-js divs_videos" controls  width="100%" height="300px" poster="<?=base_url()  ?>assets/images/logo/logo1.png"  >
-                                  <source src="<?=$ruta_absoluta ?>" type="video/mp4">
+                                  <source src="<?=$this->welcome->get_ruta_file(1,$pl['texto']) ?>" type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
                                    
@@ -428,7 +414,7 @@ if($ip!="::1"){
                             </div>
                             <!-- post title start -->
                             <div class="post-content">
-                              <img src="<?=base_url()."assets/images/patrocinadores/".$pl_patrocinador['texto'] ?>">
+                              <img src="<?=$this->welcome->get_ruta_file(2,$pl_patrocinador['texto']) ?>">
                                 <div class="post-meta">
                                     <?php $reacciones_p=$this->welcome->get_reacciones($pl_patrocinador['id']); 
                                             $reaccione_us=$this->welcome->get_reaccione($pl_patrocinador['id']);
