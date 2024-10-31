@@ -50,7 +50,7 @@
   text-align: center;
   background-color: black;
   padding-top: 15px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   border-radius: 5px;
    box-shadow: 0px 7px 17px rgba(5,5,5,5);
 }
@@ -387,7 +387,7 @@ if($url_emb!=false){
                             <?php }else{?>
                                 <h3><?=$pl['titulo'] ?></h1>
                                 <h6><?=$pl['genero'] ?></h6>
-                                <br>
+                                
                                 <?php $ruta_peli=$this->welcome->get_ruta_file(1,$pl['texto']) ; ?>
 
                                     <a><img class="imgs_pelis" src="<?=str_replace(".MP4","", $ruta_peli)  ?>.webp" data-url1="<?=$ruta_peli ?>" data-id-publicacion="<?=$pl['id'] ?>"></a>
