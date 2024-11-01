@@ -730,6 +730,7 @@ function limpiar(){
 // Pausar y eliminar el src de cada video
 videosEnReproduccion.forEach(video => {
   video.pause();
+   video.addEventListener('loadstart', prevenirCargaVideo);
   video.src = '';
 });
 }
@@ -879,4 +880,9 @@ elementosConClase2.forEach(elemento => {
     }
   });
 });
+
+function prevenirCargaVideo(event) {
+  event.preventDefault();
+  console.log('Se ha prevenido la carga del video');
+}
 </script>
