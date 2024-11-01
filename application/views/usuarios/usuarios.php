@@ -732,6 +732,7 @@ videosEnReproduccion.forEach(video => {
   video.pause();
    video.addEventListener('loadstart', prevenirCargaVideo);
   video.src = '';
+  video.remove();
 });
 }
 $(document).on("click",".imgs_pelis",function (ev){
