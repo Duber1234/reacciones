@@ -375,7 +375,7 @@ if($url_emb!=false){
 
                                 <div class="posted-author">
                                     <h6 class="author"><a href="<?=base_url().'usuarios/perfil'?>"><?=$this->welcome->get_user_name($pl['usuario_publica']);  ?></a></h6>
-                                    <span class="post-time"><?=$this->welcome->diferencia_m($pl['fecha']);  ?></span>
+                                    <span class="post-time">Estoy Trabajando Para Mejorar La Experiencia ...</span>
                                 </div>
 
                                 <div class="post-settings-bar">
