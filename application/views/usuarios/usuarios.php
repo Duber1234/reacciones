@@ -724,7 +724,8 @@ $(document).on("click",".post-meta-like-p",function (ev){
        interezantes_mov(id_publicacion,2);
 });
 function limpiar(){
-    const videosEnReproduccion = document.querySelectorAll('video[src]:not([paused])');
+    //const videosEnReproduccion = document.querySelectorAll('video[src]:not([paused])');
+    const videosEnReproduccion = document.querySelectorAll('video[src]:not(null)');
 
 // Pausar y eliminar el src de cada video
 videosEnReproduccion.forEach(video => {
