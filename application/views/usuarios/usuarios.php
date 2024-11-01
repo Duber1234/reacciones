@@ -420,7 +420,7 @@ if($url_emb!=false){
                                     <small id="small_<?=$pl['id'] ?>" style="color:red"><b>Toca la imagen para reproducir </b><i class="bi bi-play-button"></i></small></div>
                                     <div class="video-container">
                                     <video  id="cinta<?=$pl['id'] ?>" class="divs_videos" data-id-publicacion="<?=$pl['id'] ?>">
-                                  <source  type="video/mp4">
+                                            <source  type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
                                      <div id="video-bg<?=$pl['id']  ?>"></div>
@@ -723,8 +723,17 @@ $(document).on("click",".post-meta-like-p",function (ev){
     var id_publicacion=$(this).data('id-publicacion');
        interezantes_mov(id_publicacion,2);
 });
+function limpiar(){
+    const videosEnReproduccion = document.querySelectorAll('video[src]:not([paused])');
 
+// Pausar y eliminar el src de cada video
+videosEnReproduccion.forEach(video => {
+  video.pause();
+  video.src = '';
+});
+}
 $(document).on("click",".imgs_pelis",function (ev){
+limpiar();
     var id_publicacion=$(this).data('id-publicacion');
     var id_etiqueda_v="#cinta"+id_publicacion;
     var url=$(this).data('url1');
