@@ -1,0 +1,8 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.wix.com	TRUE	/templateses/cap-hats_es	FALSE	1999999999	svSession	17cd4a2424b6bf45850edf17d2677988d9708d226d90eabafa645710e1f5d164e6b180e53ab19e203788606d89cb31a41e60994d53964e647acf431e4f798bcdbeabd8cba5658362ca8210a8825fe75250dd4f09bc12ff613e8c524f868e21a53eb353b30febe68c4ec5f8303f7a9ffec065282e89826479fae5ac6a6033afae256a73fc6f07d84c2a6d2dc3a6127bd8
+.wix.com	TRUE	/	FALSE	1999999999	XSRF-TOKEN	1730903450|UO2I5nIgw1tD
+www.wix.com	TRUE	/	FALSE	1999999999	hs	1185156527
+www.wix.com	TRUE	/	FALSE	1999999999	SameSite	None
+www.wix.com	TRUE	/	FALSE	1999999999	ssr-caching	cache#desc=miss#varnish=miss_miss#dc#desc=fastly_42_g
+
